@@ -1,0 +1,433 @@
+/* Header*/
+
+.rgf-logo{
+	width: 110px;
+	margin: 3% 0%;
+}
+
+.apply-info{
+	font-size: 1.1em;
+	color: #999;
+}
+
+.apply-jobtitle{
+	font-style: italic;
+	color: #666;
+}
+
+.apply-info > span + span:before {
+    content: ", ";
+}
+
+header .col-sm-10{
+	padding: 2% 0%;
+}
+
+/* Background */
+
+.form-bkg{
+	background-color: rgba(153,153,153,0.1);
+	min-height: 100%;
+}
+
+/* Progress indicator*/
+
+.progress-indicator{
+	overflow: hidden;
+	margin: 20px;
+}
+
+.progress-stage{
+	position: relative;
+	width: auto;
+	height: 30px;
+	margin-right: 20px;
+	float: left;
+	overflow: hidden;
+}
+
+.progress-circle{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #0d80bc;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: 400;
+	font-size: 1.3em;
+	padding-top: 2px;
+	color: #fff;
+}
+
+.progress-txt{
+	font-size: 1.3em;
+	color: #666;
+	padding: 2px 0% 0% 40px;
+}
+
+.disabled .progress-circle{
+	background-color: #c3c3c3;
+}
+
+.disabled .progress-txt{
+	color: #c3c3c3;
+}
+
+/* Success message */
+
+.msg-success{
+	background-color: #74c399;
+	padding: 5px 10px;
+	margin-right: 20px;
+}
+
+.msg-success p{
+	font-size: 1.1em;
+	color: #fff;
+}
+
+/* Form field - general styles*/
+
+.form-field .container{
+	min-height: 400px;
+	box-shadow: rgba(153,153,153,0.5) -1px 5px 3px;
+	background-color: #fff;
+	padding: 4% 5%;
+}
+
+.form-control{
+	width: 80%;
+}
+
+/* Form field - sign in, login forms*/
+
+.form-field .col-sm-6:first-child{
+	min-height: 280px;
+	border-right: solid 1px rgba(153,153,153,0.3);
+}
+
+.form-field .col-sm-6:last-child{
+	padding-left: 3%;
+}
+
+/* Form field - change/forgot pw and signup talent comm. form*/
+
+.form-center{
+	padding-top: 30px;
+}
+
+.form-center .container{
+	padding-top: 1%;
+}
+
+.form-center .col-sm-6{
+	border-right: none !important;
+}
+
+.form-center p{
+	color: #999;
+}
+
+.closer{
+	margin-bottom: 0px;
+}
+
+.label-sm{
+	font-size: 0.9em;
+	color: #666;
+}
+
+/* Buttons */
+
+.form-field button{
+	width: 45%;
+	height: 40px;
+	background-color: #0d80bc;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.1em;
+	margin-top: 5px;
+}
+
+.form-field button:hover{
+	background-color: #fff;
+	border: solid 1px #0d80bc;
+	color: #0d80bc;
+	-webkit-transition: all 0.5s ease;
+	   -moz-transition: all 0.5s ease;
+		 -o-transition: all 0.5s ease;
+		    transition: all 0.5s ease;
+}
+
+.btn-cancel{
+	background-color: #999 !important;
+}
+
+.btn-cancel:hover{
+	background-color: transparent !important;
+	border: solid 1px #999 !important;
+	color: #666 !important;
+}
+
+.btn-secondary{
+	overflow: hidden;
+}
+
+.btn-secondary .btn-save{
+	width: 100px;
+	height: 30px;
+	margin-right: 10px;
+	float: right;
+	font-size: 0.9em;
+}
+
+.btn-secondary .btn-cancel{
+	width: 100px;
+	height: 30px;
+	float: right;
+	font-size: 0.9em;
+}
+
+/* Jobs module-horizontal */
+
+.job-module-horizontal{
+	margin: 30px 0px;
+	position: relative;
+}
+
+.job-module-horizontal h4{
+	text-transform: uppercase;
+}
+
+.job-module-horizontal .arrow-left{
+	display: block;
+	background:url("../assets/sprites.png") top left no-repeat;
+	width:19px; 
+	height:54px; 
+	background-position:-10px -74px;
+	position: absolute;
+	top: 80px;
+	left: -30px;
+}
+
+.job-module-horizontal .arrow-right{
+	display: block;
+	background:url("../assets/sprites.png") top left no-repeat;
+	width:19px; 
+	height:54px; 
+	background-position:-10px -10px;
+	position: absolute;
+	top: 80px;
+	right: -30px;
+}
+
+/* Buttons */
+
+.jobcart-btn{
+	overflow: hidden;
+	width: 200px !important;
+	height: 45px;
+	margin: 15px 0px;
+	border-radius: 3px;
+	border: solid 1px #3db0e6;
+	background-color: #fff !important;
+	font-size: 1em;
+	color: #666 !important;
+}
+
+.jobcart-btn:hover{
+	background-color: #3db0e6 !important;
+	color: #fff !important;
+	-webkit-transition: all 0.3s ease;
+	   -moz-transition: all 0.3s ease;
+		 -o-transition: all 0.3s ease;
+		    transition: all 0.3s ease;
+}
+
+.jobcart-btn span{
+	display: block;
+	float: left;
+	margin-left: 5px;
+}
+
+.jobcart-active{ 
+	display: block;
+	background: url('../assets/sprites.png') top left no-repeat;
+	width:31px; 
+	height:20px; 
+	background-position:-10px -541px;
+}
+
+.jobcart-empty{ 
+	display: block;
+	background: url('../assets/sprites.png') top left no-repeat;
+	width:30px; 
+	height:20px; 
+	background-position:-10px -511px; 
+}
+
+.is-empty{
+	background-color: #fff;
+	border: solid 1px #d4d4d4;
+	color: #333;
+}
+
+.is-empty:hover{
+	background-color: #e4e4e4 !important;
+	border: solid 1px #999 !important;
+	color: #333 !important;
+}
+
+/* Form field - app and review form*/
+
+.app-form .container{
+	padding: 4% 10%; 
+}
+
+.form-block .form-group:first-child{
+	border-bottom: solid 1px rgba(153,153,153,0.3);
+	margin-bottom: 30px;
+}
+
+.form-block{
+	padding: 3% 0%;
+}
+
+.form-block:first-child{
+	padding: 0%;
+}
+
+.label-head{
+	text-transform: uppercase;
+	color: #0d80bc;
+}
+
+.app-form label{
+	text-align: right;
+	color: #525252;
+}
+
+.app-form .form-control{
+	width: 50%;
+}
+
+.review-form .container{
+	padding: 4% 20%; 
+}
+
+.review-form .form-control{
+	width: 100%;
+}
+
+.review-form .col-sm-2{
+	text-align: right;
+	color: #0d80bc;
+}
+
+.review-form .col-sm-2 a{
+	display: inline-block;
+	font-size: 1.1em;
+	margin: 10px 0px;
+}
+
+/* dropdown option list*/
+
+select{
+	background-color: #fff;
+	height: 35px;
+	border: solid 1px rgba(153,153,153,0.5);
+	border-radius: 5px;
+	vertical-align: baseline;
+}
+
+.pull-left{
+	margin-right: 10px;
+}
+
+.salary{
+	width: 100% !important;
+}
+
+/* search bar - cfm page */
+
+.search-bar .form-group{												
+	width: 100%;
+	position: relative;
+}
+
+.search-bar input{
+	height: 40px;
+	width: 85%;
+	padding-left: 40px;
+	margin: 10px 0px;
+}
+
+.search-bar .glyphicon-search{
+	position: absolute;
+	color: #999;
+	left: 20px;
+	top: 23px;
+}
+
+.search-bar .btn{
+	width: 12%;
+	height: 40px;
+	border-radius: 3px;
+	border: solid 1px #3db0e6;
+	background-color: #fff;
+	font-size: 1.1em;
+	color: #333;
+	text-transform: uppercase;
+}
+
+.search-bar .btn:hover{
+	color: #fff;
+	background-color: #3db0e6;
+	-webkit-transition: all 0.5s ease;
+	   -moz-transition: all 0.5s ease;
+		 -o-transition: all 0.5s ease;
+		    transition: all 0.5s ease;
+}
+
+.search-secondary{
+	border: none;
+	background-color: transparent;
+}
+
+.search-secondary form{
+	margin: 2% 0%;
+	padding: 2px 5px;
+	position: relative;
+	border: solid 1px rgba(153,153,153,0.3);
+	border-radius: 3px;
+	background-color: rgba(233,233,233,0.68);
+}
+
+.search-secondary .glyphicon-search{
+	position: absolute;		
+	top: 23px;										
+	left: 20px;
+}
+
+.search-secondary .btn{
+	width: 14%;
+}
+
+
+/* Talent community*/
+
+.job-alert{
+	background-color: rgba(244,249,255,0.5);
+	padding: 2%;
+	border: solid 1px rgba(187,187,187,0.3);
+	border-radius: 3px;
+}
+
+/* Footer*/
+
+.footer-secondary{
+	padding: 3% 0%;
+}
