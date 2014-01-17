@@ -11,6 +11,8 @@
 	    <link href="css/base.css" rel="stylesheet">
 	    <link href="css/form.css" rel="stylesheet">
 	    <link href='http://fonts.googleapis.com/css?family=Open+Sans|Trykker' rel='stylesheet' type='text/css'>
+	    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script> 
 	    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	    <!--[if lt IE 9]>
@@ -28,7 +30,7 @@
 				<div class="row">
 					<div class="col-sm-2">
 						<a href="/">
-							<img class="rgf-logo" src="assets/logo.jpg">
+							<img class="rgf-logo" alt="rgf-singapore-logo" src="assets/rgf-singapore-logo.png">
 						</a>
 					</div>
 				</div>
@@ -39,7 +41,7 @@
 			<section class="form-field form-center">
 				<div class="container">
 					<div class="row">
-						<div class="col-sm-offset-3 col-sm-6">
+						<div class="col-sm-6">
 							<form role="form">
 								<div class="form-group">
 									<h4>Join RGF Talent Community</h4>
@@ -62,7 +64,12 @@
 										<label for="">MY JOB ALERT</label>
 										<div class="checkbox">
 											<label class="label-sm">
-												<input type="checkbox" checked="checked"> I agree to receive job alerts from RGF Singapore
+												<input type="checkbox" checked="checked"> I wish to receive job alerts from RGF Singapore
+											</label>
+										</div>
+										<div class="checkbox">
+											<label class="label-sm">
+												<input type="checkbox"> I agree to the <a href="">terms and conditions</a> and <a href="">privacy policy</a> of RGF Singapore
 											</label>
 										</div>
 									</div>
@@ -91,21 +98,38 @@
 										</select>
 									</div>
 								</div>
-								<button type="submit" class="btn">Sign up</button>
+								<button type="submit" class="btn" data-toggle="modal" data-target="#successModal">Sign up</button>
 								<button class="btn btn-cancel">Cancel</button>
 							</form>
+						</div>
+						<div class="col-sm-6">
+							Static content to be added later
 						</div>
 					</div>
 				</div>
 			</section>
+<!-- Modal-success message -->
+			<div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModal" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-body">
+			        <h2 class="modal-title">Congrats!</h2>
+			        <p>You're now part of RGF talent community. Start your job search with RGF now.</p>
+					<div class="modal-footer">
+			        	<button type="button" class="btn btn-ok">OK</button>
+			        </div>
+			      </div>
+			    </div><!-- /.modal-content -->
+			  </div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
 <!--Footer-->
 			<footer class="footer-secondary">
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12 text-center">
-							<p class="small">Copyright &copy 2013 RGF HR Agent Singapore Pte Ltd<br>
+							<p class="small">Copyright &copy 2014 RGF HR Agent Singapore Pte Ltd<br>
 							EA License 10C2978<br>
-							<a href="">Terms & Conditions</a> | <a href="">Privacy Policy</a> | <a href="">Cookie Policy</a></p>
+							<a href="">Terms & Conditions</a> | <a href="">Privacy Policy</a> | <a href="">Cookies Policy</a></p>
 						</div>
 					</div>
 				</div>

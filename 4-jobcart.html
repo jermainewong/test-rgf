@@ -11,6 +11,7 @@
 	    <link href="css/base.css" rel="stylesheet">
 	    <link href="css/main.css" rel="stylesheet">
 	    <link href='http://fonts.googleapis.com/css?family=Open+Sans|Trykker' rel='stylesheet' type='text/css'>
+	    <link href="css/font-awesome.min.css" rel="stylesheet">
 	    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	    <!--[if lt IE 9]>
@@ -22,77 +23,98 @@
 	    <!--[if lt IE 7]>
 	    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 	        <![endif]-->
-	<!--Header-->
+<!--Header-->
 		<header>
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-2">
+					<div class="col-xs-12 nav-primary">
 						<a href="/">
-							<img class="logo-primary" src="assets/logo.jpg">
+							<img class="logo-primary" alt="rgf-singapore-logo" src="assets/rgf-singapore-logo.png">
 						</a>
-					</div>
-					<div class="col-sm-10 nav">
-						<nav class="nav-primary">
-							<ul>
-								<li>
-									<a href="/">Home</a>
-								</li>
-								<li>
-									<a href="">Jobs</a>
-								</li>
-								<li>
-									<a href="">For Employers</a>
-								</li>
-								<li>
-									<a href="">About RGF</a>
-								</li>
-								<li>
-									<a href="">Contact Us</a>
-								</li>
-								<li>
-									<a href="4-jobcart.html">
-										<div class="cart-dynamic">
-											<span class="jobcart-count">5</span>
-											<span class="">Job Cart</span>
-											<span class="caret"></span>
-										</div>
-									</a>
-								</li>
-							</ul>
+						<nav class="clearfix">
+							<div class="nav-bar pull-right">
+								<ul>
+									<li>										
+										<a href="/">
+											Home
+											<div class="arrow-down"></div>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											Jobs
+											<div class="arrow-down" style="display:none"></div>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											For Employers
+											<div class="arrow-down" style="display:none"></div>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											About RGF
+											<div class="arrow-down" style="display:none"></div>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											Contact Us
+											<div class="arrow-down" style="display:none"></div>
+										</a>
+									</li>
+									<li>
+										<a class="jobcart-dropdown clearfix" href="">
+											<div>
+												Job Cart
+											</div>
+											<div class="jobcart-icon">										
+												<span class="cart-dynamic"></span>
+												<span class="jobcart-count">5</span>
+												<span class="caret"></span>
+											</div>
+											<div class="arrow-down" style="display:none"></div>
+										</a>
+									</li>
+								</ul>
+							</div>
 						</nav>
 					</div>
 				</div>
 			</div>
-		</header>	
+		</header>
 	<!--Search bar-->
 		<section class="search-bar search-secondary">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-12">
-						<form class="form-inline" role="search">
-							<div class="form-group">
+					<div class="col-xs-12">
+						<div class="search-fields clearfix">
+							<div class="float-left">
 								<span class="glyphicon glyphicon-search"></span>
 							    <label class="sr-only">Search Jobs</label>
 							    <input type="search" class="form-control" id="searchInput" placeholder="Enter job title, keyword etc...">
-							    <button class="btn">Search</button>
 							</div>
-						</form>
+							<div class="float-left">
+								<button class="btn">Search</button>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 	<!--Content-->
-		<section>
+		<section class="jobcart-list">
 			<div class="container">
 		<!--Title-->
 				<div class="row">
-					<div class="col-sm-12">
+					<div class="col-xs-12">
 						<h2>Your Job Cart <span>(5)</span></h2>
 						<p>Checkout to apply for all your jobs now</p>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-sm-12">
+					<div class="col-xs-12">
 						<table class="table table-striped">
 							<tr>
 								<th>Job Title <span class="caret"></span></th>
@@ -102,35 +124,35 @@
 								<th></th>
 							</tr>
 							<tr>
-								<td>Front-end developer job</td>
+								<td><a href="">Front-end developer job</a></td>
 								<td>Singapore</td>
 								<td>SGD 3,000 - 5,000</td>
 								<td>Dec 26, 2013</td>
 								<td><a>Remove</a></td>
 							</tr>
 							<tr>
-								<td>Senior front-end developer job</td>
+								<td><a href="">Senior front-end developer job</a></td>
 								<td>Singapore</td>
 								<td>SGD 3,000 +</td>
 								<td>Dec 26, 2013</td>
 								<td><a>Remove</a></td>
 							</tr>
 							<tr>
-								<td>Web developer job</td>
+								<td><a href="">Web developer job</a></td>
 								<td>Singapore</td>
 								<td>up to SGD 5,000</td>
 								<td>Dec 26, 2013</td>
 								<td><a>Remove</a></td>
 							</tr>
 							<tr>
-								<td>Junior front-end developer job</td>
+								<td><a href="">Junior front-end developer job</a></td>
 								<td>Malaysia</td>
 								<td>MYR 3,000 - 5,000</td>
 								<td>Dec 26, 2013</td>
 								<td><a>Remove</a></td>
 							</tr>
 							<tr>
-								<td>Senior web developer job</td>
+								<td><a href="">Senior web developer job</a></td>
 								<td>Hong Kong</td>
 								<td>HKD 3,000 - 5,000</td>
 								<td>Dec 26, 2013</td>
@@ -140,52 +162,68 @@
 					</div>					
 				</div>
 				<div class="row">
-					<div class="col-sm-12 clearfix">
+					<div class="col-xs-12 clearfix">
 						<button class="btn btn-chkout pull-right">Checkout</button>
 					</div>
 				</div>
-	<!--Horizontal job module-->
-				<div class="row job-module-horizontal">
-					<h4>Your recently viewed jobs</h4>
-					<span class="arrow-left"></span>
-					<div class="col-sm-3 text-center">
-						<h4><a href="">Web developer</a></h4>
-						<p>Singapore</p>
-						<p>SGD 3,500 - 5,000</p>
-						<button class="btn jobcart-btn is-active">
-							<span class="jobcart-desp">Add to Job cart</span>
-							<span class="jobcart-active"></span>
-						</button>
+			</div>
+		</section>
+		<section class="job-module-horizontal">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+				<!--Horizontal job module-->
+						<div class="row">
+							<h3>Your recently viewed jobs</h3>
+							<span class="arrow-left"></span>
+							<div class="col-xs-3 text-center">
+								<h4><a href="">Web developer</a></h4>
+								<p>Singapore</p>
+								<p>SGD 3,500 - 5,000</p>
+								<button class="btn jobcart-btn is-active">
+									<div class="jobcart-desp">Add to Job cart</div>
+									<div class="jobcart-state">
+										<span class="jobcart-active"></span>
+									</div>
+								</button>
+							</div>
+							<div class="col-xs-3 text-center">
+								<h4><a href="">Web developer</a></h4>
+								<p>Singapore</p>
+								<p>SGD 3,500 - 5,000</p>
+								<button class="btn jobcart-btn is-active">
+									<div class="jobcart-desp">Add to Job cart</div>
+									<div class="jobcart-state">
+										<span class="jobcart-active"></span>
+									</div>
+								</button>					
+							</div>
+							<div class="col-xs-3 text-center">
+								<h4><a href="">Web developer</a></h4>
+								<p>Singapore</p>
+								<p>SGD 3,500 - 5,000</p>
+								<button class="btn jobcart-btn is-active">
+									<div class="jobcart-desp">Add to Job cart</div>
+									<div class="jobcart-state">
+										<span class="jobcart-active"></span>
+									</div>
+								</button>
+							</div>
+							<div class="col-xs-3 text-center">
+								<h4><a href="">Web developer</a></h4>
+								<p>Singapore</p>
+								<p>SGD 3,500 - 5,000</p>
+								<button class="btn jobcart-btn is-active">
+									<div class="jobcart-desp">Add to Job cart</div>
+									<div class="jobcart-state">
+										<span class="jobcart-active"></span>
+									</div>
+								</button>
+							</div>
+							<span class="arrow-right"></span>
+						</div> <!--/Horizontal job module-->
 					</div>
-					<div class="col-sm-3 text-center">
-						<h4><a href="">Web developer</a></h4>
-						<p>Singapore</p>
-						<p>SGD 3,500 - 5,000</p>
-						<button class="btn jobcart-btn is-active">
-							<span class="jobcart-desp">Add to Job cart</span>
-							<span class="jobcart-active"></span>
-						</button>					
-					</div>
-					<div class="col-sm-3 text-center">
-						<h4><a href="">Web developer</a></h4>
-						<p>Singapore</p>
-						<p>SGD 3,500 - 5,000</p>
-						<button class="btn jobcart-btn is-empty">
-							<span class="jobcart-desp">Add to Job cart</span>
-							<span class="jobcart-empty"></span>
-						</button>
-					</div>
-					<div class="col-sm-3 text-center">
-						<h4><a href="">Web developer</a></h4>
-						<p>Singapore</p>
-						<p>SGD 3,500 - 5,000</p>
-						<button class="btn jobcart-btn is-active">
-							<span class="jobcart-desp">Add to Job cart</span>
-							<span class="jobcart-active"></span>
-						</button>
-					</div>
-					<span class="arrow-right"></span>
-				</div> <!--/Horizontal job module-->
+				</div>
 			</div>
 		</section>
 	<!--Join talent comm. section-->
@@ -193,8 +231,8 @@
 			<a href="">
 				<div class="container">
 					<div class="row">
-						<div class="col-sm-12 text-center">
-							<p>Ready to take your next career to the next level? Join our talent community</p>
+						<div class="col-xs-12 text-center">
+							<p>Get connected to greater opportunities. Join our talent community <i class="fa fa-angle-right"></i></p> 
 						</div>
 					</div>
 				</div>
@@ -204,14 +242,14 @@
 		<footer class="footer-primary">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-4">
-						<img src="assets/rgf-logo-transparent.png">
+					<div class="col-xs-4">
+						<img src="assets/rgf-singapore-transparent.png">
 						<p>RGF HR Agent Singapore Pte Ltd<br>
 						EA Licence no. 10C2978<br>
-						Copyright &copy  2013</p>
-						<a href="">Terms & Condition</a> | <a href="">Privacy Policy</a> | <a href="">Cookie Policy</a>
+						Copyright &copy  2014</p>
+						<a href="">Terms & Condition</a> | <a href="">Privacy Policy</a> | <a href="">Cookies Policy</a>
 					</div>
-					<div class="col-sm-4">
+					<div class="col-xs-4">
 						<h5>Sitemap</h5>
 						<ul>
 							<li>
@@ -231,12 +269,12 @@
 							</li>
 						</ul>
 					</div>
-					<div class="col-sm-4">
+					<div class="col-xs-4">
 						<h5>Connect with RGF</h5>
 						<div class="social-icons">
-							<span class="icon-sm-linkedin"></span>
-							<span class="icon-sm-fb"></span>
-							<span class="icon-sm-tw"></span>
+							<a href=""><i class="fa fa-linkedin"></i></a>
+							<a href=""><i class="fa fa-facebook"></i></a>
+							<a href=""><i class="fa fa-twitter"></i></a>
 						</div>
 					</div>
 				</div>

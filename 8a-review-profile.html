@@ -51,14 +51,14 @@
 							<div class="progress-stage disabled">
 								<div class="progress-circle">1</div>
 								<div class="progress-txt">
-									<span class="progress-label active">Sign up</span>
+									<span class="progress-label active">Log in</span>
 									<span class="glyphicon glyphicon-arrow-right active"></span>
 								</div>
 							</div>
 							<div class="progress-stage">
 								<div class="progress-circle">2</div>
 								<div class="progress-txt">
-									<span class="progress-label">Apply</span>
+									<span class="progress-label">Review</span>
 									<span class="glyphicon glyphicon-arrow-right"></span>
 								</div>
 							</div>
@@ -74,17 +74,42 @@
 			</div>
 	<!--Form section-->
 			<section class="form-field">
-				<div class="app-form">
+				<div class="review-form">
 					<div class="container">
 						<div class="row">
 							<div class="col-xs-12">
 								<form class="form-horizontal application" role="form">
+									<div class="form-group">
+										<div class="col-xs-12">
+											<p>Please complete your profile and press the complete button to finish your application.</p>
+											<button type="submit" class="btn">Complete</button>										
+										</div>
+									</div>
+						<!--Login Credentials-->
 									<div class="form-block">
 										<div class="form-group">
-											<h5>Complete faster with</h5>
+											<h4 class="label-head">Login Credentials</h4>
 										</div>
 										<div class="form-group">
-											<img alt="" src="assets/linkedin-btn.png">
+											<label for="input" class="col-xs-4">Email</label>
+											<div class="col-xs-8">
+												<input type="email" class="form-control">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="input" class="col-xs-4">Current password</label>
+											<div class="col-xs-8">
+												<span>
+													&#9679
+													&#9679
+													&#9679
+													&#9679
+													&#9679
+													&#9679
+													&#9679
+												</span>
+												<a href="">[change password]</a>
+											</div>
 										</div>
 									</div>
 						<!--Personal information-->
@@ -93,27 +118,31 @@
 											<h4 class="label-head">Personal Details</h4>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-3">Phone number*</label>
-											<div class="col-xs-9">
-												<input type="tel" class="form-control" id="inputPhonenumber" placeholder="Phone number">
+											<label for="input" class="col-xs-4">Phone number*</label>
+											<div class="col-xs-8">
+												<input type="tel" class="form-control">
 												<span class="small">(e.g. +65-9333 6688)</span>
 											</div>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-3">Current living location*</label>
-											<div class="col-xs-9">
+											<label for="input" class="col-xs-4">Current living location*</label>
+											<div class="col-xs-8">
 												<select>
-													<option value="Singapore" selected="selected">Singapore</option>				<!--Please help to add in full country list-->
+													<option value="Singapore" selected="selected">Singapore</option>
 													<option value="Malaysia">Malaysia</option>
 													<option value="Indonesia">Indonesia</option>
+													<option value="Indonesia">Indonesia</option>
+													<option value="Indonesia">Indonesia</option>
+													<option value="Indonesia">Indonesia</option>
+													<option value="Indonesia">Indonesia</option>							<!--Please help to add in full country list-->
 												</select>
 											</div>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-3">Visa Status in Singapore*</label>
-											<div class="col-xs-9">
+											<label for="input" class="col-xs-4">Visa Status in Singapore*</label>
+											<div class="col-xs-8">
 												<select>
-													<option value="" selected="selected">Please select</option>					
+													<option value="" selected="selected">Please select</option>
 													<option value="Singaporean">Singaporean</option>
 													<option value="Permanent-resident">Permanent Resident</option>
 													<option value="Employment-pass">Employment Pass</option>
@@ -130,39 +159,39 @@
 											<h4 class="label-head">Work Experience</h4>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-3">Current/ last position*</label>
-											<div class="col-xs-9">
-												<input type="text" class="form-control" id="inputCurrentposition" placeholder="Current or last position">
+											<label for="input" class="col-xs-4">Current/ last position*</label>
+											<div class="col-xs-8">
+												<input type="text" class="form-control">
 											</div>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-3">Current/ last company*</label>
-											<div class="col-xs-9">
-												<input type="text" class="form-control" id="inputCurrentcompany" placeholder="Current or last company">
+											<label for="input" class="col-xs-4">Current/ last company*</label>
+											<div class="col-xs-8">
+												<input type="text" class="form-control">
 											</div>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-3">Current monthly salary*</label>
-											<div class="col-xs-9 clearfix">
+											<label for="input" class="col-xs-4">Current monthly salary*</label>
+											<div class="col-xs-8 clearfix">
 												<div class="pull-left">
 													<select class="currency">
-														<option value="SGD" selected="selected">SGD</option>						<!--Please help to add in full currency list-->
+														<option value="SGD" selected="selected">SGD</option>
 														<option value="MYR">MYR</option>
 														<option value="HKD">HKD</option>
 														<option value="HKD">HKD</option>
 														<option value="HKD">HKD</option>
-														<option value="HKD">HKD</option>								
+														<option value="HKD">HKD</option>										<!--Please help to add in full currency list-->
 													</select>
 												</div>
 												<div class="pull-left">
-													<input type="number" class="form-control salary" id="inputSalary" placeholder="Monthly salary">
+													<input type="number" class="form-control salary" id="inputSalary">
 												</div>	
 											</div>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-3">Total years of work experience*</label>
-											<div class="col-xs-9">
-												<input type="number" class="form-control" id="inputWorkexp" placeholder="No. of years of work experience">
+											<label for="input" class="col-xs-4">Total years of work experience*</label>
+											<div class="col-xs-8">
+												<input type="text" class="form-control">
 											</div>
 										</div>
 									</div>
@@ -172,28 +201,28 @@
 											<h4 class="label-head">Highest Education Attained</h4>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-3">School/ University*</label>
-											<div class="col-xs-9">
-												<input type="text" class="form-control" id="inputSchool" placeholder="Name of your school or university">
+											<label for="input" class="col-xs-4">School/ University*</label>
+											<div class="col-xs-8">
+												<input type="text" class="form-control">
 											</div>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-3">Education level*</label>
-											<div class="col-xs-9">
+											<label for="input" class="col-xs-4">Education level*</label>
+											<div class="col-xs-8">
 												<select>
 													<option value="" selected="selected">Please select</option>
 													<option value="PhD">PhD</option>
-													<option value="master's-degree">Master's Degree</option>
-													<option value="bachelor's degree">Bachelor's Degree</option>
-													<option value="diploma">Diploma</option>
-													<option value="others">Others</option>
+													<option value="Master's-degree">Master's Degree</option>
+													<option value="Bachelor's-degree">Bachelor's Degree</option>
+													<option vaue="Diploma">Diploma</option>
+													<option value="Others">Others</option>
 												</select>
 											</div>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-3">Field of Study*</label>
-											<div class="col-xs-9">
-												<input type="text" class="form-control" id="inputFieldofstudy" placeholder="Field of study">
+											<label for="input" class="col-xs-4">Field of Study*</label>
+											<div class="col-xs-8">
+												<input type="text" class="form-control">
 											</div>
 										</div>
 									</div>
@@ -203,44 +232,44 @@
 											<h4 class="label-head">Language Proficiency</h4>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-3">English*</label>
-											<div class="col-xs-9">
-												<select>
+											<label for="input" class="col-xs-4">English*</label>
+											<div class="col-xs-8">
+												<select>											
 													<option value="" selected="selected">Please select</option>
-													<option value="native">Native</option>
-													<option value="fluent">Fluent</option>
-													<option value="business-level">Business level</option>
-													<option value="conversational">Conversational</option>
-													<option value="basic">Basic</option>
-													<option value="none">None</option>
+													<option value="Native">Native</option>
+													<option value="Fluent">Fluent</option>
+													<option value="Business-level">Business level</option>
+													<option value="Conversational">Conversational</option>
+													<option value="Basic">Basic</option>
+													<option value="None">None</option>
 												</select>
 											</div>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-3">Mandarin*</label>
-											<div class="col-xs-9">
-												<select>
+											<label for="input" class="col-xs-4">Mandarin*</label>
+											<div class="col-xs-8">
+												<select>											
 													<option value="" selected="selected">Please select</option>
-													<option value="native">Native</option>
-													<option value="fluent">Fluent</option>
-													<option value="business-level">Business level</option>
-													<option value="conversational">Conversational</option>
-													<option value="basic">Basic</option>
-													<option value="none">None</option>
+													<option value="Native">Native</option>
+													<option value="Fluent">Fluent</option>
+													<option value="Business-level">Business level</option>
+													<option value="Conversational">Conversational</option>
+													<option value="Basic">Basic</option>
+													<option value="None">None</option>
 												</select>
 											</div>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-3">Japanese*</label>
-											<div class="col-xs-9">
-												<select>
+											<label for="input" class="col-xs-4">Japanese*</label>
+											<div class="col-xs-8">
+												<select>											
 													<option value="" selected="selected">Please select</option>
-													<option value="native">Native</option>
-													<option value="fluent">Fluent</option>
-													<option value="business-level">Business level</option>
-													<option value="conversational">Conversational</option>
-													<option value="basic">Basic</option>
-													<option value="none">None</option>
+													<option value="Native">Native</option>
+													<option value="Fluent">Fluent</option>
+													<option value="Business-level">Business level</option>
+													<option value="Conversational">Conversational</option>
+													<option value="Basic">Basic</option>
+													<option value="None">None</option>
 												</select>
 											</div>
 										</div>
@@ -251,15 +280,15 @@
 											<h4 class="label-head">Upload your resume</h4>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-3">Your Resume*</label>
-											<div class="col-xs-9">
+											<label for="input" class="col-xs-4">Your latest resume*</label>
+											<div class="col-xs-8">
 												<input type="file" id="exampleInputFile">
-												<p class="help-block">Supported formats: .doc, .docx, .pdf, .txt, .rtf (max. file size 1MB)</p>
+												<p class="small help-block">Supported formats: .doc, .docx, .pdf, .txt, .rtf (max. file size 1MB)</p>
 											</div>
 										</div>
 									</div>
 									<div class="form-group">
-										<div class="col-xs-offset-3">
+										<div class="col-xs-offset-4">
 											<button type="submit" class="btn">Complete</button>
 										</div>
 									</div>
@@ -269,7 +298,7 @@
 					</div>
 				</div><!--/app-form-->
 			</section><!--/form-field-->
-	<!--Footer-->
+<!--Footer-->
 			<footer class="footer-secondary">
 				<div class="container">
 					<div class="row">

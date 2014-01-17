@@ -10,7 +10,8 @@
 	    <link href="css/bootstrap.min.css" rel="stylesheet">
 	    <link href="css/base.css" rel="stylesheet">
 	    <link href="css/main.css" rel="stylesheet">
-	    <link href='http://fonts.googleapis.com/css?family=Open+Sans|Trykker' rel='stylesheet' type='text/css'>	    
+	    <link href='http://fonts.googleapis.com/css?family=Open+Sans|Trykker' rel='stylesheet' type='text/css'>
+	    <link href="css/font-awesome.min.css" rel="stylesheet">	    
 	    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	    <!--[if lt IE 9]>
@@ -26,37 +27,84 @@
 		<header>
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-2">
+					<div class="col-xs-12 nav-primary">
 						<a href="/">
-							<img class="logo-primary" src="assets/logo.jpg">
+							<img class="logo-primary" alt="rgf-singapore-logo" src="assets/rgf-singapore-logo.png">
 						</a>
-					</div>
-					<div class="col-sm-10">
-						<nav class="nav-primary">
-							<div class="test">
+						<nav class="clearfix">
+							<div class="nav-bar pull-right">
 								<ul>
-									<li>
-										<a href="/">Home</a>
-									</li>
-									<li>
-										<a href="">Jobs</a>
-									</li>
-									<li>
-										<a href="">For Employers</a>
-									</li>
-									<li>
-										<a href="">About RGF</a>
-									</li>
-									<li>
-										<a href="">Contact Us</a>
-									</li>
-									<li>
-										<a href="4-jobcart.html">										<!--add in and fix job cart bug here-->
-											<span class="cart-dynamic"></span>
-											<span class="jobcart-count">5</span>
-											<span class="">Job Cart</span>
-											<span class="caret"></span>
+									<li>										
+										<a href="/">
+											Home
+											<div class="arrow-down"></div>
 										</a>
+									</li>
+									<li>
+										<a href="">
+											Jobs
+											<div class="arrow-down" style="display:none"></div>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											For Employers
+											<div class="arrow-down" style="display:none"></div>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											About RGF
+											<div class="arrow-down" style="display:none"></div>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											Contact Us
+											<div class="arrow-down" style="display:none"></div>
+										</a>
+									</li>
+									<li>
+										<a class="jobcart-dropdown clearfix" href="">
+											<div>
+												Job Cart
+											</div>
+											<div class="jobcart-icon">										
+												<span class="cart-dynamic"></span>
+												<span class="jobcart-count">5</span>
+												<span class="caret"></span>
+											</div>
+											<div class="arrow-down" style="display:none"></div>
+										</a>
+								<!--Mouse-over jobcart menu-->
+										<div class="jobcart-menu">
+											<div>
+												<p><a class="" href="">Front-end Developer</a></p>
+												<p class="job-location">Singapore</p>
+												<p class="job-salary">SGD 3,000 - 5,000</p>
+											</div>
+											<div>
+												<p><a class="" href="">Front-end Developer</a></p>
+												<p class="job-location">Singapore</p>
+												<p class="job-salary">SGD 3,000 - 5,000</p>
+											</div>
+											<div>
+												<p><a class="" href="">Front-end Developer</a></p>
+												<p class="job-location">Singapore</p>
+												<p class="job-salary">SGD 3,000 - 5,000</p>
+											</div>
+											<div>
+												<p><a class="" href="">Front-end Developer</a></p>
+												<p class="job-location">Singapore</p>
+												<p class="job-salary">SGD 3,000 - 5,000</p>
+											</div>
+											<div>
+												<p><a class="" href="">Front-end Developer</a></p>
+												<p class="job-location">Singapore</p>
+												<p class="job-salary">SGD 3,000 - 5,000</p>
+											</div>
+											<button class="btn btn-viewcart">View Job Cart (5)</button>
+										</div>
 									</li>
 								</ul>
 							</div>
@@ -69,15 +117,15 @@
 		<section class="search-bar">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-12">
-						<form class="form-inline" role="search">
-							<div class="form-group">
-								<span class="glyphicon glyphicon-search"></span>
-							    <label class="sr-only">Search Jobs</label>
-							    <input type="search" class="form-control" id="searchInput" placeholder="Enter job title, keyword etc...">
-							    <button class="btn">Search</button>
-							</div>
-						</form>
+					<div class="col-xs-12 clearfix">
+						<div class="float-left">
+							<span class="glyphicon glyphicon-search"></span>
+						    <label class="sr-only">Search Jobs</label>
+						    <input type="search" class="form-control" id="searchInput" placeholder="Enter job title, keyword etc...">
+						</div>
+						<div class="float-left">
+							<button class="btn">Search</button>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -86,29 +134,34 @@
 		<section class="banner">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-12">
+					<div class="col-xs-12">
 					</div>
 				</div>
 			</div>
 		</section>
 	<!--Subscription bar-->
-		<section class="subscription">
+		<section class="subscription search-bar">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-12">
-						<form class="form-inline" role="form">
-							<div class="form-group">
-								<div class="col-sm-3">
-									<p class="blue-txt">Get scouted by recruiters</p>
-									<p>Join our talent community</p>
-								</div>
-								<div class="col-sm-9">
-									<span class="glyphicon glyphicon-user"></span>
-								    <input type="email" class="form-control" id="emailInput" placeholder="Enter your email address">
-								    <button class="btn">Join</button>
+					<div class="col-xs-12">
+						<div class="row">
+							<div class="col-xs-3">
+								<p class="blue-txt">Get scouted by recruiters</p>
+								<p>Join our talent community</p>
+							</div>
+							<div class="col-xs-9">
+								<div class="search-fields clearfix">
+									<div class="float-left">
+										<span class="glyphicon glyphicon-user"></span>
+									    <label class="sr-only">Search Jobs</label>
+									    <input type="email" class="form-control" id="" placeholder="Enter your email address">
+									</div>
+									<div class="float-left">
+										<button class="btn">Join</button>
+									</div>
 								</div>
 							</div>
-						</form>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -117,73 +170,83 @@
 		<section class="job-section">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-6">
+					<div class="col-xs-6">
 						<div class="jobs-module">
 							<div class="row">
 								<h3><a href="">New Jobs</a></h3>
 							</div>					
 							<div class="row">
-								<div class="col-sm-8">
+								<div class="col-xs-8">
 									<h4><a class="" href="">Front-end Developer</a></h4>
 									<p class="job-location">Singapore</p>
 									<p class="job-salary">SGD 3,000 - 5,000</p>
 								</div>
-								<div class="col-sm-4">
-									<button class="btn jobcart-btn is-active">
-										<span class="jobcart-desp">Add to Job cart</span>
-										<span class="jobcart-active"></span>
-									</button>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-sm-8">
-									<h4><a class="" href="">Front-end Developer</a></h4>
-									<p class="job-location">Singapore</p>
-									<p class="job-salary">SGD 3,000 - 5,000</p>
-								</div>
-								<div class="col-sm-4">
+								<div class="col-xs-4">
 									<button class="btn jobcart-btn is-empty">
-										<span class="jobcart-desp">Remove Job</span>
-										<span class="jobcart-empty"></span>
+										<div class="jobcart-desp">Remove Job</div>
+										<div class="jobcart-state">
+											<span class="jobcart-empty"></span>
+										</div>
 									</button>
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-sm-8">
+								<div class="col-xs-8">
 									<h4><a class="" href="">Front-end Developer</a></h4>
 									<p class="job-location">Singapore</p>
 									<p class="job-salary">SGD 3,000 - 5,000</p>
 								</div>
-								<div class="col-sm-4">
-									<button class="btn jobcart-btn is-active">
-										<span class="jobcart-desp">Add to Job cart</span>
-										<span class="jobcart-active"></span>
+								<div class="col-xs-4">
+									<button class="btn jobcart-btn is-empty">
+										<div class="jobcart-desp">Remove Job</div>
+										<div class="jobcart-state">
+											<span class="jobcart-empty"></span>
+										</div>
 									</button>
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-sm-8">
+								<div class="col-xs-8">
 									<h4><a class="" href="">Front-end Developer</a></h4>
 									<p class="job-location">Singapore</p>
 									<p class="job-salary">SGD 3,000 - 5,000</p>
 								</div>
-								<div class="col-sm-4">
+								<div class="col-xs-4">
 									<button class="btn jobcart-btn is-active">
-										<span class="jobcart-desp">Add to Job cart</span>
-										<span class="jobcart-active"></span>
+										<div class="jobcart-desp">Add to Job cart</div>
+										<div class="jobcart-state">
+											<span class="jobcart-active"></span>
+										</div>
 									</button>
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-sm-8">
+								<div class="col-xs-8">
 									<h4><a class="" href="">Front-end Developer</a></h4>
 									<p class="job-location">Singapore</p>
 									<p class="job-salary">SGD 3,000 - 5,000</p>
 								</div>
-								<div class="col-sm-4">
+								<div class="col-xs-4">
 									<button class="btn jobcart-btn is-active">
-										<span class="jobcart-desp">Add to Job cart</span>
-										<span class="jobcart-active"></span>
+										<div class="jobcart-desp">Add to Job cart</div>
+										<div class="jobcart-state">
+											<span class="jobcart-active"></span>
+										</div>
+									</button>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-8">
+									<h4><a class="" href="">Front-end Developer</a></h4>
+									<p class="job-location">Singapore</p>
+									<p class="job-salary">SGD 3,000 - 5,000</p>
+								</div>
+								<div class="col-xs-4">
+									<button class="btn jobcart-btn is-active">
+										<div class="jobcart-desp">Add to Job cart</div>
+										<div class="jobcart-state">
+											<span class="jobcart-active"></span>
+										</div>
 									</button>
 								</div>
 							</div>
@@ -192,73 +255,83 @@
 							</div>
 						</div> <!--/jobs module-->
 					</div>
-					<div class="col-sm-6">
+					<div class="col-xs-6">
 						<div class="jobs-module">
 							<div class="row">
 								<h3><a href="">Featured Jobs</a></h3>
 							</div>					
 							<div class="row">
-								<div class="col-sm-8">
+								<div class="col-xs-8">
 									<h4><a class="" href="">Front-end Developer</a></h4>
 									<p class="job-location">Singapore</p>
 									<p class="job-salary">SGD 3,000 - 5,000</p>
 								</div>
-								<div class="col-sm-4">
+								<div class="col-xs-4">
 									<button class="btn jobcart-btn is-active">
-										<span class="jobcart-desp">Add to Job cart</span>
-										<span class="jobcart-active"></span>
+										<div class="jobcart-desp">Add to Job cart</div>
+										<div class="jobcart-state">
+											<span class="jobcart-active"></span>
+										</div>
 									</button>
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-sm-8">
+								<div class="col-xs-8">
 									<h4><a class="" href="">Front-end Developer</a></h4>
 									<p class="job-location">Singapore</p>
 									<p class="job-salary">SGD 3,000 - 5,000</p>
 								</div>
-								<div class="col-sm-4">
+								<div class="col-xs-4">
 									<button class="btn jobcart-btn is-empty">
-										<span class="jobcart-desp">Remove Job</span>
-										<span class="jobcart-empty"></span>
+										<div class="jobcart-desp">Remove Job</div>
+										<div class="jobcart-state">
+											<span class="jobcart-empty"></span>
+										</div>
 									</button>
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-sm-8">
+								<div class="col-xs-8">
 									<h4><a class="" href="">Front-end Developer</a></h4>
 									<p class="job-location">Singapore</p>
 									<p class="job-salary">SGD 3,000 - 5,000</p>
 								</div>
-								<div class="col-sm-4">
+								<div class="col-xs-4">
 									<button class="btn jobcart-btn is-active">
-										<span class="jobcart-desp">Add to Job cart</span>
-										<span class="jobcart-active"></span>
+										<div class="jobcart-desp">Add to Job cart</div>
+										<div class="jobcart-state">
+											<span class="jobcart-active"></span>
+										</div>
 									</button>
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-sm-8">
+								<div class="col-xs-8">
 									<h4><a class="" href="">Front-end Developer</a></h4>
 									<p class="job-location">Singapore</p>
 									<p class="job-salary">SGD 3,000 - 5,000</p>
 								</div>
-								<div class="col-sm-4">
+								<div class="col-xs-4">
 									<button class="btn jobcart-btn is-active">
-										<span class="jobcart-desp">Add to Job cart</span>
-										<span class="jobcart-active"></span>
+										<div class="jobcart-desp">Add to Job cart</div>
+										<div class="jobcart-state">
+											<span class="jobcart-active"></span>
+										</div>
 									</button>
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-sm-8">
+								<div class="col-xs-8">
 									<h4><a class="" href="">Front-end Developer</a></h4>
 									<p class="job-location">Singapore</p>
 									<p class="job-salary">SGD 3,000 - 5,000</p>
 								</div>
-								<div class="col-sm-4">
+								<div class="col-xs-4">
 									<button class="btn jobcart-btn is-active">
-										<span class="jobcart-desp">Add to Job cart</span>
-										<span class="jobcart-active"></span>
+										<div class="jobcart-desp">Add to Job cart</div>
+										<div class="jobcart-state">
+											<span class="jobcart-active"></span>
+										</div>
 									</button>
 								</div>
 							</div>
@@ -274,149 +347,20 @@
 		<section class="corporate">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-12">
-						
+					<div class="col-xs-12">
+						Static content to be added in later
 					</div>
 				</div>
 			</div>
 		</section>
-	<!--Our Expertise section-->
-		<section class="expertise">
+	<!--Static section to be added in later-->
+		<section>
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-12">
-						<h1 class="text-center">Our Expertise</h1>
-						<h3 class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h3>
+					<div class="col-xs-12">
+						Static content to be added in later
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-sm-4">
-						<div class="industry">
-							<a href="">
-								<img class="img-responsive" src="assets/sample-expertisepic.png">
-								<div class="label-bottom">
-									<h4>Foo Industry</h4>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="industry">
-							<a href="">
-								<img class="img-responsive" src="assets/sample-expertisepic.png">
-								<div class="label-bottom">
-									<h4>Foo Industry</h4>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="industry">
-							<a href="">
-								<img class="img-responsive" src="assets/sample-expertisepic.png">
-								<div class="label-bottom">
-									<h4>Foo Industry</h4>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div> <!--/industry mod row-->
-				<div class="row">
-					<div class="col-sm-4">
-						<div class="industry">
-							<a href="">
-								<img class="img-responsive" src="assets/sample-expertisepic.png">
-								<div class="label-bottom">
-									<h4>Foo Industry</h4>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="industry">
-							<a href="">
-								<img class="img-responsive" src="assets/sample-expertisepic.png">
-								<div class="label-bottom">
-									<h4>Foo Industry</h4>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="industry">
-							<a href="">
-								<img class="img-responsive" src="assets/sample-expertisepic.png">
-								<div class="label-bottom">
-									<h4>Foo Industry</h4>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div> <!--/industry mod row-->
-				<div class="row">
-					<div class="col-sm-4">
-						<div class="industry">
-							<a href="">
-								<img class="img-responsive" src="assets/sample-expertisepic.png">
-								<div class="label-bottom">
-									<h4>Foo Industry</h4>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="industry">
-							<a href="">
-								<img class="img-responsive" src="assets/sample-expertisepic.png">
-								<div class="label-bottom">
-									<h4>Foo Industry</h4>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="industry">
-							<a href="">
-								<img class="img-responsive" src="assets/sample-expertisepic.png">
-								<div class="label-bottom">
-									<h4>Foo Industry</h4>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div> <!--/industry mod row-->
-				<div class="row">
-					<div class="col-sm-4">
-						<div class="industry">
-							<a href="">
-								<img class="img-responsive" src="assets/sample-expertisepic.png">
-								<div class="label-bottom">
-									<h4>Foo Industry</h4>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="industry">
-							<a href="">
-								<img class="img-responsive" src="assets/sample-expertisepic.png">
-								<div class="label-bottom">
-									<h4>Foo Industry</h4>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="industry">
-							<a href="">
-								<img class="img-responsive" src="assets/sample-expertisepic.png">
-								<div class="label-bottom">
-									<h4>Foo Industry</h4>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div> <!--/industry mod row-->
 			</div>
 		</section>
 	<!--Join talent comm. section-->
@@ -424,8 +368,8 @@
 			<a href="">
 				<div class="container">
 					<div class="row">
-						<div class="col-sm-12 text-center">
-							<p>Ready to take your next career to the next level? Join our talent community</p>
+						<div class="col-xs-12 text-center">
+							<p>Get connected to greater opportunities. Join our talent community <i class="fa fa-angle-right"></i></p> 
 						</div>
 					</div>
 				</div>
@@ -435,14 +379,14 @@
 		<footer class="footer-primary">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-4">
-						<img src="assets/rgf-logo-transparent.png">
+					<div class="col-xs-4">
+						<img src="assets/rgf-singapore-transparent.png">
 						<p>RGF HR Agent Singapore Pte Ltd<br>
 						EA Licence no. 10C2978<br>
-						Copyright &copy  2013</p>
-						<a href="">Terms & Condition</a> | <a href="">Privacy Policy</a> | <a href="">Cookie Policy</a>
+						Copyright &copy  2014</p>
+						<a href="">Terms & Condition</a> | <a href="">Privacy Policy</a> | <a href="">Cookies Policy</a>
 					</div>
-					<div class="col-sm-4">
+					<div class="col-xs-4">
 						<h5>Sitemap</h5>
 						<ul>
 							<li>
@@ -462,12 +406,12 @@
 							</li>
 						</ul>
 					</div>
-					<div class="col-sm-4">
+					<div class="col-xs-4">
 						<h5>Connect with RGF</h5>
 						<div class="social-icons">
-							<span class="icon-sm-linkedin"></span>
-							<span class="icon-sm-fb"></span>
-							<span class="icon-sm-tw"></span>
+							<a href=""><i class="fa fa-linkedin"></i></a>
+							<a href=""><i class="fa fa-facebook"></i></a>
+							<a href=""><i class="fa fa-twitter"></i></a>
 						</div>
 					</div>
 				</div>
