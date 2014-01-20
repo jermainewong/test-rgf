@@ -371,6 +371,11 @@ header {
 }
 
 /* Title for job search results page */
+.title h1 {
+	font-family: 'Trykker', 'Georgia', serif;
+}
+
+
 .title h2 {
 	font-family: 'Trykker', 'Georgia', serif;
 }
