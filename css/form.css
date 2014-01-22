@@ -173,33 +173,14 @@ header .col-xs-10 {
 	transition: all 0.4s ease;
 }
 
-.btn-cancel {
+.btn-grey{
 	background-color: #999 !important;
 }
 
-.btn-cancel:hover {
+.btn-grey:hover {
 	background-color: transparent !important;
 	border: solid 1px #999 !important;
 	color: #666 !important;
-}
-
-.btn-secondary {
-	overflow: hidden;
-}
-
-.btn-secondary .btn-save {
-	width: 100px;
-	height: 30px;
-	margin-right: 10px;
-	float: right;
-	font-size: 0.9em;
-}
-
-.btn-secondary .btn-cancel {
-	width: 100px;
-	height: 30px;
-	float: right;
-	font-size: 0.9em;
 }
 
 /* Form field -app and review form*/
@@ -251,6 +232,12 @@ header .col-xs-10 {
 	display: inline-block;
 	font-size: 1.1em;
 	margin: 10px 0px;
+}
+
+.cloud-drive{
+	width: 150px;
+	float: left;
+	margin-right: 5px;
 }
 
 /* dropdown option list*/
@@ -341,7 +328,7 @@ select {
 /* Modal */
 .modal-content {
 	width: 450px;
-	margin: 20% auto;
+	margin: 30% auto;
 }
 
 .modal-body {
@@ -351,6 +338,7 @@ select {
 .modal-title {
 	font-size: 20px;
 	color: #0d80bc;
+	margin-bottom: 10px;
 }
 
 .btn-ok {
