@@ -183,6 +183,10 @@ header .col-xs-10 {
 	color: #666 !important;
 }
 
+.btn-complete{
+	width: 80% !important;
+}
+
 /* Form field -app and review form*/
 .app-form .container {
 	padding: 4% 10%;
@@ -235,9 +239,8 @@ header .col-xs-10 {
 }
 
 .cloud-drive{
-	width: 150px;
+	width: 140px;
 	float: left;
-	margin-right: 5px;
 }
 
 /* dropdown option list*/
