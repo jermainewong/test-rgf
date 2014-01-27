@@ -22,8 +22,19 @@
       <!-- Table -->
 <?php
   $var = array(
-    1 => array(1, '/index.html', 'Index Page', 'http://${domain}/')
-    , 2 => array(1, '/index.html', 'Index Page', 'http://${domain}/')
+      1010 => array('1', '/index.html', 'Index Page', 'http://${domain}/')
+    , 1020 => array('2', '/2-joblist.html', 'Job List1 Page', 'http://${domain}/search')
+    , 1030 => array('3', '/3-job-description.html', 'Job Description Page', 'http://${domain}/job/${jobTitle}/${jobOrderNumber}')
+    , 1040 => array('4', '/4-jobcart.html', 'Job Cart Page', 'http://$https://${domain}/jobcart')
+    , 1050 => array('5', '/5-signup-new-member.html', 'Sign Up (new member) Page', 'https://${domain}/member/signup')
+    , 1060 => array('6', '/6-application-form.html', 'Application Form Page', 'https://${domain}/member/signup')
+    , 1070 => array('7', '/7-login.html', 'Login Page', 'Hosted by Avature')
+    , 1071 => array('7a', '/7a-login-with-success-msg.html', 'Login Page', 'Hosted by Avature')
+
+    , 2010 => array('1', '/1-mb-index.html', 'MB Index Page', 'http://${domain}/')
+    , 2020 => array('2', '/2-mb-joblist.html', 'MB Job List1 Page', 'http://${domain}/search')
+    , 2030 => array('3', '/3-mb-jobdescription.html', 'MB Job Description Page', 'http://${domain}/job/${jobTitle}/${jobOrderNumber}')
+    , 2031 => array('3-1', '/3-1-mb-job-social-sharing.html', 'MB Job Description Page', 'http://${domain}/job/${jobTitle}/${jobOrderNumber}')
   );
 ?>
       <table class="table">
@@ -42,41 +53,6 @@
             <td><?php echo $row[3] ?></td>
           </tr>
 <?php } ?>
-          <tr>
-            <td>2</td>
-            <td><a href="/2-joblist.html">Job List1 Page</a></td>
-            <td>http://${domain}/search</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td><a href="/3-job-description.html">Job Description Page</a></td>
-            <td>http://${domain}/job/${jobTitle}/${jobOrderNumber}</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td><a href="/4-jobcart.html">Job Cart Page</a></td>
-            <td>https://${domain}/jobcart</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td><a href="/5-signup-new-member.html">Sign Up (new member) Page</a></td>
-            <td>https://${domain}/member/signup</td>
-          </tr>
-          <tr>
-            <td>6</td>
-            <td><a href="/6-application-form.html">Application Form Page</a></td>
-            <td>https://${domain}/member/applicationform</td>
-          </tr>
-          <tr>
-            <td>7</td>
-            <td><a href="/7-login.html">Login Page</a></td>
-            <td>Hosted by Avature</td>
-          </tr>
-          <tr>
-            <td>7a</td>
-            <td><a href="/7a-login-with-success-msg.html">Login Page</a></td>
-            <td>Hosted by Avature</td>
-          </tr>
           <tr>
             <td>8</td>
             <td><a href="/8-review-profile.html">Avature Review Profile</a></td>
