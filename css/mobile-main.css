@@ -1,0 +1,531 @@
+/* Header and Nav bar */
+header {
+	height: 50px;
+
+	-webkit-box-shadow: 3px 3px 3px rgba(153,153,153,0.2);
+	box-shadow: 3px 3px 3px rgba(153,153,153,0.2);
+	padding: 5px 0px;
+}
+
+.logo-primary {
+	width: 70px;
+}
+
+.navbar-header {
+	margin-top: 8px;
+}
+
+.navbar-header li {
+	float: left;
+	margin-right: 10px;
+}
+
+.navbar-header a {
+	display: inline-block;
+	width: 40px;
+	text-align: center;
+}
+
+.navbar-header li:first-child a {
+	text-align: right;
+}
+
+.navbar-header li:last-child {
+	margin-right: 0px;
+}
+
+.navbar-header .glyphicon,.fa {
+	font-size: 1.9em;
+	color: #666;
+}
+
+.navbar-header .fa {
+	margin-top: 2px;
+	text-align: right;
+}
+
+.jobcart-icon {
+	position: relative;
+}
+
+.cart-dynamic {
+	display: block;
+	background: url("../assets/sprites2.png") top left no-repeat;
+	width: 35px;
+	height: 29px;
+	background-position: -10px -138px;
+}
+
+.jobcart-count {
+	position: absolute;
+	font-size: 1.1em;
+	font-weight: 600;
+	color: #3db0e6;
+	top: -2px;
+	left: 5px;
+}
+
+/* Search Bars */
+.search-primary {
+	background-color: rgba(202,202,202,0.3);
+	border-radius: 5px;
+	padding: 10px;
+	margin: 10px 0px;
+}
+
+.search-primary h3 {
+	margin-top: 10px;
+	text-transform: uppercase;
+}
+
+.search-input {
+	position: relative;
+}
+
+.search-input .glyphicon {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	color: #999;
+}
+
+.search-input input {
+	padding-left: 30px;
+}
+
+.search-secondary {
+	background-color: rgba(202,202,202,0.3);
+	padding: 8px 0px;
+}
+
+.search-inline div {
+	float: left;
+	margin-right: 5px;
+}
+
+.search-inline div:first-child {
+	width: 78%;
+}
+
+.search-inline div:last-child {
+	width: 20%;
+	margin-right: 0px;
+}
+
+.search-inline input {
+	padding-left: 5px;
+}
+
+/* Links */
+.link-group {
+	border: solid 1px #bbbbbb;
+	border-radius: 5px;
+	margin: 10px 0px;
+}
+
+.link-group .mb-link {
+	border-bottom: solid 1px #e5e5e5;
+}
+
+.link-group .mb-link:last-child {
+	border-bottom: none;
+}
+
+.mb-link {
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	padding: 10px;
+}
+
+.mb-link .glyphicon {
+	display: inline-block;
+}
+
+.mb-link p {
+	margin-bottom: 0px;
+}
+
+.link-grey {
+	background-color: #f4f4f4;
+}
+
+.link-blue {
+	background-color: #f1f9ff;
+	border: solid 1px #bbbbbb;
+}
+
+/* Job list */
+.job-list .mb-link {
+	padding: 15px 0px;
+	border-bottom: solid 1px #e5e5e5;
+}
+
+.job-list .job-title {
+	font-size: 1.1em;
+}
+
+.job-list .job-info {
+	font-size: 0.9em;
+	color: #333;
+}
+
+.jobcart-active {
+	display: block;
+	background: url('../assets/sprites2.png') top left no-repeat;
+	width: 35px;
+	height: 22px;
+	background-position: -10px -210px;
+}
+
+.jobcart-empty {
+	display: block;
+	background: url('../assets/sprites2.png') top left no-repeat;
+	width: 35px;
+	height: 23px;
+	background-position: -10px -177px;
+}
+
+.pull-down {
+	padding: 15px 0px;
+}
+
+.pull-down p {
+	color: #999;
+}
+
+.pull-down .glyphicon {
+	font-size: 1.8em;
+}
+
+/* Job Cart */
+.jobcart-list {
+	padding: 15px 0px;
+	border-bottom: solid 1px #e5e5e5;
+}
+
+.jobcart-list p {
+	margin-bottom: 0px;
+}
+
+.jobcart-list .job-info,a {
+	font-size: 0.9em;
+}
+
+/* Job Description */
+.job-description {
+	padding-bottom: 70px;
+}
+
+.job-index-link {
+	width: 120px;
+	height: 40px;
+	margin: 5px auto;
+	position: relative;
+}
+
+.arrow-link i {
+	color: #3db0e6;
+	font-size: 40px;
+	font-weight: 600;
+}
+
+.job-index {
+	/* any better alternatives in positioning this */
+display: block;
+	position: absolute;
+	top: 10px;
+	left: 20px;
+}
+
+.fa-angle-left {
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.fa-angle-right {
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.share-job {
+	float: left;
+	margin-right: 10px;
+}
+
+.share-job h5 {
+	margin-top: 10px;
+}
+
+.share-job i {
+	font-size: 20px;
+	margin-right: 5px;
+}
+
+.social-network .share-job:last-child {
+	padding-top: 7px;
+}
+
+.social-network .fa-envelope-o {
+	color: #999;
+}
+
+.social-network .fa-linkedin {
+	color: #0073b2;
+}
+
+.social-network .fa-facebook {
+	color: #3b5998;
+}
+
+.social-network .fa-twitter {
+	color: #00cdff;
+}
+
+.social-network .fa-google-plus {
+	color: #da4835;
+}
+
+.social .fa {
+	display: inline-block;
+	width: 30px;
+	float: left;
+	margin-right: 10px;
+}
+
+.social p {
+	display: inline-block;
+	float: left;
+}
+
+.action {
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	padding: 8px 0px;
+	background: rgb(12,11,11); /* Old browsers */
+	background: -webkit-linear-gradient(top, rgba(12,11,11,1) 0%, rgba(34,34,34,1) 100%);
+	background: -moz-linear-gradient(top, rgba(12,11,11,1) 0%, rgba(34,34,34,1) 100%);
+	background: -o-linear-gradient(top, rgba(12,11,11,1) 0%, rgba(34,34,34,1) 100%);
+	background: -ms-linear-gradient(top, rgba(12,11,11,1) 0%, rgba(34,34,34,1) 100%);
+	background: linear-gradient(top, rgba(12,11,11,1) 0%, rgba(34,34,34,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c0b0b', endColorstr='#222222',GradientType=0 ); /* IE6-9 */
+}
+
+/* Form */
+.search-inline input {
+	height: 45px !important;
+}
+
+.form-head {
+	height: 40px;
+	background-color: rgba(202,202,202,0.3);
+}
+
+.form-head h4 {
+	color: #0d80bc;
+}
+
+.form-body {
+	padding: 20px 0px;
+}
+
+.form-group {
+	padding: 3px 0px;
+}
+
+.form-body input {
+	padding-left: 5px;
+}
+
+.form-body select {
+	padding: 5px 0px 0px 5px;
+}
+
+.cloud-drive-logo {
+	width: 50%;
+	float: left;
+}
+
+.apply-info h5 {
+	font-size: 1em;
+	line-height: 18px;
+}
+
+.text-blue {
+	color: #0d80bc;
+}
+
+.linkedin-autofill {
+	padding-bottom: 20px;
+}
+
+.input-salary div {
+	float: left;
+	margin-right: 3%;
+}
+
+.input-salary div:first-child {
+	width: 25%;
+}
+
+.input-salary div:last-child {
+	width: 72%;
+	margin-right: 0px;
+}
+
+.check-box {
+	font-size: 12px;
+	margin-bottom: 20px;
+	padding: 0px;
+}
+
+.job-alert {
+	padding: 2%;
+	margin: 5% 0%;
+	background-color: rgba(230,242,245,0.2);
+	border: solid 1px rgba(186,186,186,0.4);
+	border-radius: 5px;
+}
+
+/* Buttons */
+.btn {
+	height: 45px;
+}
+
+.search-primary .btn {
+	width: 30%;
+	margin-top: 10px;
+	font-size: 1.1em;
+}
+
+.search-inline .btn {
+	width: 100%;
+}
+
+.btn-primary {
+	background-color: #3db0e6;
+	border: solid 1px #3db0e6;
+	color: #fff;
+}
+
+.btn-primary:hover {
+	background-color: #fff;
+	border: solid 1px #3db0e6;
+	color: #666;
+}
+
+.btn-search-small {
+	height: 45px;
+}
+
+.action .btn {
+	width: 49%;
+	border: solid 1px #999;
+	font-size: 1.1em;
+}
+
+.action .btn-apply {
+	background-color: #bbbbbb;
+	border: solid 1px #666;
+	color: #333;
+}
+
+.action .btn-apply:hover {
+	background-color: #ececec;
+}
+
+.action .btn-add {
+	background-color: #3db0e6;
+	color: #fff;
+}
+
+.btn-checkout {
+	width: 100%;
+	font-size: 1.3em;
+}
+
+.btn-form {
+	width: 100%;
+	background-color: #0d80bc;
+	border: solid 1px #0d80bc;
+	color: #fff;
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+
+.btn-form:hover {
+	background-color: #fff;
+	border: solid 1px #0d80bc;
+	color: #333;
+}
+
+.btn-grey {
+	background-color: #999;
+	border: solid 1px #666;
+}
+
+.btn-grey:hover {
+	background-color: transparent !important;
+	border: solid 1px #666;
+}
+
+.btn-load {
+	border: solid 1px #666;
+	background-color: #b8b8b8;
+	color: #333;
+}
+
+/* Success message */
+.msg-success {
+	background-color: #74c399;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+
+.msg-success p {
+	color: #fff;
+}
+
+/* Footer */
+.footer-primary {
+	margin-top: 20px;
+	padding: 20px 0px;
+	background: rgb(12,11,11); /* Old browsers */
+	background: -webkit-linear-gradient(top, rgba(12,11,11,1) 0%, rgba(34,34,34,1) 100%);
+	background: -moz-linear-gradient(top, rgba(12,11,11,1) 0%, rgba(34,34,34,1) 100%);
+	background: -o-linear-gradient(top, rgba(12,11,11,1) 0%, rgba(34,34,34,1) 100%);
+	background: -ms-linear-gradient(top, rgba(12,11,11,1) 0%, rgba(34,34,34,1) 100%);
+	background: linear-gradient(top, rgba(12,11,11,1) 0%, rgba(34,34,34,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c0b0b', endColorstr='#222222',GradientType=0 ); /* IE6-9 */
+}
+
+.footer-primary p {
+	color: #838489;
+}
+
+.footer-primary .small {
+	font-size: 0.8em;
+}
+
+.footer-primary .link-lg {
+	display: inline-block;
+	font-size: 1.1em;
+	margin: 8px;
+}
+
+.footer-secondary {
+	border-top: solid 1px #e3e3e3;
+	margin-top: 30px;
+	padding: 10px 0px;
+}
+
+.footer-secondary p {
+	font-size: 0.9em;
+	line-height: 14px;
+	margin-bottom: 5px;
+}
