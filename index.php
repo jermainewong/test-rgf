@@ -59,7 +59,7 @@
     , 2130 => array('13', '/13-mb-new-password.html', 'MB Success reset password Page', 'Hosted by Avature')
     , 2140 => array('14', '/14-mb-signup-talentcomm.html', 'MB Sign up talent community Page', 'https://${domain}/talentcommunity/signup')
     , 2150 => array('15', '/15-mb-success-join%20talent%20comm.html', 'MB Sign up talent community Success Join Page', 'https://${domain}/talentcommunity/signup')
-    , 2016 => array('16', '/16-mb-newjobs.html', 'MB Job List1 New Jobs Page', 'http://${domain}/search')
+    , 2016 => array('16', '/16-mb-new-jobs.html', 'MB Job List1 New Jobs Page', 'http://${domain}/search')
     , 2017 => array('17', '/17-mb-featured-jobs.html', 'MB Job List1 Featured Jobs Page', 'http://${domain}/search')
     , 2180 => array('18', '/18-for-employers.html', 'MB For Employers Page', 'http://${domain}/employers')
     , 2200 => array('20', '/20-mb-contact-us.html', 'MB Contact Us Page', 'https://${domain}/contact')
