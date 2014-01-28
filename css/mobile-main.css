@@ -1,5 +1,5 @@
 /* General styles */
-.content{
+.content {
 	min-height: 50%;
 }
 
@@ -7,7 +7,7 @@
 	color: #0d80bc;
 }
 
-.text-grey{
+.text-grey {
 	color: #666;
 }
 
@@ -63,9 +63,9 @@ header {
 .cart-dynamic {
 	display: block;
 	background: url("../assets/mobile-sprites.png") top left no-repeat;
-	width:35px; 
-	height:29px; 
-	background-position:-10px -10px;
+	width: 35px;
+	height: 29px;
+	background-position: -10px -10px;
 }
 
 .jobcart-count {
@@ -80,6 +80,8 @@ header {
 /* Search Bars */
 .search-primary {
 	background: url('../assets/bkg.png');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
 	background-size: cover;
 	border-radius: 5px;
 	padding: 10px;
@@ -112,7 +114,7 @@ header {
 	padding: 8px 0px;
 }
 
-.search-bar .search-inline{
+.search-bar .search-inline {
 	padding: 8px;
 	border-radius: 5px;
 	background-color: rgba(202,202,202,0.3);
@@ -166,54 +168,49 @@ header {
 	margin-bottom: 0px;
 }
 
-.link-brightblue{
+.link-brightblue {
 	background-color: #3db0e6;
 }
 
-.link-brightblue a{
+.link-brightblue a {
 	color: #fff;
 }
 
-.subscription .fa{
-	display:inline-block;
+.subscription .fa {
+	display: inline-block;
 	width: 30px;
 	margin: 4px 5px 0px 0px;
 	float: left;
 	color: #fff;
 }
 
-.cart-icon{ 
+.cart-icon {
 	display: block;
-	background:url("../assets/mobile-sprites.png") top left no-repeat;
-	width:20px; 
-	height:14px; 
-	background-position:-10px -114px;
+	background: url("../assets/mobile-sprites.png") top left no-repeat;
+	width: 20px;
+	height: 14px;
+	background-position: -10px -114px;
 	float: left;
 	margin-right: 3px;
 }
 
-
-
-
 .link-grey {
 	background: rgb(249,252,247); /* Old browsers */
-	background: -moz-linear-gradient(top,  rgba(249,252,247,1) 0%, rgba(245,249,240,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(249,252,247,1)), color-stop(100%,rgba(245,249,240,1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  rgba(249,252,247,1) 0%,rgba(245,249,240,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgba(249,252,247,1) 0%,rgba(245,249,240,1) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgba(249,252,247,1) 0%,rgba(245,249,240,1) 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  rgba(249,252,247,1) 0%,rgba(245,249,240,1) 100%); /* W3C */
+	background: -webkit-linear-gradient(top, rgba(249,252,247,1) 0%, rgba(245,249,240,1) 100%);
+	background: -moz-linear-gradient(top, rgba(249,252,247,1) 0%, rgba(245,249,240,1) 100%);
+	background: -o-linear-gradient(top, rgba(249,252,247,1) 0%, rgba(245,249,240,1) 100%);
+	background: -ms-linear-gradient(top, rgba(249,252,247,1) 0%, rgba(245,249,240,1) 100%);
+	background: linear-gradient(top, rgba(249,252,247,1) 0%, rgba(245,249,240,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9fcf7', endColorstr='#f5f9f0',GradientType=0 ); /* IE6-9 */
 }
 
 .link-blue {
 	background: rgb(242,249,254); /* Old browsers */
-	background: -moz-linear-gradient(top,  rgba(242,249,254,1) 0%, rgba(214,240,253,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,249,254,1)), color-stop(100%,rgba(214,240,253,1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  rgba(242,249,254,1) 0%,rgba(214,240,253,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgba(242,249,254,1) 0%,rgba(214,240,253,1) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgba(242,249,254,1) 0%,rgba(214,240,253,1) 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  rgba(242,249,254,1) 0%,rgba(214,240,253,1) 100%); /* W3C */
+	background: -webkit-linear-gradient(top, rgba(242,249,254,1) 0%, rgba(214,240,253,1) 100%);
+	background: -moz-linear-gradient(top, rgba(242,249,254,1) 0%, rgba(214,240,253,1) 100%);
+	background: -o-linear-gradient(top, rgba(242,249,254,1) 0%, rgba(214,240,253,1) 100%);
+	background: -ms-linear-gradient(top, rgba(242,249,254,1) 0%, rgba(214,240,253,1) 100%);
+	background: linear-gradient(top, rgba(242,249,254,1) 0%, rgba(214,240,253,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f9fe', endColorstr='#d6f0fd',GradientType=0 ); /* IE6-9 */
 }
 
@@ -235,17 +232,17 @@ header {
 .jobcart-active {
 	display: block;
 	background: url('../assets/mobile-sprites.png') top left no-repeat;
-	width:35px; 
-	height:22px; 
-	background-position:-10px -82px;
+	width: 35px;
+	height: 22px;
+	background-position: -10px -82px;
 }
 
 .jobcart-empty {
 	display: block;
 	background: url('../assets/mobile-sprites.png') top left no-repeat;
-	width:35px; 
-	height:23px; 
-	background-position:-10px -49px;
+	width: 35px;
+	height: 23px;
+	background-position: -10px -49px;
 }
 
 .pull-down {
@@ -261,16 +258,16 @@ header {
 }
 
 /* Job Cart */
-.jobcart-list .row{
+.jobcart-list .row {
 	padding: 10px 0px;
 	border-bottom: solid 1px #e5e5e5;
 }
 
-.jobcart-list .row:last-child{
+.jobcart-list .row:last-child {
 	border-bottom: none;
 }
 
-.jobcart-list h4{
+.jobcart-list h4 {
 	margin-bottom: 0px;
 }
 
@@ -288,9 +285,9 @@ header {
 	background-color: rgba(244,244,244,0.4);
 }
 
-.white{
+.white {
 	-webkit-box-shadow: 3px 3px 3px rgba(153,153,153,0.2);
-	box-shadow: 2px 2px 2px rgba(153,153,153,0.2), -2px -2px 2px rgba(153,153,153,0.2);
+	box-shadow: 3px 3px 3px rgba(153,153,153,0.2);
 	background: #fff;
 }
 
@@ -307,7 +304,7 @@ header {
 	font-weight: 600;
 }
 
-.job-index {																												
+.job-index {
 	display: block;
 	margin: 0px auto;
 	padding-top: 10px;
@@ -386,8 +383,7 @@ header {
 }
 
 /* Form */
-
-.form-title{
+.form-title {
 	margin: 20px 0px 10px 0px;
 	text-transform: uppercase;
 	color: #0d80bc;
@@ -421,7 +417,8 @@ header {
 	padding-left: 5px;
 }
 
-.form-control:focus{
+.form-control:focus {
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 3px rgba(102, 175, 233, 0.6);
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 3px rgba(102, 175, 233, 0.6);
 }
 
@@ -435,18 +432,17 @@ header {
 	float: left;
 }
 
-.load-resume .form-group{
+.load-resume .form-group {
 	margin-bottom: 3px;
 }
 
-.contact .glyphicon{
+.contact .glyphicon {
 	margin-right: 5px;
 	color: #3db0e6;
 }
 
 /* Job titles header in app process */
-
-.apply-info p{
+.apply-info p {
 	margin: 10px 0px 0px 0px;
 	color: #999;
 }
@@ -457,28 +453,15 @@ header {
 }
 
 .apply-info > span:after {
-    content:";\a";
-    white-space: pre;
+	content: ";\a";
+	white-space: pre;
 }
 
-.apply-info span:last-child:after{
-	content:"";
+.apply-info span:last-child:after {
+	content: "";
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.linkedin-autofill h5{
+.linkedin-autofill h5 {
 	margin-bottom: 10px;
 }
 
@@ -599,11 +582,11 @@ header {
 	color: #fff;
 }
 
-.btn-load:hover{
+.btn-load:hover {
 	border: solid 1px #999;
 }
 
-.btn-ok{
+.btn-ok {
 	width: 100px;
 }
 
@@ -634,10 +617,9 @@ header {
 	margin-bottom: 10px;
 }
 
-.modal-footer{
+.modal-footer {
 	padding: 10px 0px 0px 0px;
 }
-
 
 /* Footer */
 .footer-primary {
