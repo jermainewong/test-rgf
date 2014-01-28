@@ -1,6 +1,6 @@
 /* Base Styles*/
 
-html, body, .container{
+html, body{
 	height: 100%;
 } 
 
@@ -9,7 +9,7 @@ li, ol{
 }
 
 a{
-	color: #0d80bc;
+	color: #0081c6;
 }
 
 a:hover{

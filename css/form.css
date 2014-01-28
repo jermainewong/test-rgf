@@ -15,7 +15,7 @@
 }
 
 .apply-info > span + span:before {
-	content: ", ";
+	content: "; ";
 }
 
 header .col-xs-10 {
@@ -100,6 +100,10 @@ header .col-xs-10 {
 
 .form-control {
 	width: 80%;
+}
+
+.form-control:focus{
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 3px rgba(102, 175, 233, 0.6);
 }
 
 .txt-blue {
