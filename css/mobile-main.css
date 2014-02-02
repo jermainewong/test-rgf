@@ -625,6 +625,22 @@ header {
 	padding: 10px 0px 0px 0px;
 }
 
+.btn-modal {
+	width: 100%;
+	height: 45px;
+	border-radius: 3px;
+	background-color: #0d80bc;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.1em;
+}
+
+.btn-modal:hover {
+	color: #0d80bc;
+	background-color: #fff;
+	border: solid 1px #0d80bc;
+}
+
 /* Footer */
 .footer-primary {
 	margin-top: 20px;
