@@ -10,7 +10,8 @@
 	    <link href="css/bootstrap.min.css" rel="stylesheet">
 	    <link href="css/mobile-base.css" rel="stylesheet">
 	    <link href="css/mobile-main.css" rel="stylesheet">
-	    <link href='http://fonts.googleapis.com/css?family=Open+Sans|Trykker' rel='stylesheet' type='text/css'> 
+	    <link href="css/error.css" rel="stylesheet">
+	    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> 
 	    <link href="css/font-awesome.min.css" rel="stylesheet">	   
 	    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -68,9 +69,14 @@
 						<form role="form">
 							<div class="form-group">
 								<h2 class="form-title">For employers</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+								<!--Error message-->
+								<div class="error-message mobile">
+									<p>Oops, you left some fields blank. Please fill in the fields highlighted red and proceed.</p>
+								</div><!--/Error message-->
+								<p class="text-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
 								<label for="input">Name *</label>
-								<input type="text" class="form-control" id="inputPhonenumber" placeholder="Your full name">
+								<input type="text" class="form-control error" id="inputPhonenumber" placeholder="Your full name">
+								<p class="error-text">Please fill in.</p>
 							</div>
 							<div class="form-group">
 								<label for="input">Title</label>

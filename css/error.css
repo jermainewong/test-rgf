@@ -1,0 +1,48 @@
+.error-message{
+	padding: 5px 10px;
+	margin-bottom: 20px;
+	background-color: #ffcbce;
+	border-radius: 5px;
+}
+
+.error-message p{
+	color: #d80404;
+	line-height: 1.4em;
+}
+
+.error{
+	border: solid 1px #d80404;
+}
+
+.error:after{
+	display: inline;
+	position: static;
+	content:'This is an error message';
+	z-index: 5;
+}
+
+.error-text{
+	color: #d80404;
+	font-size: 0.9em;
+	margin-bottom: 0px;
+}
+
+.glyphicon-ok{
+	color: #15a115;
+}
+
+.glyphicon-remove{
+	width: 10%;
+	margin-right: 5px;
+	float: left;
+	color: #d80404;
+}
+
+.error-inline p{
+	width: 90%;
+	float: left;
+}
+
+.mobile{
+	margin-bottom: 5px;
+}

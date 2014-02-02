@@ -10,6 +10,7 @@
 	    <link href="css/bootstrap.min.css" rel="stylesheet">
 	    <link href="css/base.css" rel="stylesheet">
 	    <link href="css/form.css" rel="stylesheet">
+	    <link href="css/error.css" rel="stylesheet">
 	    <link href='http://fonts.googleapis.com/css?family=Open+Sans|Trykker' rel='stylesheet' type='text/css'>
 	    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 	    <script src="js/bootstrap.min.js"></script> 
@@ -93,14 +94,20 @@
 											<h4 class="label-head">Login Credentials</h4>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-4">Email</label>
-											<div class="col-xs-8">
-												<input type="email" class="form-control">
+											<label for="input" class="col-xs-3">Email</label>
+											<div class="col-xs-5">
+												<input type="email" class="form-control error">
+											</div>
+											<div class="col-xs-4">
+												<div class="error-inline clearfix">
+													<span class="glyphicon glyphicon-remove"></span>
+													<p class="error-text">lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+												</div>
 											</div>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-4">Current password</label>
-											<div class="col-xs-8">
+											<label for="input" class="col-xs-3">Current password</label>
+											<div class="col-xs-5">
 												<span>
 													&#9679
 													&#9679
@@ -120,14 +127,19 @@
 											<h4 class="label-head">Personal Details</h4>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-4">Phone number*</label>
-											<div class="col-xs-8">
+											<label for="input" class="col-xs-3">Phone number*</label>
+											<div class="col-xs-5">
 												<input type="tel" class="form-control">
+											</div>
+											<div class="col-xs-4">
+												<div class="error-inline clearfix">
+													<span class="glyphicon glyphicon-ok"></span>
+												</div>
 											</div>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-4">Current living location*</label>
-											<div class="col-xs-8">
+											<label for="input" class="col-xs-3">Current living location*</label>
+											<div class="col-xs-5">
 												<select>
 													<option value="Singapore" selected="selected">Singapore</option>
 													<option value="Malaysia">Malaysia</option>
@@ -138,10 +150,15 @@
 													<option value="Indonesia">Indonesia</option>							<!--Please help to add in full country list-->
 												</select>
 											</div>
+											<div class="col-xs-4">
+												<div class="error-inline clearfix">
+													<span class="glyphicon glyphicon-ok"></span>
+												</div>
+											</div>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-4">Visa Status in Singapore*</label>
-											<div class="col-xs-8">
+											<label for="input" class="col-xs-3">Visa Status in Singapore*</label>
+											<div class="col-xs-5">
 												<select>
 													<option value="" selected="selected">Please select</option>
 													<option value="Singaporean">Singaporean</option>
@@ -152,6 +169,11 @@
 													<option value="Not-applicable">Not applicable</option>
 												</select>
 											</div>
+											<div class="col-xs-4">
+												<div class="error-inline clearfix">
+													<span class="glyphicon glyphicon-ok"></span>
+												</div>
+											</div>
 										</div>
 									</div>
 						<!--Work experience information-->
@@ -160,39 +182,63 @@
 											<h4 class="label-head">Work Experience</h4>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-4">Current/ last position*</label>
-											<div class="col-xs-8">
+											<label for="input" class="col-xs-3">Current/ last position*</label>
+											<div class="col-xs-5">
 												<input type="text" class="form-control">
+											</div>
+											<div class="col-xs-4">
+												<div class="error-inline clearfix">
+													<span class="glyphicon glyphicon-remove"></span>
+													<p class="error-text">lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+												</div>
 											</div>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-4">Current/ last company*</label>
-											<div class="col-xs-8">
+											<label for="input" class="col-xs-3">Current/ last company*</label>
+											<div class="col-xs-5">
 												<input type="text" class="form-control">
+											</div>
+											<div class="col-xs-4">
+												<div class="error-inline clearfix">
+													<span class="glyphicon glyphicon-remove"></span>
+													<p class="error-text">lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+												</div>
 											</div>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-4">Current monthly salary*</label>
-											<div class="col-xs-8 clearfix">
-												<div class="pull-left">
+											<label for="input" class="col-xs-3">Current monthly salary*</label>
+											<div class="col-xs-5 input-currency clearfix">
+												<div>
 													<select class="currency">
-														<option value="SGD" selected="selected">SGD</option>
+														<option value="SGD" selected="selected">SGD</option>						<!--Please help to add in full currency list-->
 														<option value="MYR">MYR</option>
 														<option value="HKD">HKD</option>
 														<option value="HKD">HKD</option>
 														<option value="HKD">HKD</option>
-														<option value="HKD">HKD</option>										<!--Please help to add in full currency list-->
+														<option value="HKD">HKD</option>								
 													</select>
 												</div>
-												<div class="pull-left">
+												<div>
 													<input type="number" class="form-control salary" id="inputSalary">
 												</div>	
 											</div>
+											<div class="col-xs-4">
+												<div class="error-inline clearfix">
+													<span class="glyphicon glyphicon-remove"></span>
+													<p class="error-text">lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+												</div>
+											</div>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-4">Total years of work experience*</label>
-											<div class="col-xs-8">
+											<label for="input" class="col-xs-3">Total years of work experience*</label>
+											<div class="col-xs-5">
 												<input type="text" class="form-control">
+											</div>
+											<div class="col-xs-4">
+												<div class="error-inline clearfix">
+													<span class="glyphicon glyphicon-remove"></span>
+													<p class="error-text">lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -202,14 +248,20 @@
 											<h4 class="label-head">Highest Education Attained</h4>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-4">School/ University*</label>
-											<div class="col-xs-8">
+											<label for="input" class="col-xs-3">School/ University*</label>
+											<div class="col-xs-5">
 												<input type="text" class="form-control">
+											</div>
+											<div class="col-xs-4">
+												<div class="error-inline clearfix">
+													<span class="glyphicon glyphicon-remove"></span>
+													<p class="error-text">lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+												</div>
 											</div>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-4">Education level*</label>
-											<div class="col-xs-8">
+											<label for="input" class="col-xs-3">Education level*</label>
+											<div class="col-xs-5">
 												<select>
 													<option value="" selected="selected">Please select</option>
 													<option value="PhD">PhD</option>
@@ -219,11 +271,23 @@
 													<option value="Others">Others</option>
 												</select>
 											</div>
+											<div class="col-xs-4">
+												<div class="error-inline clearfix">
+													<span class="glyphicon glyphicon-remove"></span>
+													<p class="error-text">lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+												</div>
+											</div>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-4">Field of Study*</label>
-											<div class="col-xs-8">
+											<label for="input" class="col-xs-3">Field of Study*</label>
+											<div class="col-xs-5">
 												<input type="text" class="form-control">
+											</div>
+											<div class="col-xs-4">
+												<div class="error-inline clearfix">
+													<span class="glyphicon glyphicon-remove"></span>
+													<p class="error-text">lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -233,8 +297,8 @@
 											<h4 class="label-head">Language Proficiency</h4>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-4">English*</label>
-											<div class="col-xs-8">
+											<label for="input" class="col-xs-3">English*</label>
+											<div class="col-xs-5">
 												<select>											
 													<option value="" selected="selected">Please select</option>
 													<option value="Native">Native</option>
@@ -245,10 +309,16 @@
 													<option value="None">None</option>
 												</select>
 											</div>
+											<div class="col-xs-4">
+												<div class="error-inline clearfix">
+													<span class="glyphicon glyphicon-remove"></span>
+													<p class="error-text">lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+												</div>
+											</div>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-4">Mandarin*</label>
-											<div class="col-xs-8">
+											<label for="input" class="col-xs-3">Mandarin*</label>
+											<div class="col-xs-5">
 												<select>											
 													<option value="" selected="selected">Please select</option>
 													<option value="Native">Native</option>
@@ -259,10 +329,16 @@
 													<option value="None">None</option>
 												</select>
 											</div>
+											<div class="col-xs-4">
+												<div class="error-inline clearfix">
+													<span class="glyphicon glyphicon-remove"></span>
+													<p class="error-text">lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+												</div>
+											</div>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-4">Japanese*</label>
-											<div class="col-xs-8">
+											<label for="input" class="col-xs-3">Japanese*</label>
+											<div class="col-xs-5">
 												<select>											
 													<option value="" selected="selected">Please select</option>
 													<option value="Native">Native</option>
@@ -272,6 +348,12 @@
 													<option value="Basic">Basic</option>
 													<option value="None">None</option>
 												</select>
+											</div>
+											<div class="col-xs-4">
+												<div class="error-inline clearfix">
+													<span class="glyphicon glyphicon-remove"></span>
+													<p class="error-text">lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -281,30 +363,36 @@
 											<h4 class="label-head">Your resume</h4>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-4">Upload latest resume</label>
-											<div class="col-xs-8 clearfix">
+											<label for="input" class="col-xs-3">Upload latest resume</label>
+											<div class="col-xs-9 clearfix">
 												<p>You have an existing resume record with us. <b>If you wish to update the existing one,</b> please upload your latest resume from Google Drive or Dropbox</p>
 											</div>
 										</div>
 										<div class="form-group">
-											<div class="col-xs-offset-4 col-xs-8">
+											<div class="col-xs-offset-3 col-xs-9">
 												<img class="cloud-drive" src="assets/google-drive-logo.png">
 												<img class="cloud-drive" src="assets/dropbox-logo.png">
 											</div>
 										</div>
 										<div class="form-group">
-											<div class="col-xs-offset-4 col-xs-8">
-												<button class="btn btn-grey" data-toggle="modal" data-target="#cloud-driveModal">Load resume</button>
+											<div class="col-xs-offset-3 col-xs-5">
+												<button class="btn btn-grey btn-load" data-toggle="modal" data-target="#cloud-driveModal">Load resume</button>
 												<p class="small help-block">Supported formats: .doc, .docx, .pdf, .txt, .rtf (max. file size 1MB)</p>
+											</div>
+											<div class="col-xs-4">
+												<div class="error-inline clearfix">
+													<span class="glyphicon glyphicon-remove"></span>
+													<p class="error-text">lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+												</div>
 											</div>
 										</div>
 										<div class="form-group">
-											<div class="col-xs-offset-4 col-xs-8">
+											<div class="col-xs-offset-3 col-xs-9">
 												<p>Or,<br><b><span class="txt-blue">Press complete to finish your application.</span></b>  and <b>update your resume the next time</b> you apply for RGF jobs from a desktop.</p>
 											</div>
 										</div>
 										<div class="form-group">
-											<div class="col-xs-offset-4 col-xs-8">
+											<div class="col-xs-offset-3 col-xs-7">
 												<button type="submit" class="btn btn-complete">Complete</button>
 											</div>
 										</div>

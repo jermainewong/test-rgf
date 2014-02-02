@@ -10,7 +10,8 @@
 	    <link href="css/bootstrap.min.css" rel="stylesheet">
 	    <link href="css/mobile-base.css" rel="stylesheet">
 	    <link href="css/mobile-main.css" rel="stylesheet">
-	    <link href='http://fonts.googleapis.com/css?family=Open+Sans|Trykker' rel='stylesheet' type='text/css'> 
+	    <link href="css/error.css" rel="stylesheet">
+	    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> 
 	    <link href="css/font-awesome.min.css" rel="stylesheet">	   
 	    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -56,8 +57,12 @@
 							<div class="form-group">
 								<h4>Join RGF Talent Community</h4>
 								<h2 class="form-title">Sign up</h2>
+							<!--Error message-->
+								<div class="error-message mobile">
+									<p>Oops, you left some fields blank. Please fill in the fields highlighted red and proceed.</p>
+								</div><!--/Error message-->
 								<label for="">First Name *</label>
-								<input type="text" class="form-control" id="">
+								<input type="text" class="form-control error" id="">
 							</div>
 							<div class="form-group">
 								<label for="">Last Name *</label>

@@ -11,6 +11,10 @@
 	color: #666;
 }
 
+.text-small{
+	font-size: 0.9em;
+}
+
 /* Header and Nav bar */
 header {
 	height: 50px;

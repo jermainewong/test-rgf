@@ -10,6 +10,7 @@
 	    <link href="css/bootstrap.min.css" rel="stylesheet">
 	    <link href="css/base.css" rel="stylesheet">
 	    <link href="css/form.css" rel="stylesheet">
+	    <link href="css/error.css" rel="stylesheet">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans|Trykker' rel='stylesheet' type='text/css'>
 		<script src="js/prefixfree.min.js"></script>
 	    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -79,10 +80,14 @@
 					<div class="row">
 						<div class="col-xs-6">
 							<form class="form-horizontal" role="form">
+						<!--Error message-->
+								<div class="error-message">
+									<p>Your login has failed because you’ve have inputted an invalid email address. Kindly check to ensure you’ve entered a correct one e.g. name@mail.com</p>
+								</div><!--/Error message-->
 								<div class="form-group">
 									<label for="input" class="col-xs-3">Email</label>
 									<div class="col-xs-9">
-										<input type="email" class="form-control" id="inputFirstname" placeholder="Your email">
+										<input type="email" class="form-control error" id="inputFirstname" placeholder="Your email">
 									</div>
 								</div>
 								<div class="form-group">
