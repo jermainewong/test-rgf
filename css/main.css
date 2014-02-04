@@ -410,6 +410,16 @@ header {
 	color: #fff;
 }
 
+/* empty results pages*/
+.content-empty{
+	padding-top: 10px;
+	padding-bottom: 230px;
+}
+
+.content-empty li{
+	list-style: disc;
+}
+
 /* Banner*/
 .banner {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";

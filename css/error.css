@@ -1,3 +1,4 @@
+/* General error styling */
 .error-message{
 	padding: 5px 10px;
 	margin-bottom: 20px;
@@ -45,4 +46,52 @@
 
 .mobile{
 	margin-bottom: 5px;
+}
+
+/* Error pages */
+.error-content{
+	min-height: 500px;
+	line-height: 2em;
+	padding: 20px;
+}
+
+.error-content ol li{
+	list-style: decimal;
+}
+
+.error-content ul li{
+	list-style: disc;
+}
+
+.error-content h1{
+	color: #0d80bc;
+	margin-bottom: 20px;
+}
+
+.error-content p{
+	font-size: 16px;
+	line-height: 1.2em;
+	color: #444;
+}
+
+.fa-warning{
+	color: #0d80bc;
+}
+
+.error-contact{
+	padding-left: 20px;
+}
+
+.error-contact li{
+	list-style: none !important;
+	text-align: left;
+}
+
+.error-content .glyphicon{
+	margin-right: 5px;
+	color: #0d80bc;
+}
+
+.footer-secondary p{
+	line-height: 1.2em;
 }
