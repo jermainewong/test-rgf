@@ -10,7 +10,6 @@ header {
 }
 
 .logo-primary {
-	width: 110px;
 	padding: 10px 0px;
 }
 
@@ -350,10 +349,11 @@ header {
 	background-color: #0d80bc;
 }
 
-.aside h4 {
-	font-size: 1.1em;
-	text-transform: uppercase;
+.aside h2 {
+	margin-top: 10px;
+	font-size: 16px;
 	line-height: 1.2em;
+	text-transform: uppercase;
 	color: #fff;
 }
 
@@ -372,11 +372,6 @@ header {
 
 /* Title for job search results page */
 .title h1 {
-	font-family: 'Trykker', 'Georgia', serif;
-}
-
-
-.title h2 {
 	font-family: 'Trykker', 'Georgia', serif;
 }
 
@@ -447,9 +442,17 @@ table {
 	color: #fff;
 }
 
+.jobcart-list h1{
+	font-size: 32px;
+}
+
 /* Job descrption page*/
 .job-description {
 	margin-bottom: 100px;
+}
+
+.job-description h1{
+	font-size: 34px;
 }
 
 .job-description p {
@@ -578,11 +581,11 @@ table {
 	transition: all 0.4s ease;
 }
 
-.jobcart-btn div {
+.jobcart-btn span {
 	float: left;
 }
 
-.jobcart-btn div:first-child {
+.jobcart-btn span:first-child {
 	margin-right: 5px;
 }
 
@@ -592,6 +595,8 @@ table {
 	width: 35px;
 	height: 22px;
 	background-position: -10px -210px;
+	float: none;
+	margin-right: 0px !important;
 }
 
 .jobcart-empty {
@@ -600,6 +605,8 @@ table {
 	width: 35px;
 	height: 23px;
 	background-position: -10px -177px;
+	float: none;
+	margin-right: 0px !important;
 }
 
 .is-empty {
@@ -774,7 +781,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#424242', end
 	background: -o-linear-gradient(top, rgba(12,11,11,1) 0%, rgba(34,34,34,1) 100%);
 	background: -ms-linear-gradient(top, rgba(12,11,11,1) 0%, rgba(34,34,34,1) 100%);
 	background: linear-gradient(top, rgba(12,11,11,1) 0%, rgba(34,34,34,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c0b0b', endColorstr='#222222',GradientType=0 ); /* IE6-9 */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c0b0b', endColorstr='#222222',GradientType=0 ); /* IE6-9 */
 }
 
 .footer-primary ul {

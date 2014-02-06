@@ -23,10 +23,6 @@ header {
 	padding: 5px 0px;
 }
 
-.logo-primary {
-	width: 70px;
-}
-
 .navbar-header {
 	margin-top: 8px;
 }
@@ -92,7 +88,8 @@ header {
 	margin: 10px 0px;
 }
 
-.search-primary h3 {
+.search-primary h1 {
+	font-size: 18px;
 	margin-top: 10px;
 	color: #222;
 	text-transform: uppercase;
@@ -219,6 +216,10 @@ header {
 }
 
 /* Job list */
+.job-list h1{
+	font-size: 18px;
+}
+
 .job-list .mb-link {
 	padding: 15px 0px;
 	border-bottom: solid 1px #e5e5e5;
@@ -271,8 +272,8 @@ header {
 	border-bottom: none;
 }
 
-.jobcart-list h4 {
-	margin-bottom: 0px;
+.jobcart-list h1 {
+	margin: 10px 0px 0px 0px;
 }
 
 .jobcart-list p {
@@ -283,16 +284,26 @@ header {
 	font-size: 0.9em;
 }
 
+.jobcart-msg{
+	font-size: 16px;
+	margin: 10px 0px !important;
+}
+
 /* Job Description */
 .job-description {
-	padding-bottom: 70px;
+	padding-bottom: 60px;
 	background-color: rgba(244,244,244,0.4);
+}
+
+.job-description h1{
+	margin-top: 10px;
 }
 
 .white {
 	-webkit-box-shadow: 3px 3px 3px rgba(153,153,153,0.2);
 	box-shadow: 3px 3px 3px rgba(153,153,153,0.2);
 	background: #fff;
+	padding: 10px 0px;
 }
 
 .job-index-link {
@@ -389,6 +400,7 @@ header {
 /* Form */
 .form-title {
 	margin: 20px 0px 10px 0px;
+	font-size: 20px;
 	text-transform: uppercase;
 	color: #0d80bc;
 }
@@ -469,16 +481,16 @@ header {
 	margin-bottom: 10px;
 }
 
-.input-salary div {
+.input-inline div {
 	float: left;
 	margin-right: 3%;
 }
 
-.input-salary div:first-child {
+.input-inline div:first-child {
 	width: 25%;
 }
 
-.input-salary div:last-child {
+.input-inline div:last-child {
 	width: 72%;
 	margin-right: 0px;
 }
@@ -548,6 +560,10 @@ header {
 	background-color: #3db0e6;
 	border: solid 1px #3db0e6;
 	color: #fff;
+}
+
+.action .btn-primary{
+	width: 100%;
 }
 
 .btn-checkout {
@@ -639,6 +655,11 @@ header {
 	color: #0d80bc;
 	background-color: #fff;
 	border: solid 1px #0d80bc;
+}
+
+#cloudfileModal i{
+	color: #0d80bc;
+	font-size: 1em;
 }
 
 /* Footer */

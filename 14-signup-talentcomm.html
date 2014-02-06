@@ -6,14 +6,14 @@
 	<head>
 	    <title>RGF HR Agent Singapore Pte Ltd</title>
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <!-- Bootstrap -->
+	    <meta name="robots" content="index,follow"/>
+		<meta name="robots" content="noydir"/>
+		<meta name="robots" content="noodp"/>
 	    <link href="css/bootstrap.min.css" rel="stylesheet">
 	    <link href="css/base.css" rel="stylesheet">
 	    <link href="css/form.css" rel="stylesheet">
 	    <link href="css/error.css" rel="stylesheet">
-	    <link href='http://fonts.googleapis.com/css?family=Open+Sans|Trykker' rel='stylesheet' type='text/css'>
-	    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-	    <script src="js/bootstrap.min.js"></script> 
+	    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	    <!--[if lt IE 9]>
@@ -31,7 +31,7 @@
 				<div class="row">
 					<div class="col-xs-2">
 						<a href="/">
-							<img class="rgf-logo" alt="rgf-singapore-logo" src="assets/rgf-singapore-logo.png">
+							<img class="rgf-logo" alt="rgf-hr-agent-singapore-logo" style="width:110px; height: 65px" src="assets/rgf-singapore-logo.png">
 						</a>
 					</div>
 				</div>
@@ -53,15 +53,15 @@
 									<h3>Sign up</h3>
 								</div>
 								<div class="form-group">
-									<label for="">First Name *</label>
-									<input type="text" class="form-control" id="">
+									<label>First Name *</label>
+									<input type="text" class="form-control error" id="">
 								</div>
 								<div class="form-group">
-									<label for="">Last Name *</label>
+									<label>Last Name *</label>
 									<input type= "text" class="form-control" id="">
 								</div>
 								<div class="form-group">
-									<label for="">Email *</label>
+									<label>Email *</label>
 									<input type="email" class="form-control" id="">
 								</div>
 								<div class="job-alert">
@@ -82,7 +82,7 @@
 										<div class="">
 											<p>Please indicate your</p>
 										</div>
-										<label for="">Preferred job function</label>
+										<label>Current job function</label>
 										<select class="form-control">
 											<option value="" selected="selected">Please select</option>					<!--Please help to include full option list-->
 											<option value="">Marketing</option>
@@ -91,10 +91,10 @@
 										</select>
 									</div>
 									<div class="form-group">
-										<label for="">-or your-</label>
+										<label>- and your -</label>
 									</div>
 									<div class="form-group">
-										<label for="">Preferred industry</label>
+										<label>Current job industry</label>
 										<select class="form-control">
 											<option value="" selected="selected">Please select</option>					<!--Please help to include full option list-->
 											<option value="">Hospitality</option>
@@ -114,7 +114,7 @@
 				</div>
 			</section>
 <!-- Modal-success message -->
-			<div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModal" aria-hidden="true">
+			<div class="modal fade" id="successModal" role="dialog" aria-labelledby="successModal" aria-hidden="true">
 			  <div class="modal-dialog">
 			    <div class="modal-content">
 			      <div class="modal-body">
@@ -132,7 +132,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 text-center">
-							<p class="small">Copyright &copy 2014 RGF HR Agent Singapore Pte Ltd<br>
+							<p class="small">Copyright &copy; 2014 RGF HR Agent Singapore Pte Ltd<br>
 							EA License 10C2978<br>
 							<a href="">Terms & Conditions</a> | <a href="">Privacy Policy</a> | <a href="">Cookies Policy</a></p>
 						</div>
@@ -140,4 +140,7 @@
 				</div>
 			</footer>
 		</section>
+		<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script> 
 	</body>
+</html>

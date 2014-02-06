@@ -15,13 +15,6 @@
 	border: solid 1px #d80404;
 }
 
-.error:after{
-	display: inline;
-	position: static;
-	content:'This is an error message';
-	z-index: 5;
-}
-
 .error-text{
 	color: #d80404;
 	font-size: 0.9em;

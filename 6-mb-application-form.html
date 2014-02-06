@@ -6,14 +6,15 @@
 	<head>
 	    <title>RGF HR Agent Singapore Pte Ltd</title>
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <!-- Bootstrap -->
+	    <meta name="robots" content="index,follow"/>
+		<meta name="robots" content="noydir"/>
+		<meta name="robots" content="noodp"/>
 	    <link href="css/bootstrap.min.css" rel="stylesheet">
 	    <link href="css/mobile-base.css" rel="stylesheet">
 	    <link href="css/mobile-main.css" rel="stylesheet">
 	    <link href="css/error.css" rel="stylesheet">
 	    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-	    <script src="js/bootstrap.min.js"></script>     
+	    <link href="css/font-awesome.min.css" rel="stylesheet">
 	    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	    <!--[if lt IE 9]>
@@ -31,7 +32,7 @@
 				<div class="row">
 					<div class="col-xs-4">
 						<a href="/">
-							<img class="logo-primary" alt="rgf-singapore-logo" src="assets/rgf-singapore-logo.png">
+							<img alt="rgf-hr-agent-singapore-logo" style="width: 70px; height: 43px" src="assets/rgf-singapore-logo.png">
 						</a>
 					</div>
 				</div>
@@ -48,7 +49,7 @@
 				</div>
 				<div class="row">
 					<div class="col-xs-12">
-						<h2 class="form-title">Apply</h2>
+						<h1 class="form-title">Apply</h1>
 					<!--Error message-->
 						<div class="error-message mobile">
 							<p>Oops, you made some mistakes. Please correct the fields highlighted red and proceed.</p>
@@ -63,7 +64,7 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<h5>Complete faster with</h5>
-						<img alt="" src="assets/linkedin-btn.png">
+						<img alt="linkedin-sign-in-button" src="assets/linkedin-btn.png">
 					</div>
 				</div>
 			</div>
@@ -85,21 +86,24 @@
 						<div class="col-xs-12">
 							<form role="form">
 								<div class="form-group">
-									<label for="input">Phone number *</label>
-									<input type="tel" class="form-control error" id="inputPhonenumber" placeholder="Phone number">
-									<span class="small">(e.g. +65-9333 6688)</span>
-									<p class="error-text">You have entered an invalid value. Only numbers, + and - are allowed. e.g. +65-9333-6688</p>
+									<label>Phone number *</label>
+									<div class="input-inline clearfix">
+										<div>
+											<select class="form-control">
+												<option value="" selected="selected">+65</option>						<!--Please help to add in full country code list-->
+												<option value="">+84</option>
+												<option value="">+85</option>								
+											</select>
+										</div>
+										<div>
+											<input type="number" class="form-control error" id="inputPhonenumber" placeholder="Phone number">
+											<span class="small">(Please input numbers only)</span>
+											<p class="error-text">You have entered an invalid value. Only numbers allowed. e.g. 93336688</p>
+										</div>
+									</div>
 								</div>
 								<div class="form-group">
-									<label for="input">Current living location *</label>
-									<select class="form-control">
-										<option value="Singapore" selected="selected">Singapore</option>				<!--Please help to add in full country list-->
-										<option value="Malaysia">Malaysia</option>
-										<option value="Indonesia">Indonesia</option>
-									</select>
-								</div>
-								<div class="form-group">
-									<label for="input">Visa Status in Singapore *</label>
+									<label>Visa Status in Singapore *</label>
 									<select class="form-control">
 										<option value="" selected="selected">Please select</option>					
 										<option value="Singaporean">Singaporean</option>
@@ -133,16 +137,16 @@
 						<div class="col-xs-12">
 							<form role="form">
 								<div class="form-group">
-									<label for="input">Current/ last position *</label>
+									<label>Current/ last position *</label>
 									<input type="text" class="form-control" id="inputCurrentposition" placeholder="Current or last position">
 								</div>
 								<div class="form-group">
-									<label for="input">Current/ last company *</label>
+									<label>Current/ last company *</label>
 									<input type="text" class="form-control" id="inputCurrentcompany" placeholder="Current or last company">
 								</div>
 								<div class="form-group">
-									<label for="input">Current monthly salary *</label>
-									<div class= "input-salary clearfix">
+									<label>Current annual salary *</label>
+									<div class="input-inline clearfix">
 										<div>
 											<select class="form-control">
 												<option value="SGD" selected="selected">SGD</option>						<!--Please help to add in full currency list-->
@@ -154,12 +158,12 @@
 											</select>
 										</div>
 										<div>
-											<input type="number" class="form-control salary" id="inputSalary" placeholder="Monthly salary">
+											<input type="number" class="form-control salary" id="inputSalary" placeholder="Annual salary">
 										</div>	
 									</div>
 								</div>
 								<div class="form-group">
-									<label for="input">Total years of work experience *</label>
+									<label>Total years of work experience *</label>
 									<input type="number" class="form-control" id="inputWorkexp" placeholder="No. of years of work experience">
 								</div>
 							</form>
@@ -185,7 +189,7 @@
 						<div class="col-xs-12">
 							<form role="form">
 								<div class="form-group">
-									<label for="input">School/ University *</label>
+									<label>School/ University *</label>
 									<input type="text" class="form-control" id="inputSchool" placeholder="Name of your school or university">
 								</div>
 								<div class="form-group">
@@ -200,7 +204,7 @@
 									</select>
 								</div>
 								<div class="form-group">
-									<label for="input">Field of Study *</label>
+									<label>Field of Study *</label>
 									<input type="text" class="form-control" id="inputFieldofstudy" placeholder="Field of study">
 								</div>							
 							</form>
@@ -226,7 +230,7 @@
 						<div class="col-xs-12">
 							<form role="form">
 								<div class="form-group">
-									<label for="input">English proficiency *</label>
+									<label>English proficiency *</label>
 									<select class="form-control">
 										<option value="" selected="selected">Please select</option>
 										<option value="native">Native</option>
@@ -238,7 +242,7 @@
 									</select>
 								</div>
 								<div class="form-group">
-									<label for="input">Mandarin proficiency *</label>
+									<label>Mandarin proficiency *</label>
 									<select class="form-control">
 										<option value="" selected="selected">Please select</option>
 										<option value="native">Native</option>
@@ -250,7 +254,7 @@
 									</select>
 								</div>
 								<div class="form-group">
-									<label for="input">Japanese proficiency *</label>
+									<label>Japanese proficiency *</label>
 									<select class="form-control">
 										<option value="" selected="selected">Please select</option>
 										<option value="native">Native</option>
@@ -287,8 +291,8 @@
 									<p>You may load your resume from Google Drive or Dropbox</p>
 								</div>
 								<div class="form-group clearfix">
-									<img class="cloud-drive-logo" src="assets/google-drive-logo.png">
-									<img class="cloud-drive-logo" src="assets/dropbox-logo.png">
+									<img class="cloud-drive-logo" alt="google-drive-logo" src="assets/google-drive-logo.png">
+									<img class="cloud-drive-logo" alt="dropbox-logo" src="assets/dropbox-logo.png">
 								</div>
 								<div class="form-group">
 									<button type="submit" class="btn btn-form btn-load" data-toggle="modal" data-target="#loadresumeModal">Load resume</button>
@@ -306,7 +310,7 @@
 			</div>
 		</section>
 	<!-- Modal-for choosing cloud drive -->
-		<div class="modal fade" id="loadresumeModal" tabindex="-1" role="dialog" aria-labelledby="loadresumeModal" aria-hidden="true">
+		<div class="modal fade" id="loadresumeModal" role="dialog" aria-labelledby="loadresumeModal" aria-hidden="true">
 		  <div class="modal-dialog">
 		    <div class="modal-content">
 		      <div class="modal-body">
@@ -314,14 +318,63 @@
 		        <h2 class="modal-title">I would like to load my resume from</h2>
 		        <form>
 					<label class="radio-inline">
-						<input type="radio" name="" id="" value="" checked> <p>Google Drive</p>
+						<input type="radio" name="" id="" value="" checked> Google Drive
 					</label>
 					<label class="radio-inline">
-						<input type="radio" name="" id="" value=""> <p>Dropbox</p>
+						<input type="radio" name="" id="" value=""> Dropbox
 					</label>
 		        </form>
 				<div class="modal-footer">
 		        	<button type="button" class="btn btn-form btn-ok">OK</button>
+		        </div>
+		      </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+	<!-- Modal-for file list from cloud drive -->
+		<div class="modal fade" id="cloudfileModal" role="dialog" aria-labelledby="cloudfileModal" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-body">
+		        <h2 class="modal-title">Please select your resume to upload</h2>
+		        <table class="table table-striped table-responsive">
+			        <tr>					        
+			        	<th>File name</th>
+				        <th class="text-center">Select</th>
+			        </tr>
+			         <tr>
+				        <td>
+				        	<a href=""><i class="fa fa-folder"></i> yata folder</a>
+				        </td>
+				        <td></td>
+			        </tr>
+			         <tr>
+				        <td>
+				        	<a href=""><i class="fa fa-folder-open"></i> yata folder</a>
+				        </td>
+				        <td></td>
+			        </tr>
+			        <tr>
+				        <td>yata_resume.pdf</td>
+				         <td class="text-center">
+				        	<input type="checkbox">
+				        </td>
+			        </tr>
+			        <tr>
+				        <td>yata_resume.pdf</td>
+				         <td class="text-center">
+				        	<input type="checkbox">
+				        </td>
+			        </tr>
+			        <tr>
+				        <td>yata_resume.pdf</td>
+				        <td class="text-center">
+				        	<input type="checkbox">
+				        </td>
+			        </tr>
+		        </table>
+				<div class="modal-footer">
+		        	<button type="button" class="btn btn-modal">OK</button>
 		        </div>
 		      </div>
 		    </div><!-- /.modal-content -->
@@ -332,12 +385,14 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 text-center small">
-						<p>Copyright &copy 2014 RGF HR Agent Singapore Pte Ltd<br>
+						<p>Copyright &copy; 2014 RGF HR Agent Singapore Pte Ltd<br>
 						EA Licence no. 10C2978</p>
 						<a href="">Terms & Condition</a> | <a href="">Privacy Policy</a>
 					</div>
 				</div>
 			</div>
 		</footer>
+		<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script>     
 	</body>
 </html>

@@ -6,12 +6,14 @@
 	<head>
 	    <title>RGF HR Agent Singapore Pte Ltd</title>
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <!-- Bootstrap -->
+	    <meta name="robots" content="index,follow"/>
+		<meta name="robots" content="noydir"/>
+		<meta name="robots" content="noodp"/>
 	    <link href="css/bootstrap.min.css" rel="stylesheet">
 	    <link href="css/base.css" rel="stylesheet">
 	    <link href="css/form.css" rel="stylesheet">
 	    <link href="css/error.css" rel="stylesheet">
-	    <link href='http://fonts.googleapis.com/css?family=Open+Sans|Trykker' rel='stylesheet' type='text/css'>
+	    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	    <!--[if lt IE 9]>
@@ -29,7 +31,7 @@
 				<div class="row">
 					<div class="col-xs-2">
 						<a href="/">
-							<img class="rgf-logo" alt="rgf-singapore-logo" src="assets/rgf-singapore-logo.png">
+							<img class="rgf-logo" alt="rgf-hr-agent-singapore-logo" style="width:110px; height: 65px" src="assets/rgf-singapore-logo.png">
 						</a>
 					</div>
 					<div class="col-xs-10 apply-info">
@@ -47,7 +49,7 @@
 			<div class="container">		
 				<div class="row">
 					<div class="col-xs-12">
-	<!--Progress indicator-->
+				<!--Progress indicator-->
 						<div class="progress-indicator">
 							<div class="progress-stage disabled">
 								<div class="progress-circle">1</div>
@@ -90,13 +92,13 @@
 											<button type="submit" class="btn">Complete</button>
 										</div>
 									</div>
-						<!--Login Credentials-->
+							<!--Personal information-->
 									<div class="form-block">
 										<div class="form-group">
-											<h4 class="label-head">Login Credentials</h4>
+											<h4 class="label-head">Personal Details</h4>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-3">Email</label>
+											<label class="col-xs-3">Email*</label>
 											<div class="col-xs-5">
 												<input type="email" class="form-control error">
 											</div>
@@ -108,28 +110,7 @@
 											</div>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-3">Current password</label>
-											<div class="col-xs-5">
-												<span>
-													&#9679
-													&#9679
-													&#9679
-													&#9679
-													&#9679
-													&#9679
-													&#9679
-												</span>
-												<a href="">[change password]</a>
-											</div>
-										</div>
-									</div>
-						<!--Personal information-->
-									<div class="form-block">
-										<div class="form-group">
-											<h4 class="label-head">Personal Details</h4>
-										</div>
-										<div class="form-group">
-											<label for="input" class="col-xs-3">Phone number*</label>
+											<label class="col-xs-3">Phone number*</label>
 											<div class="col-xs-5">
 												<input type="tel" class="form-control">
 											</div>
@@ -140,26 +121,7 @@
 											</div>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-3">Current living location*</label>
-											<div class="col-xs-5">
-												<select>
-													<option value="Singapore" selected="selected">Singapore</option>
-													<option value="Malaysia">Malaysia</option>
-													<option value="Indonesia">Indonesia</option>
-													<option value="Indonesia">Indonesia</option>
-													<option value="Indonesia">Indonesia</option>
-													<option value="Indonesia">Indonesia</option>
-													<option value="Indonesia">Indonesia</option>							<!--Please help to add in full country list-->
-												</select>
-											</div>
-											<div class="col-xs-4">
-												<div class="error-inline clearfix">
-													<span class="glyphicon glyphicon-ok"></span>
-												</div>
-											</div>
-										</div>
-										<div class="form-group">
-											<label for="input" class="col-xs-3">Visa Status in Singapore*</label>
+											<label class="col-xs-3">Visa Status in Singapore*</label>
 											<div class="col-xs-5">
 												<select>
 													<option value="" selected="selected">Please select</option>
@@ -184,7 +146,7 @@
 											<h4 class="label-head">Work Experience</h4>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-3">Current/ last position*</label>
+											<label class="col-xs-3">Current/ last position*</label>
 											<div class="col-xs-5">
 												<input type="text" class="form-control">
 											</div>
@@ -196,7 +158,7 @@
 											</div>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-3">Current/ last company*</label>
+											<label class="col-xs-3">Current/ last company*</label>
 											<div class="col-xs-5">
 												<input type="text" class="form-control">
 											</div>
@@ -208,8 +170,8 @@
 											</div>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-3">Current monthly salary*</label>
-											<div class="col-xs-5 input-currency clearfix">
+											<label class="col-xs-3">Current annual salary*</label>
+											<div class="col-xs-5 input-inline clearfix">
 												<div>
 													<select class="currency">
 														<option value="SGD" selected="selected">SGD</option>						<!--Please help to add in full currency list-->
@@ -232,7 +194,7 @@
 											</div>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-3">Total years of work experience*</label>
+											<label class="col-xs-3">Total years of work experience*</label>
 											<div class="col-xs-5">
 												<input type="text" class="form-control">
 											</div>
@@ -250,7 +212,7 @@
 											<h4 class="label-head">Highest Education Attained</h4>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-3">School/ University*</label>
+											<label class="col-xs-3">School/ University*</label>
 											<div class="col-xs-5">
 												<input type="text" class="form-control">
 											</div>
@@ -262,7 +224,7 @@
 											</div>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-3">Education level*</label>
+											<label class="col-xs-3">Education level*</label>
 											<div class="col-xs-5">
 												<select>
 													<option value="" selected="selected">Please select</option>
@@ -281,7 +243,7 @@
 											</div>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-3">Field of Study*</label>
+											<label class="col-xs-3">Field of Study*</label>
 											<div class="col-xs-5">
 												<input type="text" class="form-control">
 											</div>
@@ -299,7 +261,7 @@
 											<h4 class="label-head">Language Proficiency</h4>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-3">English*</label>
+											<label class="col-xs-3">English*</label>
 											<div class="col-xs-5">
 												<select>											
 													<option value="" selected="selected">Please select</option>
@@ -319,7 +281,7 @@
 											</div>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-3">Mandarin*</label>
+											<label class="col-xs-3">Mandarin*</label>
 											<div class="col-xs-5">
 												<select>											
 													<option value="" selected="selected">Please select</option>
@@ -339,7 +301,7 @@
 											</div>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-3">Japanese*</label>
+											<label class="col-xs-3">Japanese*</label>
 											<div class="col-xs-5">
 												<select>											
 													<option value="" selected="selected">Please select</option>
@@ -365,7 +327,7 @@
 											<h4 class="label-head">Your resume</h4>
 										</div>
 										<div class="form-group">
-											<label for="input" class="col-xs-3">Upload latest resume</label>
+											<label class="col-xs-3">Upload latest resume</label>
 											<div class="col-xs-5">
 												<p>You have an existing resume record with us. <b>If you wish to update the existing one,</b> please upload your latest resume.</p>
 												<input type="file" id="exampleInputFile">
@@ -395,7 +357,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 text-center">
-							<p class="small">Copyright &copy 2014 RGF HR Agent Singapore Pte Ltd<br>
+							<p class="small">Copyright &copy; 2014 RGF HR Agent Singapore Pte Ltd<br>
 							EA License 10C2978<br>
 							<a href="">Terms & Conditions</a> | <a href="">Privacy Policy</a> | <a href="">Cookies Policy</a></p>
 						</div>
@@ -404,3 +366,4 @@
 			</footer>
 		</section>
 	</body>
+</html>

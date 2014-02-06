@@ -10,10 +10,10 @@
 		<meta name="robots" content="noydir"/>
 		<meta name="robots" content="noodp"/>
 	    <link href="css/bootstrap.min.css" rel="stylesheet">
-	    <link href="css/mobile-base.css" rel="stylesheet">
-	    <link href="css/mobile-main.css" rel="stylesheet">
-	    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	    <link href="css/font-awesome.min.css" rel="stylesheet">	    
+	    <link href="css/base.css" rel="stylesheet">
+	    <link href="css/main.css" rel="stylesheet">
+	    <link href='http://fonts.googleapis.com/css?family=Open+Sans|Trykker' rel='stylesheet' type='text/css'>
+	    <link href="css/font-awesome.min.css" rel="stylesheet">
 	    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	    <!--[if lt IE 9]>
@@ -21,7 +21,7 @@
 	      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 	    <![endif]-->
 	</head>
-	<body>
+<body>
 	    <!--[if lt IE 7]>
 	    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 	        <![endif]-->
@@ -29,63 +29,43 @@
 		<header>
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-3">
+					<div class="col-xs-12 nav-primary">
 						<a href="/">
-							<img alt="rgf-hr-agent-singapore-logo" style="width: 70px; height: 43px" src="assets/rgf-singapore-logo.png">
+							<img class="logo-primary" alt="rgf-hr-agent-singapore-logo" style="width:110px; height: 85px" src="assets/rgf-singapore-logo.png">
 						</a>
 					</div>
-					<nav class="col-xs-9 navbar-header clearfix">
-						<div class="pull-right">
-							<ul>
-								<li>
-									<a href="">
-										<span class="fa fa-chevron-left"></span>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<span class="glyphicon glyphicon-search"></span>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<div class="jobcart-icon">										
-											<span class="cart-dynamic"></span>
-											<span class="jobcart-count">5</span>
-										</div>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</nav>
 				</div>
 			</div>
 		</header>
-	<!--Job description-->		
-		<section class="job-description">
+	<!--Content-->
+		<section>
 			<div class="container">
-			<!--view down the job list link-->	
-				<div class="row">
-					<div class="col-xs-12">
-						<div class="text-center job-index-link">
-							<span class="arrow-link"><i class="fa fa-angle-left"></i></span>
-							<span class="job-index"> 1 of 50 jobs</span>
-							<span class="arrow-link"><i class="fa fa-angle-right"></i></span>
+				<div class="job-description">
+					<div class="row">
+						<div class="col-xs-12">
+							<h1>Web developer Job</h1>
 						</div>
 					</div>
-				</div>
-				<div class="row white">
-					<div class="col-xs-12">
-						<h1 class="text-blue">Senior web developer, retail and ecommerce job</h1>
-						<ul>
-							<li><b>Job title:</b> Senior Web developer</li>
-							<li><b>Job number:</b> JO-1122-3311</li>
-							<li><b>Job location:</b> Singapore</li>
-							<li><b>Job industry:</b> Retail, Ecommerce</li>
-							<li><b>Job function:</b> Web development</li>
-							<li><b>Salary:</b> SGD 3,000 - 5,000 </li>
-						</ul>
-						<p>Job responsibilities<br>
+					<div class="row">
+						<div class="col-xs-5">
+							<ul>
+								<li><b>Job title:</b> Web developer</li>
+								<li><b>Job number:</b> JO-1122-3311</li>
+								<li><b>Job location:</b> Singapore</li>
+								<li><b>Job industry:</b> Retail, Ecommerce</li>
+								<li><b>Job function:</b> Web development</li>
+								<li><b>Salary:</b> SGD 3,000 - 5,000 </li>
+							</ul>
+						</div>
+						<div class="col-xs-7 clearfix">
+							<div class="pull-right">
+								<button class="btn btn-chkout">Apply Now</button>
+							</div>	
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<p>Job responsibilities<br>
 							- Responsible for architecture, design, programming, prototyping, documenting and supporting the product development<br>
 							- Responsible for writing high quality and performance-driven code<br>
 							- Understand and estimate project schedules / cost; anticipate and prepare for changes and obstacles<br>
@@ -110,57 +90,71 @@
 							- Excellent team and communication skills needed<br>
 							- Experience working with mobile platforms (i.e. Andriod, iOS)<br>
 							- Passion in games is a plus.<br>
-						</p>
-					</div>
-				<!--Social sharing link-->	
-					<div class="col-xs-12 social-network">
-						<div class="link-group">
-							<a class="mb-link" href="">
-								<div class="row">
-									<div class="col-xs-10 clearfix">
-										<div class="share-job">
-											<h5>Share Job</h5>
-										</div>
-										<div class="share-job">
-											<span><i class="fa fa-envelope-o"></i></span>
-											<span><i class="fa fa-linkedin"></i></span>
-											<span><i class="fa fa-facebook"></i></span>
-											<span><i class="fa fa-twitter"></i></span>
-											<span><i class="fa fa-google-plus"></i></span>
-										</div>
-									</div>
-									<div class="col-xs-2 clearfix">
-										<div class="pull-right">
-											<span class="glyphicon glyphicon-chevron-right"></span>
-										</div>
-									</div>
-								</div>
-							</a>
-						</div>	
-					</div><!--/Social sharing link-->				
-				</div>
-		<!--view down the job list link-->	
-				<div class="row">
-					<div class="col-xs-12">
-						<div class="text-center job-index-link">
-							<span class="arrow-link"><i class="fa fa-angle-left"></i></span>
-							<span class="job-index"> 1 of 50 jobs</span>
-							<span class="arrow-link"><i class="fa fa-angle-right"></i></span>
+							</p>
 						</div>
 					</div>
-				</div>		
-			</div>
-		</section>	
-	<!--Action buttons-->
-		<section class="action">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12">
-						<button class="btn btn-apply">Quick Apply</button>
-						<button class="btn btn-add">Add to Job Cart</button>
+				<!--social network icons-->	
+					<div class="row">
+						<div class="col-xs-5">
+							<h5><b>Share this job:</b></h5>
+							<div>
+								<a href=""><i class="fa fa-envelope-o fa-2x"></i></a>
+								<a href=""><i class="fa fa-linkedin fa-2x"></i></a>
+								<a href=""><i class="fa fa-facebook fa-2x"></i></a>
+								<a href=""><i class="fa fa-twitter fa-2x"></i></a>
+								<a href=""><i class="fa fa-google-plus fa-2x"></i></a>
+							</div>
+						</div>
+						<div class="col-xs-7 clearfix">
+							<div class="pull-right">
+								<button class="btn btn-chkout">Apply Now</button>
+							</div>
+						</div>					
 					</div>
 				</div>
 			</div>
 		</section>
+	<!--Footer-->
+		<footer class="footer-primary">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-4">
+						<img alt="rgf-hr-agent-singapore-logo" style="width:125px; height: 58px" src="assets/rgf-singapore-transparent.png">
+						<p>RGF HR Agent Singapore Pte Ltd<br>
+						EA Licence no. 10C2978<br>
+						Copyright &copy;  2014</p>
+						<a href="">Terms & Condition</a> | <a href="">Privacy Policy</a> | <a href="">Cookies Policy</a>
+					</div>
+					<div class="col-xs-4">
+						<h5>Sitemap</h5>
+						<ul>
+							<li>
+								<a href="/">Home</a>
+							</li>
+							<li>
+								<a href="">Jobs</a>
+							</li>
+							<li>
+								<a href="">For Employers</a>
+							</li>
+							<li>
+								<a href="">About RGF</a>
+							</li>
+							<li>
+								<a href="">Contact Us</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-xs-4">
+						<h5>Connect with RGF</h5>
+						<div class="social-icons">
+							<a href=""><i class="fa fa-linkedin"></i></a>
+							<a href=""><i class="fa fa-facebook"></i></a>
+							<a href=""><i class="fa fa-twitter"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
