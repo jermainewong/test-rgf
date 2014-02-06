@@ -24,8 +24,10 @@
   $var = array(
       1010 => array('1', '/index.html', 'Index Page', 'http://${domain}/')
     , 1020 => array('2', '/2-joblist.html', 'Job List1 Page', 'http://${domain}/search')
+    , 1021 => array('2e', '/empty-joblist.html', 'Empty Job List1 Page', 'https://${domain}/search')
     , 1030 => array('3', '/3-job-description.html', 'Job Description Page', 'http://${domain}/job/${jobTitle}/${jobOrderNumber}')
     , 1040 => array('4', '/4-jobcart.html', 'Job Cart Page', 'http://$https://${domain}/jobcart')
+    , 1041 => array('4e', '/empty-jobcart.html', 'Empty Job Cart Page', 'https://${domain}/jobcart')
     , 1050 => array('5', '/5-signup-new-member.html', 'Sign Up (new member) Page', 'https://${domain}/member/signup')
     , 1060 => array('6', '/6-application-form.html', 'Application Form Page', 'https://${domain}/member/signup')
     , 1061 => array('6a', '/6a-application-form.html', 'Application Form Page', 'https://${domain}/member/signup')
@@ -44,6 +46,8 @@
     , 1170 => array('17', '/17-featured-jobs.html', 'Job List1 Featured Jobs Page', 'http://${domain}/search')
     , 1180 => array('18', '/18-for-employers.html', 'For Employers Page', 'http://${domain}/employers')
     , 1200 => array('20', '/20-contact-us.html', 'Contact Us Page', 'https://${domain}/contact')
+    , 1300 => array('E1', '/error-page.html', 'General Error Page', 'https://${domain}/')
+    , 1310 => array('E2', '/error-system-maintenance.html', 'System Maintenance Error Page', 'https://${domain}/')
 
     , 2010 => array('1', '/1-mb-index.html', 'MB Index Page', 'http://${domain}/')
     , 2020 => array('2', '/2-mb-joblist.html', 'MB Job List1 Page', 'http://${domain}/search')
