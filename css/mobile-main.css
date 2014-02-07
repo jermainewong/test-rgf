@@ -495,6 +495,20 @@ header {
 	margin-right: 0px;
 }
 
+.input-salary div:first-child{
+	width: 10%;
+	margin-right: 5px;
+	padding-top: 5px;
+}
+
+.input-salary .salary{
+	width: 60% !important;
+}
+
+.input-salary div:last-child{
+	width: 25%;
+}
+
 .check-box {
 	font-size: 12px;
 	margin-bottom: 20px;
@@ -610,6 +624,14 @@ header {
 	width: 100px;
 }
 
+.btn-cal{
+	width: 100% !important;
+	height: 30px !important;
+	font-size: 12px !important;
+	text-transform: none !important;
+	margin: 2px 0px 2px 5px !important;
+}
+
 /* Success message */
 .msg-success {
 	background-color: #74c399;
@@ -661,6 +683,7 @@ header {
 	color: #0d80bc;
 	font-size: 1em;
 }
+
 
 /* Footer */
 .footer-primary {

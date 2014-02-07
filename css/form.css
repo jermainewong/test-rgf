@@ -202,6 +202,16 @@ header .col-xs-10 {
 	width: 80% !important;
 }
 
+.btn-cal{
+	width: 100% !important;
+	height: 30px !important;
+	background-color: #999 !important;
+	color: #fff !important;
+	font-size: 12px !important;
+	text-transform: none !important;
+	margin: 2px 0px 2px 5px !important;
+}
+
 /* Form field -app and review form*/
 .app-form .container {
 	padding: 4% 10%;
@@ -241,6 +251,20 @@ header .col-xs-10 {
 
 .input-inline div:last-child{
 	width: 77%;
+}
+
+.input-salary div:first-child{
+	width: 15%;
+	margin-right: 0;
+	padding-top: 5px;
+}
+
+.input-salary .salary{
+	width: 60% !important;
+}
+
+.input-salary div:last-child{
+	width: 25%;
 }
 
 .review-form .container {
