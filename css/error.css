@@ -4,7 +4,6 @@
 	margin-bottom: 20px;
 	background-color: #ffcbce;
 	border-radius: 5px;
-	display: none;
 }
 
 .error-message p{
@@ -24,7 +23,6 @@
 
 .glyphicon-ok{
 	color: #15a115;
-	display: none;
 }
 
 .glyphicon-remove{
@@ -32,13 +30,11 @@
 	margin-right: 5px;
 	float: left;
 	color: #d80404;
-	display: none;
 }
 
 .error-inline p{
 	width: 90%;
 	float: left;
-	display: none;
 }
 
 .mobile{
