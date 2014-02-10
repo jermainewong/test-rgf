@@ -89,6 +89,15 @@
 								<input type="text" class="form-control" placeholder="Company name">
 							</div>
 							<div class="form-group">
+								<label>Your Company Industry *</label>
+								<select class="form-control">
+									<option value="" selected="selected">Please select</option>					<!--Please help to include full option list-->
+									<option value="">Hospitality</option>
+									<option value="">Oil and Gas</option>
+									<option value="">Banking</option>
+								</select>
+							</div>
+							<div class="form-group">
 								<label>Website</label>
 								<input type="text" class="form-control" placeholder="Company website URL">
 							</div>
@@ -110,7 +119,7 @@
 								<input type="checkbox"> Contract
 							</div>
 							<div class="form-group clearfix">
-								<button type="submit" class="btn btn-form">Submit</button>
+								<button type="submit" class="btn btn-form" data-toggle="modal" data-target="#successModal">Submit</button>
 							</div>
 						</form>
 					</div>
@@ -135,5 +144,21 @@
 				</div>
 			</div>
 		</footer>
+	<!-- Modal-success message -->
+		<div class="modal fade" id="successModal" role="dialog" aria-labelledby="successModal" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-body">
+		        <h1 class="modal-title">Your request has been sent</h1>
+		        <p>Our personnel-in-charge will contact you shortly.</p>
+				<div class="modal-footer">
+		        	<button type="button" class="btn btn-form">OK</button>
+		        </div>
+		      </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+		<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script> 
 	</body>
 </html>

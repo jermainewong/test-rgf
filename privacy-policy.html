@@ -25,7 +25,7 @@
 	    <!--[if lt IE 7]>
 	    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 	        <![endif]-->
-	<!--Header-->
+<!--Header-->
 		<header>
 			<div class="container">
 				<div class="row">
@@ -45,7 +45,6 @@
 										<a href="">
 											Jobs
 										</a>
-										<div class="arrow-down"></div>
 									</li>
 									<li>
 										<a href="">
@@ -110,100 +109,55 @@
 				</div>
 			</div>
 		</header>
-	<!--Content-->
-		<section>
+	<!--Search bar-->
+		<section class="search-bar search-secondary">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
-						<ol class="breadcrumb">
-							<li><a href="#">Home</a></li>
-							<li><a href="#">"Front-end developer" jobs</a></li>
-							<li class="active">Web developer job</li>                               
-						</ol>
+						<div class="search-fields clearfix">
+							<div class="float-left">
+								<span class="glyphicon glyphicon-search"></span>
+							    <label class="sr-only">Search Jobs</label>
+							    <input type="search" class="form-control" id="searchInput" placeholder="Enter job title, keyword etc...">
+							</div>
+							<div class="float-left">
+								<button class="btn">Search</button>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="job-description">
-					<div class="row">
-						<div class="col-xs-12">
-							<h1>Web developer Job</h1>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-5">
-							<ul>
-								<li><b>Job title:</b> Web developer</li>
-								<li><b>Job number:</b> JO-1122-3311</li>
-								<li><b>Job location:</b> Singapore</li>
-								<li><b>Job industry:</b> Retail, Ecommerce</li>
-								<li><b>Job function:</b> Web development</li>
-								<li><b>Salary:</b> SGD 3,000 - 5,000 </li>
-							</ul>
-						</div>
-						<div class="col-xs-7 clearfix">
-							<div class="pull-right">
-								<button class="btn btn-app">Quick apply</button>
-								<button class="btn jobcart-btn is-active">
-									<span class="jobcart-desp">Add to Job cart</span>
-									<span class="jobcart-state">
-										<span class="jobcart-active"></span>
-									</span>
-								</button>
-							</div>	
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-12">
-							<p>Job responsibilities<br>
-							- Responsible for architecture, design, programming, prototyping, documenting and supporting the product development<br>
-							- Responsible for writing high quality and performance-driven code<br>
-							- Understand and estimate project schedules / cost; anticipate and prepare for changes and obstacles<br>
-							- Constantly keeping up with current and best development practices on various platforms and genres, especially the mobile platforms<br>
-							- Responsible for architecture, design, programming, prototyping, documenting and supporting the product development<br>
-							- Responsible for writing high quality and performance-driven code<br>
-							- Understand and estimate project schedules / cost; anticipate and prepare for changes and obstacles<br>
-							- Constantly keeping up with current and best development practices on various platforms and genres, especially the mobile platforms<br>
-							- Responsible for architecture, design, programming, prototyping, documenting and supporting the product development<br>
-							- Responsible for writing high quality and performance-driven code<br>
-							- Understand and estimate project schedules / cost; anticipate and prepare for changes and obstacles<br>
-							- Constantly keeping up with current and best development practices on various platforms and genres, especially the mobile platforms<br><br><br>
-							The Successful Applicant<br>
-							- Bachelor Degree and above in Computing, Engineering (Electrical/Electronic) or equivalent<br>
-							- Minimum 5 years of relevant working experience in gaming/IT industry<br>
-							- Minimum 2 years of team leading experience<br>
-							- Strong knowledge in C / C++ / Java / Javascript (JQuery) / PHP / HTML5<br>
-							- Strong knowledge in software design patterns<br>
-							- Experience working with database management systems (mySQL / noSQL)<br>
-							- Experience working with server and network architecture and scripting<br>
-							- Excellent interpersonal communication, person-management and leadership skills.<br>
-							- Excellent team and communication skills needed<br>
-							- Experience working with mobile platforms (i.e. Andriod, iOS)<br>
-							- Passion in games is a plus.<br>
-							</p>
-						</div>
-					</div>
-				<!--social network icons-->	
-					<div class="row">
-						<div class="col-xs-5">
-							<h5><b>Share this job:</b></h5>
-							<div>
-								<a href=""><i class="fa fa-envelope-o fa-2x"></i></a>
-								<a href=""><i class="fa fa-linkedin fa-2x"></i></a>
-								<a href=""><i class="fa fa-facebook fa-2x"></i></a>
-								<a href=""><i class="fa fa-twitter fa-2x"></i></a>
-								<a href=""><i class="fa fa-google-plus fa-2x"></i></a>
-							</div>
-						</div>
-						<div class="col-xs-7 clearfix">
-							<div class="pull-right">
-								<button class="btn btn-app">Quick apply</button>
-								<button class="btn jobcart-btn is-active">
-									<span class="jobcart-desp">Add to Job cart</span>
-									<span class="jobcart-state">
-										<span class="jobcart-active"></span>
-									</span>
-								</button>
-							</div>
-						</div>					
+			</div>
+		</section>
+	<!--Content-->
+		<section class="jobcart-list">
+			<div class="container">
+		<!--Title-->
+				<div class="row">
+					<div class="col-xs-12 terms">
+						<h1>Privacy Policy</h1>
+						<p>Please carefully read the following terms prior to using this website.  By accessing this website, you indicate your acceptance of our Privacy Policy's terms and conditions.</p>
+						<ol class="terms-conditions">
+							<li>Your personal information shall only be collected and used for the following purposes (the &#34;Purpose&#34;) and will be treated appropriately by RGF HR Agent Singapore Pte. Ltd. (&#34;RGF&#34;):
+								<ol>
+									<li>Providing you with information about job offers and employment opportunities, and services related thereto (including providing the personal information to subsidiaries of RGF for the purpose of job offers and employment opportunities, and services related thereto);</li>
+									<li>Hearing opinions or requests aimed at improving our service and confirmation of your situation after employment;</li>
+									<li>Advising and proposing recruitment planning for the companies seeking workers;</li>
+									<li>Managing inquiries, consultations and complaints, and/or resolving disputes; and</li>
+									<li>Any other reasons as determined by RGF at its sole discretion.</li>
+								</ol>
+							</li>
+							<li>In principle, the personal information you have provided shall not, other than for the Purpose as described in paragraph 1 above, be disclosed to any third party without your prior consent; provided, however, that the personal information you have provided may be disclosed without your consent when:
+								<ol>
+									<li>Disclosure or provision of personal information is required by law or regulations or under any other legal obligation;</li>
+									<li>Disclosure of personal information is necessary for protection of life or property where obtaining your consent is difficult;</li>
+									<li>Disclosure of personal information is necessary to cooperate with a state institution or a local government, or any party entrusted by either of the former two, in executing the affairs prescribed by applicable laws or regulations, and obtaining your consent is likely to impede the execution of the affairs concerned; or</li>
+									<li>Disclosure of personal information is deemed necessary by RGF.</li>
+								</ol>
+							</li>
+							<li>Notwithstanding the foregoing, RGF may disclose personal information to any entity to whom RGF outsources the whole or a part of the service when it is necessary.</li>
+							<li>If you wish to request information about the administration of your personal information or information about the Purpose, or disclosure, correction, deletion or use of your personal information, or suspension of the offer thereof to a third party, please fill out this form. <a href="">http://www.rgf-hragent.asia/en/enquiry.aspx</a></li>
+							<li>RGF may modify this Privacy Policy from time to time without prior notice.  All changes will be posted on this page, and your access or use of this website after such changes have been posted will constitute your agreement to the modified Private Policy's terms and conditions and all of the changes.  You should therefore read this page carefully each time you visit this website.</li>
+						</ol>
 					</div>
 				</div>
 			</div>
@@ -225,11 +179,11 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-4">
-						<img alt="rgf-hr-agent-singapore-logo" style="width:125px; height: 58px" src="assets/rgf-singapore-transparent.png">
+						<img alt="rgf-hr-agent-logo" style="width:125px; height: 58px" src="assets/rgf-singapore-transparent.png">
 						<p>RGF HR Agent Singapore Pte Ltd<br>
 						EA Licence no. 10C2978<br>
 						Copyright &copy;  2014</p>
-						<a href="">Terms & Condition</a> | <a href="">Privacy Policy</a> 
+						<a href="">Terms & Condition</a> | <a href="">Privacy Policy</a>
 					</div>
 					<div class="col-xs-4">
 						<h5>Sitemap</h5>

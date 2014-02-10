@@ -40,31 +40,27 @@
 									<li>										
 										<a href="/">
 											Home
-											<div class="arrow-down"></div>
 										</a>
 									</li>
 									<li>
 										<a href="">
 											Jobs
-											<div class="arrow-down" style="display:none"></div>
 										</a>
 									</li>
 									<li>
 										<a href="">
 											For Employers
-											<div class="arrow-down" style="display:none"></div>
 										</a>
+										<div class="arrow-down"></div>
 									</li>
 									<li>
 										<a href="">
 											About RGF
-											<div class="arrow-down" style="display:none"></div>
 										</a>
 									</li>
 									<li>
 										<a href="">
 											Contact Us
-											<div class="arrow-down" style="display:none"></div>
 										</a>
 									</li>
 									<li>
@@ -77,8 +73,36 @@
 												<span class="jobcart-count">5</span>
 												<span class="caret"></span>
 											</div>
-											<div class="arrow-down" style="display:none"></div>
 										</a>
+								<!--Mouse-over jobcart menu-->
+										<div class="jobcart-menu" style="display:none">
+											<div>
+												<p><a href="">Front-end Developer</a></p>
+												<p class="job-location">Singapore</p>
+												<p class="job-salary">SGD 3,000 - 5,000</p>
+											</div>
+											<div>
+												<p><a href="">Front-end Developer</a></p>
+												<p class="job-location">Singapore</p>
+												<p class="job-salary">SGD 3,000 - 5,000</p>
+											</div>
+											<div>
+												<p><a href="">Front-end Developer</a></p>
+												<p class="job-location">Singapore</p>
+												<p class="job-salary">SGD 3,000 - 5,000</p>
+											</div>
+											<div>
+												<p><a href="">Front-end Developer</a></p>
+												<p class="job-location">Singapore</p>
+												<p class="job-salary">SGD 3,000 - 5,000</p>
+											</div>
+											<div>
+												<p><a href="">Front-end Developer</a></p>
+												<p class="job-location">Singapore</p>
+												<p class="job-salary">SGD 3,000 - 5,000</p>
+											</div>
+											<button class="btn btn-viewcart">View Job Cart (5)</button>
+										</div>
 									</li>
 								</ul>
 							</div>
@@ -127,6 +151,17 @@
 								</div>
 							</div>
 							<div class="form-group">
+								<label class="col-xs-4">Your Company Industry*</label>
+								<div class="col-xs-8">
+									<select class="form-control">
+										<option value="" selected="selected">Please select</option>					<!--Please help to include full option list-->
+										<option value="">Hospitality</option>
+										<option value="">Oil and Gas</option>
+										<option value="">Banking</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
 								<label class="col-xs-4">Website</label>
 								<div class="col-xs-8">
 									<input type="text" class="form-control" placeholder="Company website URL">
@@ -159,7 +194,7 @@
 							</div>
 							<div class="form-group clearfix">
 								<div class="col-xs-12">
-									<button type="submit" class="btn btn-submit pull-right">Submit</button>
+									<button type="submit" class="btn btn-submit pull-right" data-toggle="modal" data-target="#successModal">Submit</button>
 								</div>
 							</div>
 						</form>
@@ -179,7 +214,7 @@
 						<p>RGF HR Agent Singapore Pte Ltd<br>
 						EA Licence no. 10C2978<br>
 						Copyright &copy;  2014</p>
-						<a href="">Terms & Condition</a> | <a href="">Privacy Policy</a> | <a href="">Cookies Policy</a>
+						<a href="">Terms & Condition</a> | <a href="">Privacy Policy</a>
 					</div>
 					<div class="col-xs-4">
 						<h5>Sitemap</h5>
@@ -212,5 +247,21 @@
 				</div>
 			</div>
 		</footer>
+	<!-- Modal-success message -->
+		<div class="modal fade" id="successModal" role="dialog" aria-labelledby="successModal" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-body">
+		        <h1 class="modal-title">Your request has been sent</h1>
+		        <p>Our personnel-in-charge will contact you shortly.</p>
+				<div class="modal-footer">
+		        	<button type="button" class="btn btn-submit">OK</button>
+		        </div>
+		      </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+		<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script> 
 	</body>
 </html>
