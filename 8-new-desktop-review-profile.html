@@ -13,7 +13,7 @@
 	    <link href="css/base.css" rel="stylesheet">
 	    <link href="css/form.css" rel="stylesheet">
 	    <link href="css/error.css" rel="stylesheet">
-	    <link href='http://fonts.googleapis.com/css?family=Open+Sans|Trykker' rel='stylesheet' type='text/css'>
+	    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 	    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	    <!--[if lt IE 9]>
@@ -49,19 +49,23 @@
 			<div class="container">		
 				<div class="row">
 					<div class="col-xs-12">
-	<!--Progress indicator-->
+			<!--Progress indicator-->
 						<div class="progress-indicator">
 							<div class="progress-stage disabled">
 								<div class="progress-circle">1</div>
 								<div class="progress-txt">
 									<span class="progress-label active">Log in</span>
-									<span class="glyphicon glyphicon-arrow-right active"></span>
+								</div>
+								<div class="progress-arrow">
+									<span class="glyphicon glyphicon-arrow-right"></span>
 								</div>
 							</div>
 							<div class="progress-stage">
 								<div class="progress-circle">2</div>
 								<div class="progress-txt">
 									<span class="progress-label">Review</span>
+								</div>
+								<div class="progress-arrow">
 									<span class="glyphicon glyphicon-arrow-right"></span>
 								</div>
 							</div>
@@ -71,7 +75,7 @@
 									<span class="progress-label">Complete</span>
 								</div>
 							</div>
-						</div> <!--/Progress indicator-->
+						</div> <!--/Progress indicator-->							
 					</div>
 				</div>
 			</div>
@@ -173,7 +177,7 @@
 											<label class="col-xs-3">Current annual salary*</label>
 											<div class="col-xs-5 input-inline clearfix">
 												<div>
-													<p>SGD</p>
+													<p class="static-sgd">SGD</p>
 												</div>
 												<div>
 													<input type="number" class="form-control" id="inputSalary" placeholder="Annual salary">

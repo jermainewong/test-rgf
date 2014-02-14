@@ -13,7 +13,7 @@
 	    <link href="css/base.css" rel="stylesheet">
 	    <link href="css/main.css" rel="stylesheet">
 	    <link href="css/error.css" rel="stylesheet">
-	    <link href='http://fonts.googleapis.com/css?family=Open+Sans|Trykker' rel='stylesheet' type='text/css'>
+	    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700|Trykker' rel='stylesheet' type='text/css'>
 	    <link href="css/font-awesome.min.css" rel="stylesheet">
 	    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,83 +29,83 @@
 	<!--Header-->
 		<header>
 			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 nav-primary">
+				<div class="row">	
+					<div class="col-xs-2">				
 						<a href="/">
 							<img class="logo-primary" alt="rgf-hr-agent-singapore-logo" style="width:110px; height: 85px" src="assets/rgf-singapore-logo.png">
 						</a>
+					</div>
+					<div class="col-xs-10">
 						<nav class="clearfix">
-							<div class="nav-bar pull-right">
-								<ul>
-									<li>										
-										<a href="/">
-											Home
-										</a>
-									</li>
-									<li>
-										<a href="">
-											Jobs
-										</a>
-									</li>
-									<li>
-										<a href="">
-											For Employers
-										</a>
-									</li>
-									<li>
-										<a href="">
-											About RGF
-										</a>
-									</li>
-									<li>
-										<a href="">
-											Contact Us
-										</a>
-										<div class="arrow-down"></div>
-									</li>
-									<li>
-										<a class="jobcart-dropdown clearfix" href="">
-											<div>
-												Job Cart
-											</div>
-											<div class="jobcart-icon">										
-												<span class="cart-dynamic"></span>
-												<span class="jobcart-count">5</span>
-												<span class="caret"></span>
-											</div>
-										</a>
-								<!--Mouse-over jobcart menu-->
-										<div class="jobcart-menu">
-											<div>
-												<p><a href="">Front-end Developer</a></p>
-												<p class="job-location">Singapore</p>
-												<p class="job-salary">SGD 3,000 - 5,000</p>
-											</div>
-											<div>
-												<p><a href="">Front-end Developer</a></p>
-												<p class="job-location">Singapore</p>
-												<p class="job-salary">SGD 3,000 - 5,000</p>
-											</div>
-											<div>
-												<p><a href="">Front-end Developer</a></p>
-												<p class="job-location">Singapore</p>
-												<p class="job-salary">SGD 3,000 - 5,000</p>
-											</div>
-											<div>
-												<p><a href="">Front-end Developer</a></p>
-												<p class="job-location">Singapore</p>
-												<p class="job-salary">SGD 3,000 - 5,000</p>
-											</div>
-											<div>
-												<p><a href="">Front-end Developer</a></p>
-												<p class="job-location">Singapore</p>
-												<p class="job-salary">SGD 3,000 - 5,000</p>
-											</div>
-											<button class="btn btn-viewcart">View Job Cart (5)</button>
+							<ul class="clearfix">
+								<li>										
+									<a href="/">
+										Home
+									</a>
+								</li>
+								<li>
+									<a href="">
+										Jobs
+									</a>
+								</li>
+								<li>
+									<a href="">
+										For Employers
+									</a>
+								</li>
+								<li>
+									<a href="">
+										About RGF
+									</a>
+								</li>
+								<li>
+									<a href="">
+										Contact Us
+									</a>
+									<div class="arrow-down"></div>
+								</li>
+								<li>
+									<a class="jobcart-dropdown clearfix" href="">
+										<div>
+											Job Cart
 										</div>
-									</li>
-								</ul>
-							</div>
+										<div class="jobcart-icon">										
+											<span class="cart-dynamic"></span>
+											<span class="jobcart-count">5</span>
+											<span class="caret"></span>
+										</div>
+									</a>
+								<!--Mouse-over jobcart menu-->
+									<div class="jobcart-menu">
+										<div>
+											<p><a href="">Front-end Developer</a></p>
+											<p class="job-location">Singapore</p>
+											<p class="job-salary">SGD 3,000 - 5,000</p>
+										</div>
+										<div>
+											<p><a href="">Front-end Developer</a></p>
+											<p class="job-location">Singapore</p>
+											<p class="job-salary">SGD 3,000 - 5,000</p>
+										</div>
+										<div>
+											<p><a href="">Front-end Developer</a></p>
+											<p class="job-location">Singapore</p>
+											<p class="job-salary">SGD 3,000 - 5,000</p>
+										</div>
+										<div>
+											<p><a href="">Front-end Developer</a></p>
+											<p class="job-location">Singapore</p>
+											<p class="job-salary">SGD 3,000 - 5,000</p>
+										</div>
+										<div>
+											<p><a href="">Front-end Developer</a></p>
+											<p class="job-location">Singapore</p>
+											<p class="job-salary">SGD 3,000 - 5,000</p>
+										</div>
+										<button class="btn btn-viewcart">View Job Cart (5)</button>
+									</div>
+								</li>
+							</ul>
 						</nav>
 					</div>
 				</div>
@@ -170,7 +170,7 @@
 							</div>
 							<div class="form-group clearfix">
 								<div class="col-xs-12">
-									<button type="submit" class="btn btn-submit pull-right" data-toggle="modal" data-target="#successModal">Submit</button>
+									<button type="submit" class="btn btn-submit pull-right">Submit</button>
 								</div>
 							</div>
 						</form>
@@ -225,20 +225,5 @@
 				</div>
 			</div>
 		</footer>
-	<!-- Modal-success message -->
-		<div class="modal fade" id="successModal" role="dialog" aria-labelledby="successModal" aria-hidden="true">
-		  <div class="modal-dialog">
-		    <div class="modal-content">
-		      <div class="modal-body">
-		        <h1 class="modal-title">Your message has been sent</h1>
-				<div class="modal-footer">
-		        	<button type="button" class="btn btn-submit">OK</button>
-		        </div>
-		      </div>
-		    </div><!-- /.modal-content -->
-		  </div><!-- /.modal-dialog -->
-		</div><!-- /.modal -->
-		<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-	    <script src="js/bootstrap.min.js"></script> 
 	</body>
 </html>

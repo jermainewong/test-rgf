@@ -45,6 +45,10 @@ header .col-xs-10 {
 	overflow: hidden;
 }
 
+.progress-stage div{
+	float: left;
+}
+
 .progress-circle {
 	position: absolute;
 	top: 0px;
@@ -67,6 +71,12 @@ header .col-xs-10 {
 	padding: 2px 0% 0% 40px;
 }
 
+.progress-arrow{
+	font-size: 1.3em;
+	color: #666;
+	margin: 3px 5px;
+}
+
 .disabled .progress-circle {
 	background-color: #c3c3c3;
 }
@@ -75,11 +85,16 @@ header .col-xs-10 {
 	color: #c3c3c3;
 }
 
+.disabled .progress-arrow {
+	color: #c3c3c3;
+}
+
 /* Success message */
 .msg-success {
 	background-color: #74c399;
 	padding: 5px 10px;
 	margin-right: 20px;
+	border-radius: 5px;
 }
 
 .msg-success p {
@@ -247,7 +262,10 @@ header .col-xs-10 {
 .input-inline div:first-child{
 	width: 20%;
 	margin-right: 3%;
-	padding-top: 5px;
+}
+
+.input-inline div:first-child select{
+	padding: 0;
 }
 
 .input-inline div:last-child{
@@ -265,6 +283,10 @@ header .col-xs-10 {
 
 .input-salary div:last-child{
 	width: 25%;
+}
+
+.static-sgd{
+	padding-top: 5px;
 }
 
 .review-form .container {
@@ -392,6 +414,14 @@ select {
 	padding: 10px 0px 20px 0px;
 }
 
+.folder-open{
+	color: #999;
+}
+
+.folder-child{
+	margin-left: 20px;
+}
+
 .btn-ok {
 	width: 100px;
 	height: 35px;
@@ -431,5 +461,25 @@ select {
 @media screen and (max-width: 1200px) {
 	.form-center form {
 	width: 65%;
+	}
+}
+
+@media screen and (max-width: 1000px){
+	.input-inline div:first-child{
+	width: 30%;
+	margin-right: 3%;
+	}
+	.input-inline div:last-child{
+	width: 67%;
+	}
+	.input-salary div:first-child{
+	width: 15%;
+	margin-right: 0;
+	}
+	.input-salary .salary{
+	width: 50% !important;
+	}
+	.input-salary div:last-child{
+	width: 35%;
 	}
 }

@@ -13,7 +13,7 @@
 	    <link href="css/mobile-base.css" rel="stylesheet">
 	    <link href="css/mobile-main.css" rel="stylesheet">
 	    <link href="css/error.css" rel="stylesheet">
-	    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 	    <link href="css/font-awesome.min.css" rel="stylesheet">
 	    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -87,7 +87,7 @@
 							<form role="form">
 								<div class="form-group">
 									<label>Phone number *</label>
-									<div class="input-inline clearfix">
+									<div class="input-inline input-phone clearfix">
 										<div>
 											<select class="form-control">
 												<option value="" selected="selected">+65</option>						<!--Please help to add in full country code list-->
@@ -154,7 +154,7 @@
 									<label>Current annual salary *</label>
 									<div class="input-inline input-salary clearfix">
 										<div>
-											<p>SGD</p>
+											<p class="static-sgd">SGD</p>
 										</div>
 										<div class="salary">
 											<input type="number" class="form-control" id="inputSalary" placeholder="Annual salary">
@@ -297,7 +297,7 @@
 									<img class="cloud-drive-logo" alt="dropbox-logo" src="assets/dropbox-logo.png">
 								</div>
 								<div class="form-group">
-									<button type="submit" class="btn btn-form btn-load" data-toggle="modal" data-target="#loadresumeModal">Load resume</button>
+									<button type="submit" class="btn btn-form btn-load" data-toggle="modal" data-target="#cloudfileModal">Load resume</button>
 								</div>
 								<div class="form-group">
 									<p>Or,<br><b><span class="text-blue">Press complete to proceed.</span></b> We will send you a <b>follow-up email for you to load your resume</b> from a desktop.</p>
@@ -318,8 +318,24 @@
 		      <div class="modal-body">
 		      	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 		        <h1 class="modal-title">Annual Salary Calculator</h1>
-		        <p class="text-grey small">Enter the values below and the total will be inputted for you.</p>
+		        <p class="text-grey small">Enter values below and the total will be inputted for you.</p>
 		        <form>
+		        	<div class="form-group row">
+						<label class="col-xs-12">Currency</label>
+						<div class="col-xs-9">
+							<select class="form-control">
+								<option value="" selected="selected">SGD</option>	 
+								<option class="select-dash" disabled="disabled">----</option>
+								<option value="">MYR</option>
+								<option value="">IDR</option>
+								<option value="">JPY</option>
+								<option value="">HKD</option>
+								<option value="">RMB</option>
+								<option value="">INR</option>
+								<option class="select-dash" disabled="disabled">----</option>     				<!--Please help to add in full country code list-->			
+							</select>
+						</div>
+					</div>
 					<div class="form-group row">
 						<label class="col-xs-12">Monthly basic salary</label>
 						<div class="col-xs-9">
@@ -382,32 +398,44 @@
 			        	<th>File name</th>
 				        <th class="text-center">Select</th>
 			        </tr>
-			         <tr>
+			        <tr>
 				        <td>
-				        	<a href=""><i class="fa fa-folder"></i> yata folder</a>
-				        </td>
-				        <td></td>
-			        </tr>
-			         <tr>
-				        <td>
-				        	<a href=""><i class="fa fa-folder-open"></i> yata folder</a>
+				        	<a href=""><i class="fa fa-folder"></i> Parent folder</a> / <span class="folder-open"><i class="fa fa-folder-open"></i> Child folder</span>
 				        </td>
 				        <td></td>
 			        </tr>
 			        <tr>
-				        <td>yata_resume.pdf</td>
-				         <td class="text-center">
+				        <td>
+					        <a class="folder-child" href=""><i class="fa fa-folder"></i> AA Folder</a>
+				        </td>
+				        <td></td>
+			        </tr>
+			        <tr>
+				        <td>
+					        <a class="folder-child" href=""><i class="fa fa-folder"></i> BB Folder</a>
+				        </td>
+				        <td></td>
+			        </tr>
+			        <tr>
+				        <td>
+				        	<span class="folder-child">file.pdf</span>
+				        </td>
+				        <td class="text-center">
 				        	<input type="checkbox">
 				        </td>
 			        </tr>
 			        <tr>
-				        <td>yata_resume.pdf</td>
-				         <td class="text-center">
+				        <td>
+				        	<span class="folder-child">file.pdf</span>
+				        </td>
+				        <td class="text-center">
 				        	<input type="checkbox">
 				        </td>
 			        </tr>
 			        <tr>
-				        <td>yata_resume.pdf</td>
+				        <td>
+				        	<span class="folder-child">file.pdf</span>
+				        </td>
 				        <td class="text-center">
 				        	<input type="checkbox">
 				        </td>

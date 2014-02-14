@@ -13,7 +13,7 @@
 	    <link href="css/mobile-base.css" rel="stylesheet">
 	    <link href="css/mobile-main.css" rel="stylesheet">
 	    <link href="css/error.css" rel="stylesheet">
-	    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> 
+	    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'> 
 	    <link href="css/font-awesome.min.css" rel="stylesheet">	   
 	    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -115,11 +115,17 @@
 							</div>
 							<div class="form-group">
 								<label>Types of Positions *</label>
-								<input type="checkbox"> Permanent
-								<input type="checkbox"> Contract
+								<div class="row">
+									<div class="col-xs-6">
+										<input type="checkbox"> Permanent
+									</div>
+									<div class="col-xs-6">
+										<input type="checkbox"> Contract
+									</div>
+								</div>
 							</div>
 							<div class="form-group clearfix">
-								<button type="submit" class="btn btn-form" data-toggle="modal" data-target="#successModal">Submit</button>
+								<button type="submit" class="btn btn-form">Submit</button>
 							</div>
 						</form>
 					</div>
@@ -144,21 +150,5 @@
 				</div>
 			</div>
 		</footer>
-	<!-- Modal-success message -->
-		<div class="modal fade" id="successModal" role="dialog" aria-labelledby="successModal" aria-hidden="true">
-		  <div class="modal-dialog">
-		    <div class="modal-content">
-		      <div class="modal-body">
-		        <h1 class="modal-title">Your request has been sent</h1>
-		        <p>Our personnel-in-charge will contact you shortly.</p>
-				<div class="modal-footer">
-		        	<button type="button" class="btn btn-form">OK</button>
-		        </div>
-		      </div>
-		    </div><!-- /.modal-content -->
-		  </div><!-- /.modal-dialog -->
-		</div><!-- /.modal -->
-		<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-	    <script src="js/bootstrap.min.js"></script> 
 	</body>
 </html>

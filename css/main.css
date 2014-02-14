@@ -5,53 +5,48 @@ header {
 	box-shadow: 3px 3px 3px rgba(153,153,153,0.2);
 }
 
-.nav-primary {
-	position: relative;
-}
-
 .logo-primary {
 	padding: 10px 0px;
 }
 
-.nav-bar {
-	width: 680px;
-	height: 100%;
-	position: absolute;
-	top: 0px;
-	right: 0px;
+nav{
+	width: 100%;
+	float: right;
+}
+
+nav ul{
+	width: 75%;
+	float: right;
+}
+
+nav li{
+	display: inline-block;
+	position: relative;
+	float: left;
+	margin-right: 8%;
 	padding-top: 40px;
 }
 
-.nav-bar li {
-	text-transform: uppercase;
-	margin-right: 35px;
-	float: left;
-}
-
-.nav-bar li:last-child {
+nav li:last-child{
 	margin-right: 0;
 }
 
-.nav-bar li {
-	display: inline-block;
-	position: relative;
-}
-
-.nav-bar a {
+nav a {
 	color: #666;
 }
 
-.nav-bar a:hover {
+nav a:hover {
 	color: #0d80bc;
 }
 
 .arrow-down {
 	position: absolute;
-	top: -40px;
+	top: 0px;
 	left: 35%;
 	border-left: 7px solid transparent;
 	border-right: 7px solid transparent;
 	border-top: 7px solid #3db0e6;
+	z-index: 5;
 }
 
 .jobcart-dropdown div {
@@ -92,7 +87,7 @@ header {
 	height: auto;
 	position: absolute;
 	right: -10px;
-	top: 50px;
+	top: 90px;
 	z-index: 5;
 	padding: 10px 15px;
 	background-color: #fff;
@@ -420,6 +415,11 @@ header {
 	list-style: disc;
 }
 
+.complete-heading{
+	padding-top: 20px;
+	color: #0d80bc;
+}
+
 /* Banner*/
 .banner {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
@@ -689,13 +689,15 @@ table {
 
 /* Static corporate section*/
 .corporate {
-	height: 280px;
-	background: url('../assets/sample-corpsection2.png') no-repeat center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-webkit-box-shadow: 3px 3px 3px rgba(153,153,153,0.1);
-	box-shadow: 3px 3px 3px rgba(153,153,153,0.1);
+	height: 200px;
+	background-color: rgba(222,222,222,0.5);
+}
+
+.corporate h2{
+	font-family: 'Trykker', serif;
+	font-size: 6em;
+	text-align: center;
+	color: #3db0e6;
 }
 
 /* Base join talent community section */
@@ -852,6 +854,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#424242', end
 
 /* Media Queries*/
 @media screen and (max-width: 1200px) {
+	nav ul{
+		width: 100%;
+	}
+	nav li{
+		margin-right: 6%;
+	}
 	.col-xs-4 .jobcart-desp {
 	display: none;
 	}

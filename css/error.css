@@ -88,3 +88,29 @@
 .footer-secondary p{
 	line-height: 1.2em;
 }
+
+/* Mobile error pages */
+.mb-error{
+	min-height: 300px;
+}
+
+.mb-error .fa{
+	font-size: 20px;
+	color: #0d80bc;
+}
+
+.mb-error ul{
+	padding-left: 25px;
+}
+
+.mb-error ol{
+	padding-left: 25px;
+}
+
+.mb-error .error-contact{
+	padding-left: 10px;
+}
+
+.mb-error p{
+	font-size: 14px;
+}

@@ -13,7 +13,7 @@
 	    <link href="css/base.css" rel="stylesheet">
 	    <link href="css/form.css" rel="stylesheet">
 	    <link href="css/error.css" rel="stylesheet">
-	    <link href='http://fonts.googleapis.com/css?family=Open+Sans|Trykker' rel='stylesheet' type='text/css'>
+	    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 	    <link href="css/font-awesome.min.css" rel="stylesheet">
 	    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -56,13 +56,17 @@
 								<div class="progress-circle">1</div>
 								<div class="progress-txt">
 									<span class="progress-label active">Sign up</span>
-									<span class="glyphicon glyphicon-arrow-right active"></span>
+								</div>
+								<div class="progress-arrow">
+									<span class="glyphicon glyphicon-arrow-right"></span>
 								</div>
 							</div>
 							<div class="progress-stage">
 								<div class="progress-circle">2</div>
 								<div class="progress-txt">
 									<span class="progress-label">Apply</span>
+								</div>
+								<div class="progress-arrow">
 									<span class="glyphicon glyphicon-arrow-right"></span>
 								</div>
 							</div>
@@ -72,7 +76,7 @@
 									<span class="progress-label">Complete</span>
 								</div>
 							</div>
-						</div> <!--/Progress indicator-->
+						</div> <!--/Progress indicator-->						
 					</div>
 				</div>
 			</div>
@@ -179,7 +183,7 @@
 											<label class="col-xs-3">Current annual salary*</label>
 											<div class="col-xs-5 input-inline input-salary clearfix">
 												<div>
-													<p>SGD</p>
+													<p class="static-sgd">SGD</p>
 												</div>
 												<div class="salary">
 													<input type="number" class="form-control" id="inputSalary" placeholder="Annual salary">
@@ -342,7 +346,7 @@
 										</div>
 										<div class="form-group">
 											<div class="col-xs-offset-3 col-xs-5">
-												<button class="btn btn-grey btn-load" data-toggle="modal" data-target="#loadresumeModal">Load resume</button>
+												<button class="btn btn-grey btn-load" data-toggle="modal" data-target="#cloudfileModal">Load resume</button>
 												<p class="small help-block">Supported formats: .doc, .docx, .pdf, .txt, .rtf (max. file size 1MB)</p>
 											</div>
 											<div class="col-xs-4">
@@ -369,15 +373,31 @@
 					</div>
 				</div><!--/app-form-->
 			</section><!--/form-field-->
-		<!-- Modal- calculator -->
+	<!-- Modal- calculator -->
 			<div class="modal fade" id="calculatorModal" role="dialog" aria-labelledby="calculatorModal" aria-hidden="true">
 			  <div class="modal-dialog">
 			    <div class="modal-content">
 			      <div class="modal-body">
 			      	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 			        <h1 class="modal-title">Annual Salary Calculator</h1>
-			         <p class="text-grey small">Enter the values below and the total will be inputted for you.</p>
+			         <p class="text-grey small">Enter values below and the total will be inputted for you.</p>
 			        <form>
+			        	<div class="form-group row">
+							<label class="col-xs-5">Currency</label>
+							<div class="col-xs-5">
+								<select class="form-control">
+									<option value="" selected="selected">SGD</option>	 
+									<option class="select-dash" disabled="disabled">----</option>
+									<option value="">MYR</option>
+									<option value="">IDR</option>
+									<option value="">JPY</option>
+									<option value="">HKD</option>
+									<option value="">RMB</option>
+									<option value="">INR</option>
+									<option class="select-dash" disabled="disabled">----</option>     				<!--Please help to add in full country code list-->			
+								</select>
+							</div>
+						</div>
 						<div class="form-group row">
 							<label class="col-xs-5">Monthly basic salary</label>
 							<div class="col-xs-5">
@@ -440,32 +460,44 @@
 				        	<th>File name</th>
 					        <th class="text-center">Select</th>
 				        </tr>
-				         <tr>
+				        <tr>
 					        <td>
-					        	<a href=""><i class="fa fa-folder"></i> yata folder</a>
-					        </td>
-					        <td></td>
-				        </tr>
-				         <tr>
-					        <td>
-					        	<a href=""><i class="fa fa-folder-open"></i> yata folder</a>
+					        	<a href=""><i class="fa fa-folder"></i> Parent folder</a> / <span class="folder-open"><i class="fa fa-folder-open"></i> Child folder</span>
 					        </td>
 					        <td></td>
 				        </tr>
 				        <tr>
-					        <td>yata_resume.pdf</td>
-					         <td class="text-center">
+					        <td>
+						        <a class="folder-child" href=""><i class="fa fa-folder"></i> AA Folder</a>
+					        </td>
+					        <td></td>
+				        </tr>
+				        <tr>
+					        <td>
+						        <a class="folder-child" href=""><i class="fa fa-folder"></i> BB Folder</a>
+					        </td>
+					        <td></td>
+				        </tr>
+				        <tr>
+					        <td>
+					        	<span class="folder-child">file.pdf</span>
+					        </td>
+					        <td class="text-center">
 					        	<input type="checkbox">
 					        </td>
 				        </tr>
 				        <tr>
-					        <td>yata_resume.pdf</td>
-					         <td class="text-center">
+					        <td>
+					        	<span class="folder-child">file.pdf</span>
+					        </td>
+					        <td class="text-center">
 					        	<input type="checkbox">
 					        </td>
 				        </tr>
 				        <tr>
-					        <td>yata_resume.pdf</td>
+					        <td>
+					        	<span class="folder-child">file.pdf</span>
+					        </td>
 					        <td class="text-center">
 					        	<input type="checkbox">
 					        </td>

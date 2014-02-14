@@ -13,7 +13,7 @@
 	    <link href="css/base.css" rel="stylesheet">
 	    <link href="css/form.css" rel="stylesheet">
 	    <link href="css/error.css" rel="stylesheet">
-	    <link href='http://fonts.googleapis.com/css?family=Open+Sans|Trykker' rel='stylesheet' type='text/css'>
+	    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 	    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	    <!--[if lt IE 9]>
@@ -55,13 +55,17 @@
 								<div class="progress-circle">1</div>
 								<div class="progress-txt">
 									<span class="progress-label active">Sign up</span>
-									<span class="glyphicon glyphicon-arrow-right active"></span>
+								</div>
+								<div class="progress-arrow">
+									<span class="glyphicon glyphicon-arrow-right"></span>
 								</div>
 							</div>
 							<div class="progress-stage">
 								<div class="progress-circle">2</div>
 								<div class="progress-txt">
 									<span class="progress-label">Apply</span>
+								</div>
+								<div class="progress-arrow">
 									<span class="glyphicon glyphicon-arrow-right"></span>
 								</div>
 							</div>
@@ -71,7 +75,7 @@
 									<span class="progress-label">Complete</span>
 								</div>
 							</div>
-						</div> <!--/Progress indicator-->
+						</div> <!--/Progress indicator-->					
 					</div>
 				</div>
 			</div>
@@ -103,8 +107,8 @@
 											<label class="col-xs-3">Phone number*</label>
 											<div class="col-xs-5 input-inline clearfix">
 												<div>
-													<select>
-														<option value="" selected="selected">+65</option>						<!--Please help to add in full country code list-->
+													<select class="form-control">
+														<option value="" selected="selected">+65</option>	 
 														<option class="select-dash" disabled="disabled">----</option>
 														<option value="">+60</option>
 														<option value="">+62</option>
@@ -112,7 +116,7 @@
 														<option value="">+852</option>
 														<option value="">+86</option>
 														<option value="">+91</option>
-														<option class="select-dash" disabled="disabled">----</option>					
+														<option class="select-dash" disabled="disabled">----</option>     				<!--Please help to add in full country code list-->			
 													</select>
 												</div>
 												<div>
@@ -127,7 +131,7 @@
 										<div class="form-group">
 											<label class="col-xs-3">Visa Status in Singapore*</label>
 											<div class="col-xs-5">
-												<select class="error">
+												<select class="form-control error">
 													<option value="" selected="selected">Please select</option>					
 													<option value="Singaporean">Singaporean</option>
 													<option value="Permanent-resident">Permanent Resident</option>
@@ -178,7 +182,7 @@
 											<label class="col-xs-3">Current annual salary*</label>
 											<div class="col-xs-5 input-inline input-salary clearfix">
 												<div>
-													<p>SGD</p>
+													<p class="static-sgd">SGD</p>
 												</div>
 												<div class="salary">
 													<input type="number" class="form-control" id="inputSalary" placeholder="Annual salary">
@@ -359,8 +363,24 @@
 			      <div class="modal-body">
 			      	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 			        <h1 class="modal-title">Annual Salary Calculator</h1>
-			        <p class="text-grey small">Enter the values below and the total will be inputted for you.</p>
+			        <p class="text-grey small">Enter values below and the total will be inputted for you.</p>
 			        <form>
+			        	<div class="form-group row">
+							<label class="col-xs-5">Currency</label>
+							<div class="col-xs-5">
+								<select class="form-control">
+									<option value="" selected="selected">SGD</option>	 
+									<option class="select-dash" disabled="disabled">----</option>
+									<option value="">MYR</option>
+									<option value="">IDR</option>
+									<option value="">JPY</option>
+									<option value="">HKD</option>
+									<option value="">RMB</option>
+									<option value="">INR</option>
+									<option class="select-dash" disabled="disabled">----</option>     				<!--Please help to add in full country code list-->			
+								</select>
+							</div>
+						</div>
 						<div class="form-group row">
 							<label class="col-xs-5">Monthly basic salary</label>
 							<div class="col-xs-5">
