@@ -144,6 +144,10 @@ header {
 	background-color: rgba(202,202,202,0.3);
 }
 
+.search-bar h2{
+	line-height: 1.2em;
+}
+
 .search-inline div {
 	float: left;
 	margin-right: 5px;
@@ -720,7 +724,7 @@ header {
 	border: solid 1px #0d80bc;
 }
 
-a > .fa{
+.table a > .fa{
 	color: #0d80bc;
 	font-size: 1em;
 }
