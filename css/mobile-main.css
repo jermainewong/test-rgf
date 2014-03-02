@@ -688,6 +688,86 @@ header {
 	color: #fff;
 }
 
+/* About RGF - General styling */
+
+.nav-secondary h1{
+	margin: 20px 0px 10px 0px;
+	text-transform: uppercase;
+	color: #0d80bc;
+}
+
+.nav-secondary li{
+	font-size: 14px;
+	color: #999;
+	float: left;
+	padding: 0% 4%;
+	border-right: solid 1px #ccc;
+}
+
+.nav-secondary a{
+	font-size: 1em;
+}
+
+.nav-secondary li:first-child{
+	padding-left: 0%;
+}
+
+.nav-secondary li:last-child{
+	padding-right: 0%;
+	border-right: none;
+}
+
+.abt h2{
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.abt ul{
+	padding-left: 20px;
+}
+
+.abt li{
+	list-style: disc;
+}
+
+.abt a{
+	font-size: 1em;
+}
+
+/* About RGF - Our Services */
+
+.grp-info{
+	margin: 20px 0px;
+}
+
+.grp-info h4{
+	float: left;
+	margin-right: 15px;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+/* About RGF - Our Process */
+
+.abt h4{
+	font-size: 14px;
+	font-weight: 700;
+	color: #555; 
+}
+
+/* About RGF - Our Team */
+
+.team-intro{
+	margin: 10px 0px;
+	font-size: 13px;
+	color: #666;
+}
+
+.abt img+p{
+	font-size: 0.9em;
+}
+
 /* Modal */
 .modal-content {
 	width: auto;

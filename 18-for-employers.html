@@ -14,6 +14,7 @@
 	    <link href="css/main.css" rel="stylesheet">
 	    <link href="css/error.css" rel="stylesheet">
 	    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700|Trykker' rel='stylesheet' type='text/css'>
+	    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 	    <link href="css/font-awesome.min.css" rel="stylesheet">
 	    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -76,7 +77,7 @@
 										</div>
 									</a>
 								<!--Mouse-over jobcart menu-->
-									<div class="jobcart-menu">
+									<div class="jobcart-menu" style="display:none">
 										<div>
 											<p><a href="">Front-end Developer</a></p>
 											<p class="job-location">Singapore</p>
@@ -111,13 +112,16 @@
 				</div>
 			</div>
 		</header>
-	<!--Page title head-->
-		<section class="title-head">
+	<!--Title heading-->
+		<section class="employer-head">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12">
-						<h1>For employers</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>	
+					<div class="col-xs-5">									
+						<h1>For Employers,</h1>
+						<span>looking to hire a great candidate</span>
+					</div>
+					<div class="col-xs-7">
+						<blockquote>"Get in touch today to discuss how, together, <br>we can gather the best talents for your organisation."</blockquote>
 					</div>
 				</div>
 			</div>
@@ -127,13 +131,13 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-6">
-						<form class="form-horizontal application" role="form">
+						<form class="form-horizontal" role="form">
 					<!--Error message-->
-							<div class="error-message">
+							<div class="error-message" style="display: none">
 								<p>Oops, you left some fields blank. Please fill in the fields highlighted red and proceed.</p>
 							</div><!--/Error message-->
 							<div class="form-group">
-								<label class="col-xs-4">Name*</label>
+								<label class="col-xs-4">Name *</label>
 								<div class="col-xs-8">
 									<input type="text" class="form-control" placeholder="Your full name">
 								</div>
@@ -199,8 +203,34 @@
 							</div>
 						</form>
 					</div>
-					<div class="col-xs-6">
-						Placeholder - Static content to be considered later
+					<div class="col-xs-6 benefits-employer">
+						<div class="row">
+							<div class="col-xs-5 clearfix">
+								<img alt="rgf-asia-map-icon" style="width: 150px ; height: 150px" src="assets/rgf-employer-icon1.png">
+							</div>
+							<div class="col-xs-7">
+								<h4>We support your regional recruiting needs</h4>
+								<p>RGF has key hubs in Singapore, Tokyo, Bangalore, Mumbai, Hong Kong, Shanghai and 920 global offices, supporting your local and regional hiring needs.</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-5 clearfix">
+								<img alt="rgf-jobs-network-icon" style="width: 150px; height: 150px;" src="assets/rgf-employer-icon2.png">
+							</div>
+							<div class="col-xs-7">
+								<h4>Leverage on our Jobs network</h4>
+								<p>We have 20+ global jobs advertising network. Find that hidden candidate through our unique network and original candidate database.</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-5 clearfix">
+								<img alt="rgf-speed-icon" style="width: 130px; height: 80px;" src="assets/rgf-employer-icon3.png">
+							</div>
+							<div class="col-xs-7">
+								<h4>Sourcing with speed & accuracy</h4>
+								<p>RGF reinvents and leverages on the latest HR technologies to power our recruiting team to source for the right candidate at the highest efficiency.</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

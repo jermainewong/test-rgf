@@ -39,7 +39,7 @@ nav a:hover {
 	color: #0d80bc;
 }
 
-.arrow-down {
+nav .arrow-down {
 	position: absolute;
 	top: 0px;
 	left: 35%;
@@ -124,27 +124,92 @@ nav a:hover {
 	line-height: 14px;
 }
 
-/* For employers page & contact us page*/
-.title-head {
-	border-top: solid 3px #3db0e6;
-	padding: 10px 0px;
-	background: url('../assets/bkg.png');
+/* Banner*/
+.banner {
+	height: 400px;
+	background: url('../assets/samplebanner2.png');
+	background-size: cover
 }
 
-.title-head h1 {
-	font-family: 'Trykker', serif;
-	font-size: 3em;
-	color: #0d80bc;
+
+.banner button{
+	display: block;
+	height: 45px;
+	margin: 0px auto;
+	background-color: #fff;
+	border: solid 2px #3db0e6;
+	border-radius: 0;
+}
+
+/* Odometer Section*/
+
+.odometer-sect {
+	background-color: #222;
+	margin: 0px auto;
+	padding: 40px 0px;
+	text-align: center;
+}
+
+.odometer{
+	font-family: 'Lato', 'Gerorgia', serif !important;
+	font-size: 65px !important;
+	color: #3db0e6 !important;
+}
+
+.count-divider{
+	display: block; 
+	width: 50px; 
+	margin: 20px auto; 
+	border-bottom: solid 1px #555;
+}
+
+.odometer-sect h5{
 	text-transform: uppercase;
+	color: #666;
 }
 
-.title-head p {
-	color: #333;
-	line-height: 1.4em;
+/* Team Pic Section */
+
+.team-intro{
+	position: relative;
+	background-color: rgba(233,233,233,0.68);
+	padding: 20px 0px;
 }
 
-.content {
-	padding: 3% 0%;
+.team-intro .arrow-down{
+	position: absolute;
+	bottom: -30px;
+	left: 45%;
+	border-left: 70px solid transparent;
+	border-right: 70px solid transparent;
+	border-top: 30px solid rgba(233,233,233,0.68);
+}
+
+.team-intro h2{
+	color: #666;
+}
+
+
+.team-intro p{
+	font-size: 16px;
+	line-height: 24px;
+	color: #999;
+}
+
+.team{
+	margin: 50px 0px;
+}
+
+.team-pic{
+	display: block;
+	margin: 20px auto 0px auto !important;
+}
+
+.team .col-xs-3 p{
+	padding: 5px 40px;
+	font-size: 12px;
+	line-height: 1.2em;
+	color: #666;
 }
 
 /* Search bars -primary & secondary*/
@@ -420,17 +485,6 @@ nav a:hover {
 	color: #0d80bc;
 }
 
-/* Banner*/
-.banner {
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
-	filter: alpha(opacity=90);
-	opacity: 0.9;
-	height: 450px; /* has to convert to percentages later*/
-	background: url('../assets/samplebanner2.png') no-repeat center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-}
 
 /* Table for Job List & Job cart */
 table {
@@ -687,19 +741,6 @@ table {
 	transition: all 0.4s ease;
 }
 
-/* Static corporate section*/
-.corporate {
-	height: 200px;
-	background-color: rgba(222,222,222,0.5);
-}
-
-.corporate h2{
-	font-family: 'Trykker', serif;
-	font-size: 6em;
-	text-align: center;
-	color: #3db0e6;
-}
-
 /* Base join talent community section */
 .base-subscription {
 	height: 140px;
@@ -777,6 +818,291 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#424242', end
 	-o-transition: all 0.4s ease;
 	-ms-transition: all 0.4s ease;
 	transition: all 0.4s ease;
+}
+
+/* About RGF - General styling */
+
+.abt-intro li{
+	list-style: disc;
+}
+
+.abt-intro .col-xs-3 p{
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.abt-intro{
+	position: relative;
+	background: url('../assets/bkg.png');
+	background-size: cover;
+	padding: 30px 0px;
+}
+
+.abt-intro .arrow-down{
+	position: absolute;
+	bottom: -30px;
+	left: 45%;
+	border-left: 70px solid transparent;
+	border-right: 70px solid transparent;
+	border-top: 30px solid rgba(233,233,233,0.45);
+}
+
+.abt-intro p{
+	line-height: 1.5em;
+}
+
+.abt-intro h1{
+	font-size: 42px;
+}
+
+.abt-content p{
+	line-height: 1.5em;
+}
+
+.abt-content li{
+	list-style: disc;
+}
+
+/* About RGF - Services */
+
+.svc-intro{
+	margin: 50px 0px;
+}
+
+.svc-intro h4{
+	font-family: 'Trykker', 'Georgia', serif;
+	font-weight: 600;
+}
+
+.svc-content .row{
+	margin: 30px 0px;
+}
+
+.svc-content .col-xs-6 img{
+	display: block;
+	margin: 5% auto;
+}
+
+/* About RGF - Process */
+
+.process .row{
+	margin: 50px 0px;
+}
+
+.circle-big{
+	display: table;
+	background-color: rgba(123,209,255,0.3);
+	width: 300px;
+	height: 300px;
+	margin: 0px auto;
+	border-radius: 300px;
+}
+
+.circle-big h1{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.process-benefits h1{
+	margin: 40px 0px;
+}
+
+.process-benefits img{
+	display: block;
+	margin: 30px auto;
+}
+
+.process-benefits .col-xs-6 .row{
+	height: 100px;
+	padding: 5px 50px;
+}
+
+.process-benefits span{
+	font-family: 'Trykker', 'Georgia', serif;
+	font-size: 24px;
+	font-weight: 600;
+	color: #3db0e6;
+}
+
+.process-benefits button{
+	display: block;
+	margin: 50px auto;
+	width: 180px;
+	height: 45px;
+	font-size: 16px;
+}
+
+/* About RGF - Team */
+
+.abt-team{
+	padding-bottom: 80px;
+}
+
+.team-career{
+	padding: 30px 0px;
+	background-color: #f6f6f6;
+}
+
+.team-career p{
+	line-height: 1.5em;
+}
+
+.team-career .btn{
+	width: 200px;
+}
+
+.team-career .col-xs-6{
+	position: relative;
+}
+
+.team-career img{
+	position: absolute;
+	top: -50px;
+	left: 50px;
+}
+
+.team-ethos{
+	padding: 50px 0px;
+}
+
+.team-ethos .col-xs-6 .row{
+	margin: 30px 0px;
+}
+
+.team-ethos .circle-small{
+	width: 30px;
+	height: 30px;
+	margin-right: 20px;
+	border-radius: 30px;
+	background-color: rgba(123,209,255,1);
+}
+
+.team-ethos .circle-small p{
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 16px;
+	text-align: center;
+	color: #fff;
+	font-weight: 700;
+}
+
+.ethos div{
+	float: left;
+	display: table;
+}
+
+.ethos div:last-child{
+	width: 90%;
+
+}
+
+.ethos div:last-child p{
+	margin: 5px 0px;
+	font-size: 22px;
+	line-height: 24px;
+}
+
+/* For employers page & contact us page*/
+
+.employer-head {
+	background: url('../assets/bkg.png');
+	background-size: cover;
+	padding: 60px 0px;
+}
+
+.employer-head h1{
+	margin-top: 0px;
+	font-size: 44px;
+	text-transform: uppercase;
+	color: #333;
+}
+
+.employer-head span{
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 300;
+	color: #999;
+}
+
+.employer-head blockquote{
+	font-weight: 100;
+	font-size: 20px;
+	color: #999;
+}
+
+.benefits-employer .row{
+	margin-bottom: 30px;
+}
+
+.benefits-employer h4{
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 14px;
+}
+
+.benefits-employer h4 + p{
+	line-height: 1.5em;
+	color: #999;
+}
+
+.benefits-employer .col-xs-5 img{
+	display: block;
+	float: right;
+	margin: 10px;
+}
+
+.contact-head{
+	background: url('../assets/bkg.png');
+	background-size: cover;
+	opacity: 0.8;
+}
+
+.contact-head .contact-sect{
+	width: 80%;
+	height: 140px;
+	position: relative;
+	margin: 50px auto;
+	padding: 25px;
+	background-color: #fff;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.contact-head .contact-sect h4{
+	font-family: 'Trykker', 'Georgia', serif;
+	font-weight: 700;
+}
+
+.contact-head .contact-sect p{
+	font-size: 13px;
+	line-height: 1.4em;
+}
+
+.icons-contact{
+	width: 40px;
+	position: absolute;
+	top: -35px;
+	right: 40%;
+}
+
+.contact p{
+	margin-bottom: 30px;
+	font-size: 16px;
+	line-height: 1.2em;
+	color: #666;
+}
+
+.content {
+	padding: 3% 0%;
+}
+
+.content input{
+	height: 40px;
+}
+
+.content .form-group{
+	margin: 20px 0px;
 }
 
 /* terms and conditions, privacy policy page */

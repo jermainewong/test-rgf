@@ -177,6 +177,30 @@ header .col-xs-10 {
 	width: 50%;
 }
 
+.benefits-talent .row{
+	margin: 30px 0px;
+}
+
+.benefits-talent h4{
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 14px;
+}
+
+.benefits-talent h4 + p{
+	color: #999;
+}
+
+.benefits-talent .col-xs-4 img{
+	display: block;
+	float: right;
+	margin: 30px 10px 0px 0px;
+}
+
+
+
+
+
 /* Buttons */
 .form-field button {
 	width: 45%;
