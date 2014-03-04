@@ -828,14 +828,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#424242', end
 
 .abt-intro .col-xs-3 p{
 	font-size: 16px;
+	color: #777;
 	text-transform: uppercase;
 }
 
 .abt-intro{
+	background-color: #f6f6f6;
 	position: relative;
-	background: url('../assets/bkg.png');
-	background-size: cover;
-	padding: 30px 0px;
+	padding: 20px 0px;
 }
 
 .abt-intro .arrow-down{
@@ -844,15 +844,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#424242', end
 	left: 45%;
 	border-left: 70px solid transparent;
 	border-right: 70px solid transparent;
-	border-top: 30px solid rgba(233,233,233,0.45);
+	border-top: 30px solid #f6f6f6;
 }
 
 .abt-intro p{
 	line-height: 1.5em;
+	color: #777;
 }
 
 .abt-intro h1{
-	font-size: 42px;
+	font-size: 38px;
+	color: #333;
 }
 
 .abt-content p{
@@ -914,8 +916,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#424242', end
 }
 
 .process-benefits .col-xs-6 .row{
-	height: 100px;
-	padding: 5px 50px;
+	height: 110px;
+	margin: 5px 40px;
 }
 
 .process-benefits span{
@@ -967,7 +969,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#424242', end
 }
 
 .team-ethos .col-xs-6 .row{
-	margin: 30px 0px;
+	height: 40px;
+	margin: 30px 10px;
 }
 
 .team-ethos .circle-small{
@@ -994,7 +997,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#424242', end
 
 .ethos div:last-child{
 	width: 90%;
-
 }
 
 .ethos div:last-child p{
@@ -1006,8 +1008,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#424242', end
 /* For employers page & contact us page*/
 
 .employer-head {
-	background: url('../assets/bkg.png');
-	background-size: cover;
+	background-color: #f6f6f6;
 	padding: 60px 0px;
 }
 
@@ -1052,10 +1053,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#424242', end
 	margin: 10px;
 }
 
+.check-box{
+	height: 15px !important;
+}
+
 .contact-head{
-	background: url('../assets/bkg.png');
-	background-size: cover;
-	opacity: 0.8;
+	background-color: #f6f6f6;
 }
 
 .contact-head .contact-sect{
@@ -1192,5 +1195,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#424242', end
 	.col-xs-4 .jobcart-btn {
 		width: auto;
 		border: none;
+	}
+	.team-pic{
+		width: 150px !important;
+		height: 163px !important;
+	}
+	.team .col-xs-3 p{
+	padding: 5px 10px;
+	}
+	.team-career img{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	}
+	.ethos div:last-child{
+	width: 80%;
+	}
+	.ethos div:last-child p{
+	font-size: 18px;
 	}
 }
