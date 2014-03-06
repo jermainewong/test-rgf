@@ -197,10 +197,6 @@ header .col-xs-10 {
 	margin: 30px 10px 0px 0px;
 }
 
-
-
-
-
 /* Buttons */
 .form-field button {
 	width: 45%;
@@ -505,5 +501,8 @@ select {
 	}
 	.input-salary div:last-child{
 	width: 35%;
+	}
+	.job-alert select{
+	width: 70%;
 	}
 }
