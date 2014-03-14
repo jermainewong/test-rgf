@@ -324,7 +324,7 @@ header {
 /* Job Description */
 .job-description {
 	padding-bottom: 60px;
-	background-color: rgba(244,244,244,0.4);
+	background-color: rgba(244,244,244,0.8);
 }
 
 .job-description h1{

@@ -126,23 +126,25 @@ nav .arrow-down {
 
 /* Banner*/
 .banner {
-	height: 400px;
-	background: url('../assets/sample-banner-msg.png') no-repeat center center;
+	height: 430px;
+	background-size: cover;
 }
 
-.banner button{
-	display: block;
-	height: 45px;
-	margin: 0px auto;
-	background-color: #fff;
-	border: solid 3px #3db0e6;
-	border-radius: 0;
-	margin-top: 320px;
+.msg-main{
+	padding: 50px 200px;
 }
 
-.banner button:hover{
-	background-color: #3db0e6;
-	color: #fff;
+.msg-main h1{
+	font-family: 'Josefin Sans', 'Arial', sans-serif;
+	font-size: 54px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.msg-main h2{
+	font-family: 'Josefin Sans', 'Arial', sans-serif;
+	font-size: 28px;
+	text-align: center;
 }
 
 /* Odometer Section*/
@@ -918,9 +920,10 @@ table {
 
 .circle-big{
 	display: table;
-	width: 280px;
-	height: 280px;
+	width: 300px;
+	height: 300px;
 	margin: 0px auto;
+	position: relative;
 	border-radius: 300px;
 	border: 1px solid #3db0e6;
 }
@@ -956,9 +959,23 @@ table {
 .process-benefits button{
 	display: block;
 	margin: 50px auto;
-	width: 180px;
+	width: 220px;
 	height: 45px;
 	font-size: 16px;
+}
+
+.fa-angle-double-down{
+	position: absolute;
+	top: 310px;
+	left: 48%;
+	font-size: 25px; 
+	color: #999; 
+}
+
+.closer{
+	font-family: 'Seaweed Script', cursive !important;
+	font-size: 46px !important;
+	color: #ccc !important;
 }
 
 /* About RGF - Team */
@@ -1034,7 +1051,7 @@ table {
 /* For employers page & contact us page*/
 
 .employer-head {
-	background: url('../assets/sample-employer6.png') center center;
+	background: url('../assets/sample-employer13.png') center center;
 	background-size: cover;
 	padding: 70px 0px;
 	box-shadow: inset 0px 3px 5px rgba(204,204,204,0.6);
@@ -1045,20 +1062,21 @@ table {
 	margin-top: 0px;
 	font-size: 48px;
 	text-transform: uppercase;
-	color: #333;
+	color: #222;
 }
 
 .employer-head span{
 	font-size: 20px;
 	text-transform: uppercase;
 	font-weight: 300;
-	color: #666;
+	color: #333;
 }
 
 .employer-head blockquote{
 	font-weight: 100;
 	font-size: 24px;
-	color: #333;
+	color: #222;
+	background-color: rgba(255,255,255,0.3);
 }
 
 .benefits-employer{
@@ -1247,5 +1265,19 @@ table {
 	}
 	.benefits-employer{
 	padding: 1% 5%;
+	}
+	.services-pic{
+		width: 350px !important;
+		height: 350px !important;
+	}
+	.abt-intro .arrow-down{
+	left: 42%;
+	}
+	.circle-big{
+	width: 265px;
+	height: 265px;
+	}
+	.fa-angle-double-down{
+	top: 280px;
 	}
 }
