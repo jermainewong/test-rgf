@@ -429,6 +429,11 @@ header {
 	background-color: #222;
 }
 
+.social-network .col-xs-2 span{
+	display: block;
+	margin: 10px 0px;
+}
+
 /* Form */
 .form-title {
 	margin: 20px 0px 10px 0px;
