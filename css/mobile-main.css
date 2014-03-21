@@ -621,6 +621,10 @@ header {
 	color: #fff;
 }
 
+.action .btn-remove{
+	background-color: #f6f6f6;
+}
+
 .action .btn-primary{
 	width: 100%;
 }
