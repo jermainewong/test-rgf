@@ -387,6 +387,12 @@ nav .arrow-down {
 	position: relative;
 }
 
+.jobs-viewed h4{
+	display: block;
+	line-height: 1.2em;
+	min-height: 90px;
+}
+
 .jobs-viewed .arrow-left {
 	display: block;
 	background: url("../assets/sprites2.png") top left no-repeat;
@@ -1311,5 +1317,8 @@ table .job-salary{
 	}
 	.fa-angle-double-down{
 	top: 280px;
+	}
+	.jobs-viewed h4{
+	min-height: 180px;
 	}
 }
