@@ -517,6 +517,10 @@ nav .arrow-down {
 	color: #0d80bc;
 }
 
+.jc-empty .job-module-horizontal{
+	margin-top: 30px;
+}
+
 /* Table for Job List & Job cart, Pagination */
 table {
 	border: solid 1px rgba(153,153,153,0.3);
