@@ -66,21 +66,35 @@
 									<label>Email *</label>
 									<input type="email" class="form-control" id="">
 								</div>
+								<div class="form-group">
+									<label>Visa Status in Singapore *</label>
+									<select class="form-control">
+										<option value="" selected="selected">Please select</option>					
+										<option value="Singaporean">Singaporean</option>
+										<option value="Permanent-resident">Permanent Resident</option>
+										<option value="Employment-pass">Employment Pass</option>
+										<option value="S-pass">S-Pass</option>
+										<option value="Others">Others</option>
+										<option value="Not-applicable">Not applicable</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label>Current annual salary *</label>
+									<div class="input-inline input-salary clearfix">
+										<div>
+											<p class="static-sgd">SGD</p>
+										</div>
+										<div class="salary">
+											<input class="form-control" id="inputSalary" placeholder="Annual salary">
+										</div>
+										<div>
+											<button class="btn btn-grey btn-cal" data-toggle="modal" data-target="#calculatorModal">Calculator</button>
+										</div>	
+									</div>
+								</div>
 								<div class="job-alert">
 									<div class="form-group">
-										<label>MY JOB ALERT</label>
-										<div class="checkbox">
-											<label class="label-xs">
-												<input type="checkbox" checked="checked"> I wish to receive job alerts from RGF Singapore
-											</label>
-										</div>
-										<div class="checkbox">
-											<label class="label-xs">
-												<input type="checkbox"> I agree to the <a href="">terms and conditions</a> and <a href="">privacy policy</a> of RGF Singapore
-											</label>
-										</div>
-									</div>
-									<div class="form-group">
+										<label>YOUR EXPERTISE</label>
 										<p>Please indicate your current</p>
 										<label>Job Category</label>
 										<select class="form-control">
@@ -119,6 +133,18 @@
 											<option value="">Oil and Gas</option>
 											<option value="">Banking</option>
 										</select>
+									</div>
+								</div>
+								<div class="checkbox">
+									<label class="label-xs">
+										<input type="checkbox" checked="checked"> I wish to receive job alerts from RGF Singapore
+									</label>
+								</div>
+								<div class="form-group">
+									<div class="checkbox">
+										<label class="label-xs">
+											<input type="checkbox"> I agree to the <a href="">terms and conditions</a> and <a href="">privacy policy</a> of RGF Singapore
+										</label>
 									</div>
 								</div>
 								<button type="submit" class="btn" data-toggle="modal" data-target="#successModal">Sign up</button>
@@ -164,6 +190,60 @@
 			      <div class="modal-body">
 			        <h2 class="modal-title">Congrats!</h2>
 			        <p>You're now part of RGF talent community. Start your job search with RGF now.</p>
+					<div class="modal-footer">
+			        	<button type="button" class="btn btn-ok">OK</button>
+			        </div>
+			      </div>
+			    </div><!-- /.modal-content -->
+			  </div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+		<!-- Modal- calculator -->
+			<div class="modal fade" id="calculatorModal" role="dialog" aria-labelledby="calculatorModal" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-body">
+			      	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			        <h1 class="modal-title">Annual Salary Calculator</h1>
+			        <p class="text-grey small">Enter values below and the total will be inputted for you.</p>
+			        <form>
+			        	<div class="form-group row">
+							<label class="col-xs-5">Currency</label>
+							<div class="col-xs-5">
+								<select class="form-control">
+									<option value="" selected="selected">SGD</option>	 
+									<option class="select-dash" disabled="disabled">----</option>
+									<option value="">MYR</option>
+									<option value="">IDR</option>
+									<option value="">JPY</option>
+									<option value="">HKD</option>
+									<option value="">RMB</option>
+									<option value="">INR</option>
+									<option class="select-dash" disabled="disabled">----</option>     				<!--Please help to add in full country code list-->			
+								</select>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-xs-5">Monthly basic salary</label>
+							<div class="col-xs-5">
+								<input class="form-control" placeholder="Monthly salary">
+							</div>
+							<div class="col-xs-2">
+								<p><b>x 12</b></p>
+							</div>
+						</div>
+						<div class="form-group row">
+							<p class="col-xs-offset-5 col-xs-5 text-center"><b>+</b></p>
+						</div>
+						<div class="form-group row">
+							<div class="col-xs-5">
+								<label>Bonus</label>
+								<p class="small text-grey">Includes AWS and any bonuses</p>
+							</div>
+							<div class="col-xs-5">
+								<input class="form-control" placeholder="Annual bonus">
+							</div>
+						</div>
+			        </form>
 					<div class="modal-footer">
 			        	<button type="button" class="btn btn-ok">OK</button>
 			        </div>

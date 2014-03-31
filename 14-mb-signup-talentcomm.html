@@ -76,21 +76,35 @@
 								<label>Email *</label>
 								<input type="email" class="form-control" id="">
 							</div>
+							<div class="form-group">
+								<label>Visa Status in Singapore *</label>
+								<select class="form-control">
+									<option value="" selected="selected">Please select</option>					
+									<option value="Singaporean">Singaporean</option>
+									<option value="Permanent-resident">Permanent Resident</option>
+									<option value="Employment-pass">Employment Pass</option>
+									<option value="S-pass">S-Pass</option>
+									<option value="Others">Others</option>
+									<option value="Not-applicable">Not applicable</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label>Current annual salary *</label>
+								<div class="input-inline input-salary clearfix">
+									<div>
+										<p class="static-sgd">SGD</p>
+									</div>
+									<div class="salary">
+										<input class="form-control" id="inputSalary" placeholder="Annual salary">
+									</div>
+									<div>
+										<button class="btn btn-primary btn-grey btn-cal" data-toggle="modal" data-target="#calculatorModal">Calculator</button>
+									</div>	
+								</div>
+							</div>
 							<div class="job-alert">
 								<div class="form-group">
-									<label>MY JOB ALERT</label>
-									<div class="checkbox">
-										<label class="label-sm">
-											<input type="checkbox" checked="checked"> I wish to receive job alerts from RGF Singapore
-										</label>
-									</div>
-									<div class="checkbox">
-										<label class="label-sm">
-											<input type="checkbox"> I agree to the <a href="">terms and conditions</a> and <a href="">privacy policy</a> of RGF Singapore
-										</label>
-									</div>
-								</div>
-								<div class="form-group">
+									<label>YOUR EXPERTISE</label>
 									<p>Please indicate your current</p>
 									<label>Job Category</label>
 									<select class="form-control">
@@ -131,6 +145,12 @@
 									</select>
 								</div>
 							</div>
+							<div class="form-group check-box">
+								<input type="checkbox" checked="checked"> I wish to receive job alerts from RGF Singapore
+							</div>
+							<div class="form-group check-box">
+								<input type="checkbox"> I agree to the <a href="">terms and conditions</a>, <a href="">privacy policy</a> of RGF Singapore
+							</div>							
 							<div class="form-group">
 								<button type="submit" class="btn btn-form">Sign up</button>
 							</div>
@@ -139,6 +159,60 @@
 				</div><!--/Form field-->
 			</div>
 		</section>
+	<!-- Modal- calculator -->
+		<div class="modal fade" id="calculatorModal" role="dialog" aria-labelledby="calculatorModal" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-body">
+		      	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		        <h1 class="modal-title">Annual Salary Calculator</h1>
+		        <p class="text-grey small">Enter values below and the total will be inputted for you.</p>
+		        <form>
+		        	<div class="form-group row">
+						<label class="col-xs-12">Currency</label>
+						<div class="col-xs-9">
+							<select class="form-control">
+								<option value="" selected="selected">SGD</option>	 
+								<option class="select-dash" disabled="disabled">----</option>
+								<option value="">MYR</option>
+								<option value="">IDR</option>
+								<option value="">JPY</option>
+								<option value="">HKD</option>
+								<option value="">RMB</option>
+								<option value="">INR</option>
+								<option class="select-dash" disabled="disabled">----</option>     				<!--Please help to add in full country code list-->			
+							</select>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-xs-12">Monthly basic salary</label>
+						<div class="col-xs-9">
+							<input class="form-control" placeholder="Monthly salary">
+						</div>
+						<div class="col-xs-3">
+							<p><b>x 12</b></p>
+						</div>
+					</div>
+					<div class="row">
+						<p class="col-xs-9 text-center"><b>+</b></p>
+					</div>
+					<div class="form-group row">
+						<div class="col-xs-12">
+							<label>Bonus</label>
+							<p class="small text-grey">Includes AWS and any bonuses</p>
+						</div>
+						<div class="col-xs-9">
+							<input class="form-control" placeholder="Annual bonus">
+						</div>
+					</div>
+		        </form>
+				<div class="modal-footer">
+		        	<button type="button" class="btn btn-form">OK</button>
+		        </div>
+		      </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
 	<!--Footer-->
 		<footer class="footer-secondary">
 			<div class="container">
@@ -153,5 +227,6 @@
 		</footer>
 		<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 		<script src="js/placeholder.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 	</body>
 </html>

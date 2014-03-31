@@ -511,7 +511,7 @@ nav .arrow-down {
 	color: #0d80bc;
 }
 
-/* Table for Job List & Job cart */
+/* Table for Job List & Job cart, Pagination */
 table {
 	border: solid 1px rgba(153,153,153,0.3);
 	margin: 0;
@@ -536,6 +536,10 @@ table .job-title{
 
 table .job-salary{
 	 min-width: 140px;
+}
+
+.page-current{
+	background-color: #eee !important;
 }
 
 /* Job descrption page*/
