@@ -91,19 +91,20 @@
 									<div class="input-inline input-phone clearfix">
 										<div>
 											<select class="form-control">
-												<option value="" selected="selected">+65</option>						<!--Please help to add in full country code list-->
+												<option value="" selected="selected">SG ( +65 )</option>	 
 												<option class="select-dash" disabled="disabled">----</option>
-												<option value="">+60</option>
-												<option value="">+62</option>
-												<option value="">+81</option>
-												<option value="">+852</option>
-												<option value="">+86</option>
-												<option value="">+91</option>
-												<option class="select-dash" disabled="disabled">----</option>					
+												<option value="">SG ( +65 )</option>
+												<option value="">MY ( +60 )</option>
+												<option value="">JP ( +81 )</option>
+												<option value="">HK ( +852 )</option>
+												<option value="">CN ( +86 )</option>
+												<option value="">IN ( +91 )</option>
+												<option value="">ID ( +62 )</option>
+												<option class="select-dash" disabled="disabled">----</option>     				<!--Please help to add in full country code list-->			
 											</select>
 										</div>
 										<div>
-											<input type="number" class="form-control error" id="inputPhonenumber" placeholder="Phone number">
+											<input class="form-control error" id="inputPhonenumber" placeholder="Phone number">
 											<span class="small">(Please input numbers only)</span>
 											<p class="error-text">You have entered an invalid value. Only numbers allowed. e.g. 93336688</p>
 										</div>
@@ -158,7 +159,7 @@
 											<p class="static-sgd">SGD</p>
 										</div>
 										<div class="salary">
-											<input type="number" class="form-control" id="inputSalary" placeholder="Annual salary">
+											<input class="form-control" id="inputSalary" placeholder="Annual salary">
 										</div>
 										<div>
 											<button class="btn btn-primary btn-grey btn-cal" data-toggle="modal" data-target="#calculatorModal">Calculator</button>
@@ -167,7 +168,7 @@
 								</div>
 								<div class="form-group">
 									<label>Total years of work experience *</label>
-									<input type="number" class="form-control" id="inputWorkexp" placeholder="No. of years of work experience">
+									<input class="form-control" id="inputWorkexp" placeholder="No. of years of work experience">
 								</div>
 							</form>
 						</div>
@@ -238,10 +239,8 @@
 									<select class="form-control">
 										<option value="" selected="selected">Please select</option>
 										<option value="native">Native</option>
-										<option value="fluent">Fluent</option>
 										<option value="business-level">Business level</option>
 										<option value="conversational">Conversational</option>
-										<option value="basic">Basic</option>
 										<option value="none">None</option>
 									</select>
 								</div>
@@ -250,10 +249,8 @@
 									<select class="form-control">
 										<option value="" selected="selected">Please select</option>
 										<option value="native">Native</option>
-										<option value="fluent">Fluent</option>
 										<option value="business-level">Business level</option>
 										<option value="conversational">Conversational</option>
-										<option value="basic">Basic</option>
 										<option value="none">None</option>
 									</select>
 								</div>
@@ -262,10 +259,8 @@
 									<select class="form-control">
 										<option value="" selected="selected">Please select</option>
 										<option value="native">Native</option>
-										<option value="fluent">Fluent</option>
 										<option value="business-level">Business level</option>
 										<option value="conversational">Conversational</option>
-										<option value="basic">Basic</option>
 										<option value="none">None</option>
 									</select>
 								</div>				
@@ -300,6 +295,7 @@
 								</div>
 								<div class="form-group">
 									<button type="submit" class="btn btn-form btn-load" data-toggle="modal" data-target="#cloudfileModal">Load resume</button>
+									<p class="small help-block">Supported formats: .doc, .docx, .pdf, .txt (max. file size 1MB)</p>
 								</div>
 								<div class="form-group">
 									<p>Or,<br><b><span class="text-blue">Press complete to proceed.</span></b> We will send you a <b>follow-up email for you to load your resume</b> from a desktop.</p>
@@ -341,7 +337,7 @@
 					<div class="form-group row">
 						<label class="col-xs-12">Monthly basic salary</label>
 						<div class="col-xs-9">
-							<input type="number" class="form-control" placeholder="Monthly salary">
+							<input class="form-control" placeholder="Monthly salary">
 						</div>
 						<div class="col-xs-3">
 							<p><b>x 12</b></p>
@@ -356,7 +352,7 @@
 							<p class="small text-grey">Includes AWS and any bonuses</p>
 						</div>
 						<div class="col-xs-9">
-							<input type="number" class="form-control" placeholder="Annual bonus">
+							<input class="form-control" placeholder="Annual bonus">
 						</div>
 					</div>
 		        </form>
