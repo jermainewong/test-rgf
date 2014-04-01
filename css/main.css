@@ -321,7 +321,6 @@ nav .arrow-down {
 	color: #3db0e6;
 }
 
-
 /* New & Hot jobs section*/
 .job-section {
 	margin: 80px 0px;
@@ -553,73 +552,79 @@ table .job-salary{
 }
 
 /* Job descrption page*/
-.job-description {
+.job-content {
 	margin-bottom: 100px;
 }
 
-.job-description h1{
+.job-content h1{
 	font-size: 34px;
 }
 
-.job-description p {
+.job-content p {
 	line-height: 1.5em;
 }
 
-.job-description ul {
-	padding: 0;
+.job-content .job-date{
+	margin-bottom: 0px;
 }
 
-.job-description a {
+.job-share a {
 	display: block;
 	float: left;
 	margin-right: 15px;
 }
 
-.job-description .fa-envelope-o {
+.job-btn{
+	width: 360px;
+	float: right;
+	padding-top: 30px;
+}
+
+.job-content .fa-envelope-o {
 	color: #999;
 }
 
-.job-description .fa-envelope-o:hover {
+.job-content .fa-envelope-o:hover {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 	filter: alpha(opacity=70);
 	opacity: 0.7;
 }
 
-.job-description .fa-linkedin {
+.job-content .fa-linkedin {
 	color: #0073b2;
 }
 
-.job-description .fa-linkedin:hover {
+.job-content .fa-linkedin:hover {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 	filter: alpha(opacity=70);
 	opacity: 0.7;
 }
 
-.job-description .fa-facebook {
+.job-content .fa-facebook {
 	color: #3b5998;
 }
 
-.job-description .fa-facebook:hover {
+.job-content .fa-facebook:hover {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 	filter: alpha(opacity=70);
 	opacity: 0.7;
 }
 
-.job-description .fa-twitter {
+.job-content .fa-twitter {
 	color: #00cdff;
 }
 
-.job-description .fa-twitter:hover {
+.job-content .fa-twitter:hover {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 	filter: alpha(opacity=70);
 	opacity: 0.7;
 }
 
-.job-description .fa-google-plus {
+.job-content .fa-google-plus {
 	color: #da4835;
 }
 
-.job-description .fa-google-plus:hover {
+.job-content .fa-google-plus:hover {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 	filter: alpha(opacity=70);
 	opacity: 0.7;
@@ -727,7 +732,7 @@ table .job-salary{
 	color: #333;
 }
 
-.job-description .btn {
+.job-content .btn {
 	height: 45px;
 	width: 170px;
 }
@@ -1095,6 +1100,12 @@ table .job-salary{
 .employer-head {
 	background: url('../assets/bkg-for-employers.png') center center;
 	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='../assets/bkg-for-employers.png',
+	sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='../assets/bkg-for-employers.png',
+	sizingMethod='scale')";
 	padding: 70px 0px;
 	box-shadow: inset 0px 3px 5px rgba(204,204,204,0.6);
 	border-bottom: solid 40px #f6f6f6;

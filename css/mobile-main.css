@@ -331,6 +331,10 @@ header {
 	margin-top: 10px;
 }
 
+.job-date{
+	margin-bottom: 0px;
+}
+
 .white {
 	-webkit-box-shadow: 3px 3px 3px rgba(153,153,153,0.2);
 	box-shadow: 3px 3px 3px rgba(153,153,153,0.2);
