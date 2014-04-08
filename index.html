@@ -28,7 +28,12 @@
 		<!--[if lte IE 7]>
 	    	<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 	    <![endif]-->
-	    <script type="text/javascript" src="js/selectivizr-min.js"></script>
+	    
+	    <!--[if (gte IE 6)&(lte IE 8)]>
+          <script type="text/javascript" src="js/selectivizr-min.js"></script>
+          <noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
+        <![endif]--> 
+	    
 	</head>
 	<body>
 	<!--Header-->
