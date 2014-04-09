@@ -1267,7 +1267,10 @@ table .job-salary{
 	float: left;
 	margin-right: 10px;
 	border: solid 1px #fff;
-	border-radius: 100px;
+	-webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    behavior: url(PIE/PIE.htc);
 	color: #b4b4b4;
 }
 
