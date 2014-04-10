@@ -687,7 +687,6 @@ table .job-salary{
 	width: 100%;
 	height: 40px;
 	border-radius: 3px;
-	behavior: url(PIE/PIE.htc);
 	border: solid 1px #3db0e6;
 	background-color: #fff;
 	font-size: 1.1em;
