@@ -163,7 +163,7 @@ nav .arrow-down {
 	font-size: 1.1em;
 	color: #222;
 	border-radius: 0px;
-	behavior: url(../PIE/PIE.htc);
+	behavior: url(PIE/PIE.htc);
 	margin: 40px auto;
 	background-color: rgb(255,255,255);
 	background-color: rgba(255,255,255,0.6);
@@ -304,7 +304,7 @@ nav .arrow-down {
 	border: solid 1px rgb(224,224,224);
 	border: solid 1px rgba(153,153,153,0.3);
 	border-radius: 3px;
-	behavior: url(../PIE/PIE.htc);
+	behavior: url(PIE/PIE.htc);
 	background-color: rgb(240,240,240);
 	background-color: rgba(233,233,233,0.68);
 }
@@ -354,7 +354,7 @@ nav .arrow-down {
 
 .jobs-module {
 	border-radius: 0px 80px 0px 80px;
-	behavior: url(../PIE/PIE.htc);
+	behavior: url(PIE/PIE.htc);
 	border: solid 1px rgb(214,214,214);
 	border: solid 1px rgba(153,153,153,0.4);
 	padding-bottom: 50px;
@@ -446,7 +446,7 @@ nav .arrow-down {
 /* Jobs module-aside */
 .aside {
 	border-radius: 10px 10px 0px 0px;
-	behavior: url(../PIE/PIE.htc);
+	behavior: url(PIE/PIE.htc);
 	margin-bottom: 50px;
 	padding-bottom: 35px;
 }
@@ -472,7 +472,7 @@ nav .arrow-down {
 	margin: 0;
 	padding: 0px 15px;
 	border-radius: 10px 10px 0px 0px;
-	behavior: url(../PIE/PIE.htc);
+	behavior: url(PIE/PIE.htc);
 	background-color: #0d80bc;
 }
 
@@ -512,7 +512,7 @@ nav .arrow-down {
 .breadcrumb {
 	background-color: transparent;
 	border-radius: 0px;
-	behavior: url(../PIE/PIE.htc);
+	behavior: url(PIE/PIE.htc);
 	padding-left: 0px;
 	margin: 20px 0px 0px 0px;
 }
@@ -524,7 +524,7 @@ nav .arrow-down {
 /* Success message*/
 .msg-success {
 	border-radius: 5px;
-	behavior: url(../PIE/PIE.htc);
+	behavior: url(PIE/PIE.htc);
 	background-color: #74c399;
 	padding: 20px;
 }
@@ -687,7 +687,7 @@ table .job-salary{
 	width: 100%;
 	height: 40px;
 	border-radius: 3px;
-	behavior: url(../PIE/PIE.htc);
+	behavior: url(PIE/PIE.htc);
 	border: solid 1px #3db0e6;
 	background-color: #fff;
 	font-size: 1.1em;
@@ -711,7 +711,7 @@ table .job-salary{
 	height: 45px;
 	margin: 15px 0px;
 	border-radius: 3px;
-	behavior: url(../PIE/PIE.htc);
+	behavior: url(PIE/PIE.htc);
 	border: solid 1px #3db0e6;
 	background-color: #fff;
 	font-size: 1em;
@@ -895,7 +895,7 @@ table .job-salary{
 	width: 100%;
 	height: 40px;
 	border-radius: 3px;
-	behavior: url(../PIE/PIE.htc);
+	behavior: url(PIE/PIE.htc);
 	background-color: #0d80bc;
 	color: #fff;
 	text-transform: uppercase;
@@ -1014,7 +1014,7 @@ table .job-salary{
 	margin: 0px auto;
 	position: relative;
 	border-radius: 300px;
-	behavior: url(../PIE/PIE.htc);
+	behavior: url(PIE/PIE.htc);
 	border: 1px solid #3db0e6;
 }
 
@@ -1111,7 +1111,7 @@ table .job-salary{
 	height: 30px;
 	margin-right: 20px;
 	border-radius: 30px;
-	behavior: url(../PIE/PIE.htc);
+	behavior: url(PIE/PIE.htc);
 	background-color: rgb(123,209,255);
 }
 
@@ -1210,7 +1210,7 @@ table .job-salary{
 	padding: 25px;
 	background-color: #fff;
 	border-radius: 5px;
-	behavior: url(../PIE/PIE.htc);
+	behavior: url(PIE/PIE.htc);
 	text-align: center;
 }
 
@@ -1308,7 +1308,7 @@ table .job-salary{
 	margin-right: 10px;
 	border: solid 1px #fff;
 	border-radius: 100px;
-	behavior: url(../PIE/PIE.htc);
+	behavior: url(PIE/PIE.htc);
 	color: #b4b4b4;
 }
 
